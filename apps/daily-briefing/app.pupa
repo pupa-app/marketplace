@@ -1,0 +1,520 @@
+{
+  "app" : {
+    "activeComponentId" : "tracker-2",
+    "components" : [
+      {
+        "body" : {
+          "data" : {
+            "fields" : [
+              {
+                "label" : "Source",
+                "name" : "source",
+                "type" : "text"
+              },
+              {
+                "label" : "Tool \/ MCP",
+                "name" : "tool",
+                "type" : "text"
+              },
+              {
+                "label" : "Cadence",
+                "name" : "cadence",
+                "options" : [
+                  "Daily",
+                  "Weekdays",
+                  "Hourly"
+                ],
+                "type" : "select"
+              },
+              {
+                "label" : "Enabled",
+                "name" : "enabled",
+                "options" : [
+                  "On",
+                  "Off"
+                ],
+                "type" : "select"
+              },
+              {
+                "label" : "Last pulled",
+                "name" : "last_pulled",
+                "type" : "text"
+              }
+            ],
+            "filter" : {
+
+            },
+            "items" : [
+              {
+                "id" : "D82B181E-0FBE-4A19-B408-CB139EED4604",
+                "linkedItems" : [
+
+                ],
+                "schemaVersion" : 1,
+                "values" : {
+                  "cadence" : "Daily",
+                  "enabled" : "On",
+                  "last_pulled" : "Today 07:00",
+                  "source" : "Weather",
+                  "tool" : "weather MCP (forecast)"
+                }
+              },
+              {
+                "id" : "06C0CF4E-143E-4801-A01F-86A0BD5C898E",
+                "linkedItems" : [
+
+                ],
+                "schemaVersion" : 1,
+                "values" : {
+                  "cadence" : "Daily",
+                  "enabled" : "On",
+                  "last_pulled" : "Today 07:00",
+                  "source" : "Calendar",
+                  "tool" : "calendar MCP \/ EventKit"
+                }
+              },
+              {
+                "id" : "EAD38A9E-0129-4A89-B521-E33E15E64FDF",
+                "linkedItems" : [
+
+                ],
+                "schemaVersion" : 1,
+                "values" : {
+                  "cadence" : "Daily",
+                  "enabled" : "On",
+                  "last_pulled" : "Today 07:00",
+                  "source" : "Hacker News (AI)",
+                  "tool" : "tavily_search \/ HN API"
+                }
+              },
+              {
+                "id" : "5900EAA8-C81C-44EB-AEE5-5CBC20DD9E0F",
+                "linkedItems" : [
+
+                ],
+                "schemaVersion" : 1,
+                "values" : {
+                  "cadence" : "Weekdays",
+                  "enabled" : "On",
+                  "last_pulled" : "Today 07:00",
+                  "source" : "GitHub notifications",
+                  "tool" : "github MCP"
+                }
+              },
+              {
+                "id" : "871EC189-7A80-4A7F-8BE9-C413474CEEE2",
+                "linkedItems" : [
+
+                ],
+                "schemaVersion" : 1,
+                "values" : {
+                  "cadence" : "Weekdays",
+                  "enabled" : "Off",
+                  "last_pulled" : "—",
+                  "source" : "Markets",
+                  "tool" : "markets MCP (quotes)"
+                }
+              },
+              {
+                "id" : "1585DB6B-BBE6-4453-B2A4-CD4859CDE186",
+                "linkedItems" : [
+
+                ],
+                "schemaVersion" : 1,
+                "values" : {
+                  "cadence" : "Daily",
+                  "enabled" : "On",
+                  "last_pulled" : "Today 07:00",
+                  "source" : "Newsletters (RSS)",
+                  "tool" : "rss tool"
+                }
+              }
+            ],
+            "title" : "Briefing Sources",
+            "viewMode" : "grid"
+          },
+          "kind" : "tracker"
+        },
+        "iconSystemName" : "antenna.radiowaves.left.and.right",
+        "id" : "tracker-1",
+        "isLocked" : false,
+        "name" : "Briefing Sources",
+        "summary" : "The feeds the morning briefing pulls, each naming the tool \/ MCP it uses. Flip a source On \/ Off to add or drop a section. Markets is Off — turn it On once a markets MCP is configured on the backend."
+      },
+      {
+        "body" : {
+          "data" : {
+            "fields" : [
+              {
+                "label" : "Section",
+                "name" : "section",
+                "type" : "text"
+              },
+              {
+                "label" : "Summary",
+                "name" : "summary",
+                "type" : "text"
+              },
+              {
+                "label" : "Priority",
+                "name" : "priority",
+                "options" : [
+                  "Now",
+                  "Today",
+                  "FYI"
+                ],
+                "type" : "select"
+              }
+            ],
+            "filter" : {
+
+            },
+            "items" : [
+              {
+                "id" : "2FF94D5F-4C44-4101-8109-3CE90300F9A8",
+                "linkedItems" : [
+                  {
+                    "componentId" : "tracker-1",
+                    "itemId" : "D82B181E-0FBE-4A19-B408-CB139EED4604"
+                  }
+                ],
+                "schemaVersion" : 1,
+                "values" : {
+                  "priority" : "Today",
+                  "section" : "Weather",
+                  "summary" : "Clear, high 24°C, light breeze. No rain — good for the 6pm run."
+                }
+              },
+              {
+                "id" : "0508D2B2-ECF7-4C24-B9DD-055BDDA7679E",
+                "linkedItems" : [
+                  {
+                    "componentId" : "tracker-1",
+                    "itemId" : "06C0CF4E-143E-4801-A01F-86A0BD5C898E"
+                  }
+                ],
+                "schemaVersion" : 1,
+                "values" : {
+                  "priority" : "Now",
+                  "section" : "Today's agenda",
+                  "summary" : "3 meetings: 10:00 standup, 13:00 design review, 16:00 1:1. Free 11:00–13:00 for deep work."
+                }
+              },
+              {
+                "id" : "8A41A0F7-6B87-4CF1-86B7-4D18EBB13DE6",
+                "linkedItems" : [
+                  {
+                    "componentId" : "tracker-1",
+                    "itemId" : "EAD38A9E-0129-4A89-B521-E33E15E64FDF"
+                  }
+                ],
+                "schemaVersion" : 1,
+                "values" : {
+                  "priority" : "Today",
+                  "section" : "Top AI on HN",
+                  "summary" : "1) New open-weights 70B tops prior SOTA on SWE-bench. 2) 'The harness beats the model' essay. 3) MCP registry passes 1k servers."
+                }
+              },
+              {
+                "id" : "09ADDED7-2154-4921-BBD6-DFCE844D1307",
+                "linkedItems" : [
+                  {
+                    "componentId" : "tracker-1",
+                    "itemId" : "5900EAA8-C81C-44EB-AEE5-5CBC20DD9E0F"
+                  }
+                ],
+                "schemaVersion" : 1,
+                "values" : {
+                  "priority" : "Now",
+                  "section" : "GitHub",
+                  "summary" : "4 review requests, CI failing on the pupa#54 branch, 1 mention in pupa-backend."
+                }
+              },
+              {
+                "id" : "B4067692-A10E-403B-87EB-7000B8EF0195",
+                "linkedItems" : [
+
+                ],
+                "schemaVersion" : 1,
+                "values" : {
+                  "priority" : "Now",
+                  "section" : "One thing to focus on",
+                  "summary" : "Ship the Research Tracker template — it unblocks the marketplace demo."
+                }
+              }
+            ],
+            "title" : "Today's Briefing",
+            "viewMode" : "grid"
+          },
+          "kind" : "tracker"
+        },
+        "iconSystemName" : "newspaper",
+        "id" : "tracker-2",
+        "isLocked" : false,
+        "name" : "Today's Briefing",
+        "summary" : "The morning brief, one card per section, kept under ~500 words total. The agent rewrites these rows each morning from the enabled sources; each section links back to the feed that produced it."
+      },
+      {
+        "body" : {
+          "data" : {
+            "fields" : [
+              {
+                "label" : "Day",
+                "name" : "day",
+                "options" : [
+                  "1 Mon",
+                  "2 Tue",
+                  "3 Wed",
+                  "4 Thu",
+                  "5 Fri"
+                ],
+                "type" : "select"
+              },
+              {
+                "label" : "HN AI posts",
+                "name" : "hn_count",
+                "type" : "number"
+              },
+              {
+                "label" : "GitHub notifs",
+                "name" : "github_count",
+                "type" : "number"
+              },
+              {
+                "label" : "Focus done",
+                "name" : "focus_done",
+                "options" : [
+                  "Yes",
+                  "No"
+                ],
+                "type" : "select"
+              }
+            ],
+            "filter" : {
+
+            },
+            "items" : [
+              {
+                "id" : "EC2836CF-4266-4EA0-B37A-771489628CB2",
+                "linkedItems" : [
+
+                ],
+                "schemaVersion" : 1,
+                "values" : {
+                  "day" : "1 Mon",
+                  "focus_done" : "No",
+                  "github_count" : "6",
+                  "hn_count" : "5"
+                }
+              },
+              {
+                "id" : "CC28EA1E-49EC-4EC5-BC83-D5899F087F00",
+                "linkedItems" : [
+
+                ],
+                "schemaVersion" : 1,
+                "values" : {
+                  "day" : "2 Tue",
+                  "focus_done" : "Yes",
+                  "github_count" : "9",
+                  "hn_count" : "4"
+                }
+              },
+              {
+                "id" : "526FEDC0-C471-49EF-B6CD-A4F451E83C6D",
+                "linkedItems" : [
+
+                ],
+                "schemaVersion" : 1,
+                "values" : {
+                  "day" : "3 Wed",
+                  "focus_done" : "Yes",
+                  "github_count" : "4",
+                  "hn_count" : "6"
+                }
+              },
+              {
+                "id" : "9F94025B-153D-4C69-BE7B-BD50333C48B4",
+                "linkedItems" : [
+
+                ],
+                "schemaVersion" : 1,
+                "values" : {
+                  "day" : "4 Thu",
+                  "focus_done" : "No",
+                  "github_count" : "11",
+                  "hn_count" : "5"
+                }
+              },
+              {
+                "id" : "2C24663A-F543-45AB-84E6-1F44FB69D9DE",
+                "linkedItems" : [
+
+                ],
+                "schemaVersion" : 1,
+                "values" : {
+                  "day" : "5 Fri",
+                  "focus_done" : "Yes",
+                  "github_count" : "5",
+                  "hn_count" : "3"
+                }
+              }
+            ],
+            "title" : "Briefing History",
+            "viewMode" : "grid"
+          },
+          "kind" : "tracker"
+        },
+        "iconSystemName" : "calendar.day.timeline.left",
+        "id" : "tracker-3",
+        "isLocked" : false,
+        "name" : "Briefing History",
+        "summary" : "One row per day logging feed volume (HN AI posts, GitHub notifications) and whether the day's focus item got done. The agent appends a row each morning; the Feed Volume chart plots it."
+      },
+      {
+        "body" : {
+          "data" : {
+            "kind" : "bar",
+            "series" : [
+              {
+                "id" : "F93B6C25-E0F3-4030-A7AA-57C5973718CF",
+                "name" : "HN AI posts",
+                "source" : {
+                  "componentId" : "tracker-3",
+                  "filter" : {
+
+                  },
+                  "groupBy" : "day",
+                  "reduce" : "sum",
+                  "type" : "tracker",
+                  "valueField" : "hn_count",
+                  "xIsNumericOrDate" : false
+                }
+              },
+              {
+                "id" : "47E81EEC-9A53-41CA-BAC4-C30D384CD503",
+                "name" : "GitHub notifs",
+                "source" : {
+                  "componentId" : "tracker-3",
+                  "filter" : {
+
+                  },
+                  "groupBy" : "day",
+                  "reduce" : "sum",
+                  "type" : "tracker",
+                  "valueField" : "github_count",
+                  "xIsNumericOrDate" : false
+                }
+              }
+            ],
+            "title" : "Feed volume this week"
+          },
+          "kind" : "chart"
+        },
+        "iconSystemName" : "chart.bar.xaxis",
+        "id" : "chart-1",
+        "isLocked" : false,
+        "name" : "Feed Volume",
+        "summary" : "Daily feed volume across the week, resolved live from Briefing History. A spike in GitHub notifications is a cue to protect deep-work time the next morning."
+      },
+      {
+        "body" : {
+          "data" : {
+            "events" : [
+              {
+                "end" : "2026-07-11T06:00:00Z",
+                "id" : "B23AFE49-389F-4E0E-9022-8227755B2E16",
+                "linkedItems" : [
+
+                ],
+                "notes" : "Your 7am push. Ask the agent to 'send my briefing every morning at 7' and it schedules a daily sendNotification.",
+                "schemaVersion" : 1,
+                "start" : "2026-07-11T06:00:00Z",
+                "title" : "Daily Briefing"
+              },
+              {
+                "end" : "2026-07-10T09:00:00Z",
+                "id" : "B25821BB-364B-4454-8AB0-A703BF5090E7",
+                "linkedItems" : [
+
+                ],
+                "notes" : "Team standup.",
+                "schemaVersion" : 1,
+                "start" : "2026-07-10T09:00:00Z",
+                "title" : "Standup"
+              },
+              {
+                "end" : "2026-07-10T13:00:00Z",
+                "id" : "7206256E-C98F-4AF7-946F-D565A535ECB5",
+                "linkedItems" : [
+
+                ],
+                "notes" : "Marketplace template review.",
+                "schemaVersion" : 1,
+                "start" : "2026-07-10T12:00:00Z",
+                "title" : "Design review"
+              },
+              {
+                "end" : "2026-07-10T15:00:00Z",
+                "id" : "89652734-864F-4922-99AD-51AEF094C7C8",
+                "linkedItems" : [
+
+                ],
+                "notes" : "Weekly 1:1.",
+                "schemaVersion" : 1,
+                "start" : "2026-07-10T15:00:00Z",
+                "title" : "1:1"
+              },
+              {
+                "end" : "2026-07-10T17:00:00Z",
+                "id" : "5B6D9478-CC51-49E8-BF4E-F08CA97B3C7B",
+                "linkedItems" : [
+
+                ],
+                "notes" : "5k — weather's clear per today's briefing.",
+                "schemaVersion" : 1,
+                "start" : "2026-07-10T17:00:00Z",
+                "title" : "Evening run"
+              }
+            ],
+            "title" : "Schedule",
+            "viewMode" : "list"
+          },
+          "kind" : "calendar"
+        },
+        "iconSystemName" : "calendar",
+        "id" : "calendar-1",
+        "isLocked" : false,
+        "name" : "Schedule",
+        "summary" : "The recurring 7am briefing push plus today's events (pulled into the briefing's agenda section). Ask the agent to schedule the daily notification once; it remembers the preference."
+      }
+    ],
+    "createdAt" : "2026-07-10T08:00:47Z",
+    "currentThreadId" : "253A3042-9ABE-466E-B5E9-5800638C7ADC",
+    "iconSystemName" : "sun.horizon",
+    "id" : "44F59A76-2F2C-4DA2-824F-19FEE1467A63",
+    "name" : "Daily Briefing",
+    "threads" : [
+      {
+        "createdAt" : "2026-07-10T08:00:47Z",
+        "id" : "253A3042-9ABE-466E-B5E9-5800638C7ADC",
+        "title" : ""
+      }
+    ],
+    "typeId" : "tracker"
+  },
+  "header" : {
+    "appVersion" : "0.0.180",
+    "exportedAt" : "2026-07-10T08:00:47Z",
+    "format" : "pupa.myapp.bundle",
+    "formatVersion" : 1,
+    "includedMemories" : true,
+    "includedRecords" : true
+  },
+  "memories" : [
+    {
+      "content" : "# Example: Daily Briefing\n\nA morning-briefing workspace. The agent pulls a handful of feeds, writes\na tight brief, and pushes it at 7am.\n\n## Components\n\n- **Briefing Sources** (`tracker-1`) — the feeds, each naming the tool \/\n  MCP it uses and whether it's On. This is the capability contract: a\n  source only works if its tool is configured on the backend.\n- **Today's Briefing** (`tracker-2`) — one card per section, kept under\n  ~500 words total. Each section links back to its source.\n- **Briefing History** (`tracker-3`) — per-day feed volume + whether the\n  focus item got done.\n- **Feed Volume** (`chart-1`) — the week's feed volume, live from\n  Briefing History.\n- **Schedule** (`calendar-1`) — the recurring 7am push + today's events.\n\n## How to use — the morning loop\n\n1. For each **On** source, pull fresh data with its named tool (weather\n   MCP, calendar, HN, GitHub, RSS). Skip a source whose tool is missing.\n2. Rewrite the Today's Briefing rows — lead with `Now` items, keep the\n   whole thing under ~500 words, link each section to its source.\n3. Append a Briefing History row (HN + GitHub counts, focus done?) so the\n   Feed Volume chart updates.\n4. Send the brief as a notification. To automate it: ask \"send my\n   briefing every morning at 7\" — the agent schedules a daily\n   `sendNotification`.\n\n## Capability boundaries\n\n- A source needs its tool on the backend. **Markets** ships Off because\n  no markets MCP is assumed — turn it On once one is configured.\n- If a tool fails, mark its source's `last_pulled` and note the gap in\n  the brief rather than inventing data.\n\n## Keeping yourself updated\n\n- Maintain `MEMORY.md` (which sources are noisy vs. useful, recurring\n  themes) and `USER.md` (which sections the user actually reads, their\n  tone + length preference) at this app's memory root. Keep both\n  compact — prune rather than append forever.\n- Keep a `skills\/` folder: write `skills\/morning-brief.md` (the source\n  order + length that landed well). When a feed dies or a section gets\n  ignored, fix that skill's trigger — drop the dead source, reorder the\n  sections the user reads first.\n- Each morning, glance at `USER.md` before writing: reorder and trim to\n  what the user reads. Record a skipped-source failure so you stop\n  re-pulling a dead feed.\n- Confirm in chat before overwriting a memory file the user has edited.",
+      "path" : "pupa\/AGENTS.md"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+name: validate
+
+# Thin wrapper over `make`. The org's Actions can be billing-blocked, so this
+# workflow only duplicates commands maintainers can (and do) run locally. Do not
+# make it a required status check until Actions is reliably enabled — the real
+# gate is the PR checklist + a local `make check-pr` before merge.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0        # needed for the --base version-bump check
+      - run: make validate
+      - name: Require version bumps vs base (PRs only)
+        if: github.event_name == 'pull_request'
+        run: make check-pr BASE=origin/${{ github.base_ref }}

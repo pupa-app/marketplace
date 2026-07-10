@@ -1,0 +1,3 @@
+# Every path needs maintainer review. The whole point of this repo is that a
+# human reviews each app's agent prompts before it ships (moderation = review).
+* @pupa-app/maintainers

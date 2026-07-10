@@ -1,0 +1,54 @@
+{
+  "description": "Official marketplace of Pupa MyApp bundles.",
+  "entries": [
+    {
+      "appFormatVersion": 1,
+      "appVersion": "0.0.180",
+      "author": "pupa-app",
+      "exportedAt": "2026-07-10T08:00:47Z",
+      "homepage": "https://github.com/pupa-app/pupa",
+      "icon": "sun.horizon",
+      "id": "daily-briefing",
+      "includedMemories": true,
+      "includedRecords": true,
+      "name": "Daily Briefing",
+      "path": "apps/daily-briefing/app.pupa",
+      "screenshots": [],
+      "sha256": "603fcfc03e59de5832228837b94d7f6e7a67a235527239bed539a214c35d27f7",
+      "sizeBytes": 19037,
+      "summary": "A 7am briefing: named sources, today's digest, feed-volume chart, and a calendar for scheduled pulls.",
+      "tags": [
+        "briefing",
+        "productivity",
+        "dashboard"
+      ],
+      "version": 1
+    },
+    {
+      "appFormatVersion": 1,
+      "appVersion": "0.0.180",
+      "author": "pupa-app",
+      "exportedAt": "2026-07-10T08:00:47Z",
+      "homepage": "https://github.com/pupa-app/pupa",
+      "icon": "chart.line.uptrend.xyaxis.circle",
+      "id": "research-tracker",
+      "includedMemories": true,
+      "includedRecords": true,
+      "name": "Research Tracker",
+      "path": "apps/research-tracker/app.pupa",
+      "screenshots": [],
+      "sha256": "2570afd351ebf6a0b42f41ca10fffe26578d3d89d541f9cb14d425c7504c56fb",
+      "sizeBytes": 24688,
+      "summary": "Competitive-intel watchlist, weekly findings log, signal-trend chart, and a Scout/Analyst/Digest research room.",
+      "tags": [
+        "research",
+        "competitive-intel",
+        "dashboard"
+      ],
+      "version": 1
+    }
+  ],
+  "formatVersion": 1,
+  "name": "Pupa Marketplace",
+  "owner": "pupa-app"
+}

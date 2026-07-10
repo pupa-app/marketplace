@@ -1,0 +1,8 @@
+{
+  "id": "daily-briefing",
+  "version": 1,
+  "author": "pupa-app",
+  "summary": "A 7am briefing: named sources, today's digest, feed-volume chart, and a calendar for scheduled pulls.",
+  "tags": ["briefing", "productivity", "dashboard"],
+  "homepage": "https://github.com/pupa-app/pupa"
+}
