@@ -16,3 +16,5 @@ that clients can pin.
 - Format spec ([docs/spec.md](docs/spec.md)) and self-hosting guide
   ([docs/hosting.md](docs/hosting.md)).
 - Seed apps: `research-tracker`, `daily-briefing`.
+- Dual licensing: MIT for tooling/docs, CC0 1.0 for contributed app content
+  (`CONTENT-LICENSE`), attested via the PR checklist.

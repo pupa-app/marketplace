@@ -50,6 +50,11 @@ in the install preview before accepting it.
 - `docs/spec.md` — the marketplace format spec (host-agnostic).
 - `docs/hosting.md` — host your own marketplace.
 
+## License
+
+Repo tooling, scripts, and docs: **MIT** ([LICENSE](LICENSE)). Contributed app
+content under `apps/`: **CC0 1.0** public domain ([CONTENT-LICENSE](CONTENT-LICENSE)).
+
 ## Releases
 
 Patch-only versions (`0.0.X`) tracked in [CHANGELOG.md](CHANGELOG.md), tagged

@@ -24,3 +24,5 @@ inert, but these prompts run with the installing user's tools.
 - [ ] No personal data: I reviewed the included records/memories ("sharing is
       publishing").
 - [ ] Update only: I bumped `version` in `metadata.json`.
+- [ ] I dedicate this app's content to the public domain under CC0 1.0
+      (see `CONTENT-LICENSE`).

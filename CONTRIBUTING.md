@@ -77,6 +77,14 @@ A good app is a real, augmentable starting point — not a feature demo. Aim for
 
 Full rubric: Pupa's [`docs/templates.md`](https://github.com/pupa-app/pupa/blob/main/docs/templates.md).
 
+### 6. Licensing
+
+By opening a PR you dedicate your app's content (`apps/<slug>/**` — bundle,
+metadata, README, screenshots) to the public domain under **CC0 1.0** (see
+[CONTENT-LICENSE](CONTENT-LICENSE)). The repo's tooling/docs are MIT (see
+[LICENSE](LICENSE)). Only submit content you have the right to release — CC0
+does not clear third-party rights in material you don't own.
+
 ## Reviewers — moderation checklist
 
 The bundle is inert, but it carries **agent prompts that run with the installing
