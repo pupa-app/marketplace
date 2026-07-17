@@ -26,6 +26,29 @@
     },
     {
       "appFormatVersion": 1,
+      "appVersion": "0.0.201",
+      "author": "pupa-app",
+      "exportedAt": "2026-07-17T15:21:06Z",
+      "homepage": "https://github.com/pupa-app/pupa",
+      "icon": "flame.fill",
+      "id": "myfire",
+      "includedMemories": true,
+      "includedRecords": true,
+      "name": "MyFIRE",
+      "path": "apps/myfire/app.pupa",
+      "screenshots": [],
+      "sha256": "8f8a67cf51bf8dba612aab1a8534d447f42003f273ed3ca5aeb5e9397e80e3e6",
+      "sizeBytes": 35599,
+      "summary": "Personal FIRE planner: a profile tracker of your numbers feeding a calculator for savings rate, years to FIRE, and Lean/Regular/Fat/Coast/Barista variants.",
+      "tags": [
+        "finance",
+        "fire",
+        "calculator"
+      ],
+      "version": 1
+    },
+    {
+      "appFormatVersion": 1,
       "appVersion": "0.0.180",
       "author": "pupa-app",
       "exportedAt": "2026-07-10T08:00:47Z",
