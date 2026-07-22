@@ -1,0 +1,8 @@
+{
+  "id": "myfire",
+  "version": 1,
+  "author": "pupa-app",
+  "summary": "Personal FIRE planner: a profile tracker of your numbers feeding a calculator for savings rate, years to FIRE, and Lean/Regular/Fat/Coast/Barista variants.",
+  "tags": ["finance", "fire", "calculator"],
+  "homepage": "https://github.com/pupa-app/pupa"
+}

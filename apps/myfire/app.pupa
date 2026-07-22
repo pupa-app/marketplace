@@ -1,0 +1,708 @@
+{
+  "app" : {
+    "activeComponentId" : "calculator-1",
+    "colorIndex" : 4,
+    "components" : [
+      {
+        "body" : {
+          "data" : {
+            "fields" : [
+              {
+                "label" : "Name",
+                "name" : "name",
+                "type" : "text"
+              },
+              {
+                "label" : "Current Age",
+                "name" : "current_age",
+                "type" : "number"
+              },
+              {
+                "label" : "Target Retirement Age",
+                "name" : "target_age",
+                "type" : "number"
+              },
+              {
+                "label" : "Annual Income (after tax £)",
+                "name" : "income",
+                "type" : "number"
+              },
+              {
+                "label" : "Annual Expenses (£)",
+                "name" : "expenses",
+                "type" : "number"
+              },
+              {
+                "label" : "Current Portfolio \/ Savings (£)",
+                "name" : "portfolio",
+                "type" : "number"
+              },
+              {
+                "label" : "Monthly Contribution (£)",
+                "name" : "monthly_contrib",
+                "type" : "number"
+              }
+            ],
+            "filter" : {
+
+            },
+            "items" : [
+              {
+                "id" : "9C465E59-8177-4F78-AA61-C406C4E6F3EB",
+                "linkedItems" : [
+
+                ],
+                "schemaVersion" : 1,
+                "values" : {
+                  "current_age" : "25",
+                  "expenses" : "10000",
+                  "income" : "25000",
+                  "monthly_contrib" : "500",
+                  "name" : "My Plan",
+                  "portfolio" : "30000",
+                  "target_age" : "50"
+                }
+              },
+              {
+                "id" : "9DACF778-411F-4025-898B-CCDA98A459F1",
+                "linkedItems" : [
+
+                ],
+                "schemaVersion" : 1,
+                "values" : {
+                  "current_age" : "45",
+                  "expenses" : "42000",
+                  "income" : "85000",
+                  "monthly_contrib" : "2500",
+                  "name" : "Later Start (age 45)",
+                  "portfolio" : "220000",
+                  "target_age" : "62"
+                }
+              }
+            ],
+            "title" : "👤 My FIRE Profile",
+            "viewMode" : "grid"
+          },
+          "kind" : "tracker"
+        },
+        "iconSystemName" : "person.circle.fill",
+        "id" : "tracker-2",
+        "isLocked" : false,
+        "name" : "👤 My FIRE Profile",
+        "summary" : "Personal FIRE inputs — one row, each figure is its own field. Fields: current_age, target_age, income, expenses, portfolio, monthly_contrib. All feed into the FIRE Calculator via linkedField rows."
+      },
+      {
+        "body" : {
+          "data" : {
+            "extraCharts" : [
+
+            ],
+            "inlineChart" : {
+              "kind" : "line",
+              "series" : [
+                {
+                  "id" : "BF0CB7C0-6878-4CE2-A49A-6EC5E74509DE",
+                  "name" : "Balance over time",
+                  "source" : {
+                    "componentId" : "calculator-1",
+                    "key" : "growth_curve",
+                    "type" : "calculatorList"
+                  }
+                },
+                {
+                  "id" : "DFE774F7-5FE2-43D7-9641-19D6137085EC",
+                  "name" : "🌱 Lean",
+                  "source" : {
+                    "componentId" : "calculator-1",
+                    "key" : "line_lean",
+                    "type" : "calculatorList"
+                  }
+                },
+                {
+                  "id" : "8A880158-2A3F-4799-B921-D7CDB15E4689",
+                  "name" : "🔥 Regular",
+                  "source" : {
+                    "componentId" : "calculator-1",
+                    "key" : "line_regular",
+                    "type" : "calculatorList"
+                  }
+                },
+                {
+                  "id" : "AC9EC793-8CA2-491D-AA91-274B0441739D",
+                  "name" : "🐳 Fat",
+                  "source" : {
+                    "componentId" : "calculator-1",
+                    "key" : "line_fat",
+                    "type" : "calculatorList"
+                  }
+                }
+              ],
+              "title" : "📈 Projected Portfolio Growth"
+            },
+            "rows" : [
+              {
+                "id" : "2953200C-AC87-49FE-A0BB-5B706880A79A",
+                "key" : "personal_inputs_from_your_profile",
+                "kind" : {
+                  "type" : "header"
+                },
+                "name" : "📋 Personal Inputs (from your profile)"
+              },
+              {
+                "id" : "9BE9C7D6-1B68-4D5A-8B84-1049CDDE90D8",
+                "key" : "current_age",
+                "kind" : {
+                  "linkedField" : {
+                    "fieldName" : "current_age",
+                    "ref" : {
+                      "componentId" : "tracker-2",
+                      "itemId" : "9C465E59-8177-4F78-AA61-C406C4E6F3EB"
+                    }
+                  },
+                  "type" : "linkedField"
+                },
+                "name" : "Current Age",
+                "unit" : "yrs"
+              },
+              {
+                "id" : "C17BAFC2-105B-4315-A4E5-C9A6761FC2CB",
+                "key" : "target_age",
+                "kind" : {
+                  "linkedField" : {
+                    "fieldName" : "target_age",
+                    "ref" : {
+                      "componentId" : "tracker-2",
+                      "itemId" : "9C465E59-8177-4F78-AA61-C406C4E6F3EB"
+                    }
+                  },
+                  "type" : "linkedField"
+                },
+                "name" : "Target Retirement Age",
+                "unit" : "yrs"
+              },
+              {
+                "id" : "F0E92DF1-E27F-4C82-B1B8-4EC5AE19BE23",
+                "key" : "income",
+                "kind" : {
+                  "linkedField" : {
+                    "fieldName" : "income",
+                    "ref" : {
+                      "componentId" : "tracker-2",
+                      "itemId" : "9C465E59-8177-4F78-AA61-C406C4E6F3EB"
+                    }
+                  },
+                  "type" : "linkedField"
+                },
+                "name" : "Annual Income (after tax)",
+                "unit" : "£"
+              },
+              {
+                "id" : "4EC18079-7EF4-43D1-9220-BFB601A90DF1",
+                "key" : "expenses",
+                "kind" : {
+                  "linkedField" : {
+                    "fieldName" : "expenses",
+                    "ref" : {
+                      "componentId" : "tracker-2",
+                      "itemId" : "9C465E59-8177-4F78-AA61-C406C4E6F3EB"
+                    }
+                  },
+                  "type" : "linkedField"
+                },
+                "name" : "Annual Expenses",
+                "unit" : "£"
+              },
+              {
+                "id" : "7C279464-FC76-47BD-8F26-DABCAD165255",
+                "key" : "portfolio",
+                "kind" : {
+                  "linkedField" : {
+                    "fieldName" : "portfolio",
+                    "ref" : {
+                      "componentId" : "tracker-2",
+                      "itemId" : "9C465E59-8177-4F78-AA61-C406C4E6F3EB"
+                    }
+                  },
+                  "type" : "linkedField"
+                },
+                "name" : "Current Portfolio \/ Savings",
+                "unit" : "£"
+              },
+              {
+                "id" : "073D2EE3-42DA-4A0C-B225-15CA453AD756",
+                "key" : "monthly_contrib",
+                "kind" : {
+                  "linkedField" : {
+                    "fieldName" : "monthly_contrib",
+                    "ref" : {
+                      "componentId" : "tracker-2",
+                      "itemId" : "9C465E59-8177-4F78-AA61-C406C4E6F3EB"
+                    }
+                  },
+                  "type" : "linkedField"
+                },
+                "name" : "Monthly Contribution",
+                "unit" : "£"
+              },
+              {
+                "id" : "402AE29C-8DC1-4B29-8B5C-8B1CF82B098E",
+                "key" : "global_assumptions_tweak_me",
+                "kind" : {
+                  "type" : "header"
+                },
+                "name" : "⚙️ Global Assumptions (tweak me!)"
+              },
+              {
+                "id" : "DF230BBF-E664-4875-AFD3-61C242BCDDA5",
+                "key" : "return_rate",
+                "kind" : {
+                  "control" : {
+                    "max" : 15,
+                    "min" : 2,
+                    "step" : 0.5,
+                    "type" : "slider"
+                  },
+                  "type" : "variable",
+                  "value" : 7.5
+                },
+                "name" : "Expected Annual Return",
+                "unit" : "%"
+              },
+              {
+                "id" : "FD54F0D1-D1CB-4C17-9DD4-766145F3A012",
+                "key" : "swr",
+                "kind" : {
+                  "control" : {
+                    "max" : 6,
+                    "min" : 2,
+                    "step" : 0.25,
+                    "type" : "slider"
+                  },
+                  "type" : "variable",
+                  "value" : 3.5
+                },
+                "name" : "Safe Withdrawal Rate",
+                "unit" : "%"
+              },
+              {
+                "id" : "6A8C68BF-C16D-4C52-A89D-B18F5F3FDC8B",
+                "key" : "inflation",
+                "kind" : {
+                  "control" : {
+                    "max" : 8,
+                    "min" : 0,
+                    "step" : 0.25,
+                    "type" : "slider"
+                  },
+                  "type" : "variable",
+                  "value" : 2.5
+                },
+                "name" : "Inflation Rate",
+                "unit" : "%"
+              },
+              {
+                "id" : "4A8CB11B-F8B4-459E-9D66-46604FCD794B",
+                "key" : "fire_variant_multipliers_tweak_me",
+                "kind" : {
+                  "type" : "header"
+                },
+                "name" : "🔥 FIRE Variant Multipliers (tweak me!)"
+              },
+              {
+                "id" : "44A621D8-F656-4A7A-94BB-F310E078D966",
+                "key" : "lean_mult",
+                "kind" : {
+                  "control" : {
+                    "max" : 1,
+                    "min" : 0.4,
+                    "step" : 0.05,
+                    "type" : "slider"
+                  },
+                  "type" : "variable",
+                  "value" : 0.75
+                },
+                "name" : "Lean FIRE — Expense Multiplier",
+                "unit" : "×"
+              },
+              {
+                "id" : "C6698ADD-325D-48F3-BF83-ABCC0326EEC0",
+                "key" : "fat_mult",
+                "kind" : {
+                  "control" : {
+                    "max" : 3,
+                    "min" : 1,
+                    "step" : 0.1,
+                    "type" : "slider"
+                  },
+                  "type" : "variable",
+                  "value" : 1.6
+                },
+                "name" : "Fat FIRE — Expense Multiplier",
+                "unit" : "×"
+              },
+              {
+                "id" : "CAC7AF58-1CB1-4670-A5D1-01D86772F757",
+                "key" : "barista_income",
+                "kind" : {
+                  "control" : {
+                    "step" : 1000,
+                    "type" : "stepper"
+                  },
+                  "type" : "variable",
+                  "value" : 12000
+                },
+                "name" : "Barista FIRE — Part-time Income (£\/yr)",
+                "unit" : "£"
+              },
+              {
+                "id" : "C54F8A74-E96B-4A7A-BF7C-223066B04578",
+                "key" : "core_stats",
+                "kind" : {
+                  "type" : "header"
+                },
+                "name" : "📊 Core Stats"
+              },
+              {
+                "id" : "95434FCC-81EA-4234-81C2-36C2632383C0",
+                "key" : "annual_savings",
+                "kind" : {
+                  "expression" : "monthly_contrib * 12",
+                  "type" : "formula"
+                },
+                "name" : "Annual Savings",
+                "unit" : "£"
+              },
+              {
+                "format" : "%.1f",
+                "id" : "DFF02E24-372F-414E-AB9F-7E38321CD395",
+                "key" : "savings_rate",
+                "kind" : {
+                  "expression" : "annual_savings \/ income * 100",
+                  "type" : "formula"
+                },
+                "name" : "Savings Rate",
+                "unit" : "%"
+              },
+              {
+                "format" : "%.2f",
+                "id" : "5E649E63-215D-418C-BD2D-10E099CB99D8",
+                "key" : "real_return",
+                "kind" : {
+                  "expression" : "return_rate - inflation",
+                  "type" : "formula"
+                },
+                "name" : "Real Return (after inflation)",
+                "unit" : "%"
+              },
+              {
+                "id" : "921D1D6C-7C02-4FB1-B52E-528B675BA38E",
+                "key" : "years_target",
+                "kind" : {
+                  "expression" : "target_age - current_age",
+                  "type" : "formula"
+                },
+                "name" : "Years Until Target Age",
+                "unit" : "yrs"
+              },
+              {
+                "id" : "44688C61-D132-405B-8B42-F5C3E20A6C14",
+                "key" : "fire_numbers",
+                "kind" : {
+                  "type" : "header"
+                },
+                "name" : "🎯 FIRE Numbers"
+              },
+              {
+                "format" : "%.0f",
+                "id" : "475B8D80-4D24-4631-95E4-A0F8546BEEC8",
+                "key" : "fire_number",
+                "kind" : {
+                  "expression" : "expenses \/ (swr \/ 100)",
+                  "type" : "formula"
+                },
+                "name" : "🔥 Regular FIRE Number",
+                "unit" : "£"
+              },
+              {
+                "format" : "%.0f",
+                "id" : "76D4A222-7468-4483-AEB3-D37C55079F66",
+                "key" : "lean_fire",
+                "kind" : {
+                  "expression" : "expenses * lean_mult \/ (swr \/ 100)",
+                  "type" : "formula"
+                },
+                "name" : "🌱 Lean FIRE Number",
+                "unit" : "£"
+              },
+              {
+                "format" : "%.0f",
+                "id" : "C14B447D-9349-49C0-A274-CC433ADB47B3",
+                "key" : "fat_fire",
+                "kind" : {
+                  "expression" : "expenses * fat_mult \/ (swr \/ 100)",
+                  "type" : "formula"
+                },
+                "name" : "🐳 Fat FIRE Number",
+                "unit" : "£"
+              },
+              {
+                "format" : "%.0f",
+                "id" : "72CF01BD-281E-4A3B-BBB6-8E92D95108C2",
+                "key" : "barista_fire",
+                "kind" : {
+                  "expression" : "(expenses - barista_income) \/ (swr \/ 100)",
+                  "type" : "formula"
+                },
+                "name" : "☕ Barista FIRE Number",
+                "unit" : "£"
+              },
+              {
+                "format" : "%.0f",
+                "id" : "DAEB5E15-44EF-4A15-86D0-F4422EF8DB89",
+                "key" : "coast_fire",
+                "kind" : {
+                  "expression" : "fire_number \/ pow(1 + real_return \/ 100, years_target)",
+                  "type" : "formula"
+                },
+                "name" : "🏄 Coast FIRE Number",
+                "unit" : "£"
+              },
+              {
+                "id" : "5C18145E-F485-4823-8BFA-3B8D6ADBDBAB",
+                "key" : "your_progress",
+                "kind" : {
+                  "type" : "header"
+                },
+                "name" : "📈 Your Progress"
+              },
+              {
+                "format" : "%.1f",
+                "id" : "E5179A18-F2BB-47EE-809F-A37F374F923F",
+                "key" : "progress_pct",
+                "kind" : {
+                  "expression" : "portfolio \/ fire_number * 100",
+                  "type" : "formula"
+                },
+                "name" : "% Progress to Regular FIRE",
+                "unit" : "%"
+              },
+              {
+                "format" : "%.0f",
+                "id" : "1E9935DA-4889-4CB8-BB64-7CEFFF92B5F1",
+                "key" : "remaining",
+                "kind" : {
+                  "expression" : "fire_number - portfolio",
+                  "type" : "formula"
+                },
+                "name" : "Remaining to Regular FIRE",
+                "unit" : "£"
+              },
+              {
+                "format" : "%.1f",
+                "id" : "BCEA18E5-65C4-4FFA-A1E1-1C3EA9A0265D",
+                "key" : "coast_pct",
+                "kind" : {
+                  "expression" : "portfolio \/ coast_fire * 100",
+                  "type" : "formula"
+                },
+                "name" : "% Progress to Coast FIRE",
+                "unit" : "%"
+              },
+              {
+                "format" : "%.1f",
+                "id" : "B33C7B17-91C2-4500-AC2A-D3C3B252439A",
+                "key" : "yrs_to_fire",
+                "kind" : {
+                  "expression" : "log((fire_number * real_return \/ 100 + annual_savings) \/ (portfolio * real_return \/ 100 + annual_savings)) \/ log(1 + real_return \/ 100)",
+                  "type" : "formula"
+                },
+                "name" : "Years to Regular FIRE",
+                "unit" : "yrs"
+              },
+              {
+                "format" : "%.0f",
+                "id" : "98A6F5F5-6DB1-4146-BEEE-AD3E168F7DE4",
+                "key" : "fire_age",
+                "kind" : {
+                  "expression" : "current_age + yrs_to_fire",
+                  "type" : "formula"
+                },
+                "name" : "Projected FIRE Age",
+                "unit" : "yrs"
+              },
+              {
+                "id" : "B2EC2E5F-3DF6-488A-9112-319F5944B679",
+                "key" : "growth_header",
+                "kind" : {
+                  "type" : "header"
+                },
+                "name" : "📉 Growth Projection"
+              },
+              {
+                "id" : "8939EC59-5C7B-446A-9AAE-6B2D62A163A5",
+                "key" : "proj_year",
+                "kind" : {
+                  "control" : {
+                    "max" : 40,
+                    "min" : 0,
+                    "step" : 1,
+                    "type" : "slider"
+                  },
+                  "type" : "variable",
+                  "value" : 8
+                },
+                "name" : "Projection Year (chart driver)",
+                "unit" : "yrs"
+              },
+              {
+                "format" : "%.0f",
+                "id" : "8C4A84C4-56C9-4C02-8DC2-8AC5032E8F89",
+                "key" : "proj_balance",
+                "kind" : {
+                  "expression" : "portfolio * (1 + real_return\/100)^proj_year + annual_savings * (((1 + real_return\/100)^proj_year - 1) \/ (real_return\/100))",
+                  "type" : "formula"
+                },
+                "name" : "Projected Portfolio",
+                "unit" : "£"
+              },
+              {
+                "id" : "9AB5676A-B4AE-47FC-80B6-84665AE07BB3",
+                "key" : "growth_curve",
+                "kind" : {
+                  "list" : {
+                    "from" : 0,
+                    "step" : 1,
+                    "targetKey" : "proj_balance",
+                    "to" : 30,
+                    "type" : "sweep",
+                    "variableKey" : "proj_year"
+                  },
+                  "type" : "list"
+                },
+                "name" : "Balance over time",
+                "unit" : "£"
+              },
+              {
+                "id" : "CA5C5B0A-6194-44C4-A548-7D770D74FC7F",
+                "key" : "line_lean",
+                "kind" : {
+                  "list" : {
+                    "from" : 0,
+                    "step" : 1,
+                    "targetKey" : "lean_fire",
+                    "to" : 30,
+                    "type" : "sweep",
+                    "variableKey" : "proj_year"
+                  },
+                  "type" : "list"
+                },
+                "name" : "Lean target line",
+                "unit" : "£"
+              },
+              {
+                "id" : "D6025D97-5A09-40D2-83F2-C72C4814B2DD",
+                "key" : "line_regular",
+                "kind" : {
+                  "list" : {
+                    "from" : 0,
+                    "step" : 1,
+                    "targetKey" : "fire_number",
+                    "to" : 30,
+                    "type" : "sweep",
+                    "variableKey" : "proj_year"
+                  },
+                  "type" : "list"
+                },
+                "name" : "Regular target line",
+                "unit" : "£"
+              },
+              {
+                "id" : "544DFE3F-B592-4344-AF23-C1CD129306B2",
+                "key" : "line_fat",
+                "kind" : {
+                  "list" : {
+                    "from" : 0,
+                    "step" : 1,
+                    "targetKey" : "fat_fire",
+                    "to" : 30,
+                    "type" : "sweep",
+                    "variableKey" : "proj_year"
+                  },
+                  "type" : "list"
+                },
+                "name" : "Fat target line",
+                "unit" : "£"
+              }
+            ],
+            "title" : "🔥 FIRE Calculator"
+          },
+          "kind" : "calculator"
+        },
+        "iconSystemName" : "flame.fill",
+        "id" : "calculator-1",
+        "isLocked" : false,
+        "name" : "🔥 FIRE Calculator",
+        "summary" : "Full FIRE calculator. Personal inputs are linkedField rows pulling from tracker-2 (My FIRE Profile). Global assumptions are variable rows the user can tweak. Outputs cover: core FIRE stats, progress, savings rate, years to FIRE, and all 5 FIRE variant numbers (Lean, Regular, Fat, Coast, Barista). Key formula rows: yrs_to_fire, fire_age, fire_number, coast_fire, lean_fire, fat_fire, barista_fire."
+      }
+    ],
+    "createdAt" : "2026-07-10T14:46:09Z",
+    "currentThreadId" : "9C83427A-1FBF-4559-9E0E-1B8EE28848A6",
+    "iconSystemName" : "flame.fill",
+    "id" : "5AC6DF56-AAB8-4F9C-9217-68EABFAB9C2D",
+    "name" : "MyFIRE",
+    "threads" : [
+      {
+        "createdAt" : "2026-07-17T15:21:06Z",
+        "id" : "9C83427A-1FBF-4559-9E0E-1B8EE28848A6",
+        "title" : ""
+      }
+    ],
+    "typeId" : "tracker"
+  },
+  "header" : {
+    "appVersion" : "0.0.201",
+    "exportedAt" : "2026-07-17T15:21:06Z",
+    "format" : "pupa.myapp.bundle",
+    "formatVersion" : 1,
+    "includedMemories" : true,
+    "includedRecords" : true
+  },
+  "memories" : [
+    {
+      "content" : "# MyFIRE\n\n**Purpose:** Personal FIRE (Financial Independence, Retire Early) planning app.\n\n## Components\n- **tracker-2 — 👤 My FIRE Profile:** One-row tracker holding the user's personal inputs (current_age, target_age, income, expenses, portfolio, monthly_contrib).\n- **calculator-1 — 🔥 FIRE Calculator:** Main calculator. Pulls live values from the Profile via linkedField rows. Outputs core FIRE stats, savings rate, years to FIRE, and all 5 variants (Lean, Regular, Fat, Coast, Barista).\n\n## Key rules\n- Always activate the relevant skill (`get_skill_tracker` or `get_skill_calculator`) before using its tools.\n- Profile edits flow automatically into calculator outputs — no manual sync needed.\n- Use `linkItem` \/ `unlinkItem` to connect tracker rows to calculator rows when adding new linked fields.\n",
+      "path" : "AGENTS.md"
+    },
+    {
+      "content" : "# MyFIRE\n\n**Type:** tracker\n\n## Instructions\nCanvas hosts COMPONENTS (sub-canvases, ids like \"tracker-1\") — pass `componentId` to target one; single-component myApps may omit it. Per-kind tools unlock only after `addComponent` introduces that kind.\n\nLINKING — linkItem \/ unlinkItem attach refs between any two items (any kinds, any direction, same-component allowed for parent \/ subtask).",
+      "path" : "pupa\/AGENTS.md"
+    },
+    {
+      "content" : "---\ndescription: Skills, subagents and multi-agent slack rooms\nwhen_to_use: when creating skills or subagents, using \/commands, or working with slack rooms\nversion: 7\n---\n- **Skills** — reusable playbooks that double as `\/commands` in chat.\n  Each app has its own set (this guide is one). Ask the agent to create\n  one, or write it yourself in the memory tree under `pupa\/skills\/`.\n- **Subagents** — named delegates with their own persona and\n  instructions. The main agent creates them and hands off focused tasks.\n- **Orchestrator** — the top-level agent: creates and manages myapps and\n  delegates work to each app's agent.\n\n**Slack rooms.** A component with channels, group DMs and DMs. The\nworkspace roster is simply *all* the myapp's subagents — creating a\nsubagent adds it to the roster; nothing lives in the component but rooms\nand their transcripts. @-mention an agent (or post in its DM) to wake it:\nit reads the channel's history for context, works with the app's tools,\nand posts its reply back to the channel. Agents can @-mention each other,\nso one message can start a chain of replies. Exporting the app keeps the\nchannels and the agent personas but strips the transcripts.",
+      "path" : "pupa\/plugins\/pupa-guide\/skills\/pupa-agents\/SKILL.md"
+    },
+    {
+      "content" : "---\ndescription: The component shapes a myapp canvas can hold and how they combine\nwhen_to_use: when choosing, combining or linking components, or asked what shapes exist\nversion: 7\n---\nA myapp's canvas holds components. Available shapes:\n\n- **calculator** — live numeric model with tunable inputs + formula rows\n- **calendar** — time-indexed events in a list or month grid\n- **chart** — pie\/bar\/line visualisation of tracker or calculator data\n- **checklist** — simple done\/not-done items, no per-row fields\n- **slack** — multi-agent chat rooms (subagent personas, channels, @-mentions)\n- **tracker** — multi-field records in a table\/kanban (fields, filters, cards)\n\n**Combining.** One myapp mixes shapes freely. Items link across\ncomponents — a tracker row to a calendar event, a task to a parent\nrecord. Calculators and charts read live from other components, and a\nchart can be embedded straight into chat.\n\n**Views, not shapes.** Kanban is a tracker view mode (table ⇄ cards),\nnot a separate component.",
+      "path" : "pupa\/plugins\/pupa-guide\/skills\/pupa-components\/SKILL.md"
+    },
+    {
+      "content" : "---\ndescription: How Pupa remembers: memories, sessions, change history, archive\nwhen_to_use: when asked what persists, how to undo changes, or how to hide an app\nversion: 7\n---\n- **Memories** — a filesystem-like tree of markdown notes and folders\n  that lives *inside* the app, not on the device's file system. Browse\n  and edit it from the Memories tab; the agent reads and writes it too.\n  Persists across sessions.\n- **Sessions** — \"New session\" starts a fresh conversation. The canvas\n  and memories stay.\n- **History** — every canvas change is recorded per myapp. Browse the\n  History tab and restore any earlier state in one tap. Tap **Take\n  snapshot** to pin the current state permanently (kept forever); pinned\n  snapshots can be **Export**ed as a `.pupa` file. Pins survive deleting\n  the myapp — find them all in **Settings ▸ Pinned snapshots**, where a\n  deleted app can be restored (revived) from a pin.\n- **Archive** — hide a myapp without deleting it (its data and memories\n  are kept). Browse, restore or delete from Settings ▸ Archive.",
+      "path" : "pupa\/plugins\/pupa-guide\/skills\/pupa-memory\/SKILL.md"
+    },
+    {
+      "content" : "---\ndescription: Share and install myapps as .pupa files\nwhen_to_use: when exporting, sharing, importing or installing an app\nversion: 7\n---\nA `.pupa` file is an inert snapshot of a myapp: its components, optionally\nyour records and memories, plus the app's agent instructions and skills.\nNo code runs from the file itself.\n\n**Export.** Settings ▸ Import & Export: pick components, choose whether\nrecords and memories ride along, then Share (AirDrop, Messages, Files…).\n\n**Install.** Open a `.pupa` file (or import from Settings). A confirmation\nsheet shows what's inside before anything is added. Imported agent\ninstructions run with your tools once installed — only install bundles\nyou trust.",
+      "path" : "pupa\/plugins\/pupa-guide\/skills\/pupa-sharing\/SKILL.md"
+    },
+    {
+      "content" : "---\ndescription: Where things live: the on-device app vs the backend, and standing instructions\nwhen_to_use: when unsure whether something belongs in the app or the backend, which skill system you're touching, or how to change standing behaviour\nversion: 7\n---\n**App vs backend.** Everything the user sees — components and their\nitems, memories, skills, `AGENTS.md` — is app state, created and edited\n**on the user's device** through the app's own tools. The backend only\nruns the model plus a few server-side tools (web search, shell, …) and\nstores **no app data**. Never write app content to a backend path or via\na shell unless explicitly told to; if unsure where something belongs, ask.\n\n**Canvas vs memory.** Components hold data items; memory is a *separate*\nper-app markdown note tree for durable context — not canvas data. Two\ndifferent stores; don't cross them. Memory paths are an in-app structure,\nnot host file paths — never reach for it via a shell.\n\n**Two skill systems.** *App* skills are on-device `SKILL.md` files —\nyours under `pupa\/skills\/<name>\/`, bundled ones under\n`pupa\/plugins\/<plugin>\/skills\/<name>\/` (this guide is one). A backend may\nseparately expose its own read-only skills library. App skills are\nalways the on-device files.\n\n**Standing behaviour.** Persistent instructions for an app's main agent\nlive at `pupa\/AGENTS.md` (subagents: `pupa\/agents\/<name>\/AGENTS.md`).\nEdit those to change behaviour permanently — not memory, not a skill.",
+      "path" : "pupa\/plugins\/pupa-guide\/skills\/pupa-system\/SKILL.md"
+    },
+    {
+      "content" : "---\ndescription: What Pupa is and what it can do — guide entry point\nwhen_to_use: when the user asks what Pupa is, what it can do, or how its pieces fit together\nversion: 7\n---\nPupa builds apps around you: describe what you need in chat and the agent\nassembles a **myapp** — a canvas of components it edits live while you talk.\n\n**Boundaries — who is what**\n- **Orchestrator** — the top-level chat. Creates, renames, archives and\n  deletes myapps and delegates work to their agents. Has its own memories\n  and skills; no canvas of its own.\n- **Myapp** — one workspace: its own agent, canvas, memories, skills and\n  subagents.\n- **Component** — one shape on a myapp's canvas (tracker, calendar, …).\n- **Item** — one record inside a component (row, event, task…).\n- **Memories** — each myapp (and the orchestrator) keeps its own\n  filesystem-like tree of markdown notes and folders living *inside* the\n  app — not on the device's file system. Edited by you and the agent\n  alike; persists across sessions. Durable context, not records.\n\nItems can link across components *within one myapp*. Myapps don't share\ndata — an app moves between devices or people as a `.pupa` file.\n\n**Go deeper** (users: type the `\/command`; agents: `app_skill_view`)\n- \/pupa-components — the shapes a canvas can hold and how they combine\n- \/pupa-sharing — export and install myapps as `.pupa` files\n- \/pupa-memory — memories, sessions, change history, archive\n- \/pupa-agents — skills, subagents and slack rooms\n- \/pupa-system — where things live: on-device app vs backend, standing instructions",
+      "path" : "pupa\/plugins\/pupa-guide\/skills\/pupa\/SKILL.md"
+    },
+    {
+      "content" : "---\ndescription: Onboards a new user to MyFIRE — helps them fill in their first FIRE profile by editing the template row, and answers questions about FIRE and the inputs it needs.\nwhen_to_use: When the user is getting started, asks how to set up their profile, wants help entering their numbers, or asks what FIRE is \/ what a field means.\n---\n\n# MyFIRE Setup\n\nGoal: get the user's real numbers into **My FIRE Profile** (`tracker-2`) and connect them to the **FIRE Calculator** (`calculator-1`), while answering any FIRE questions along the way.\n\n## Steps\n\n1. **Find the template row.** Read `tracker-2` (`listTrackerItems`). There's usually a starter row named \"Current Profile\" with placeholder values. Reuse it — don't create a duplicate. If several profiles exist, ask which one is theirs.\n\n2. **Gather the six inputs.** Ask for whatever is missing, in plain language. Accept ranges\/estimates — this is refinable later. Fields:\n   - `current_age` — their age today.\n   - `target_age` — the age they'd like to reach FIRE \/ stop needing to work.\n   - `income` — annual take-home (after tax) income.\n   - `expenses` — annual living expenses (what they actually spend per year).\n   - `portfolio` — total invested\/liquid net worth today (savings + investments).\n   - `monthly_contrib` — how much they add to investments each month.\n\n3. **Write into the template row** with `patchTrackerItems` (use the row's `id`). Rename it to something personal if they like (e.g. \"My Plan\"). Don't wipe fields they didn't answer — leave prior values.\n\n4. **Point the calculator at it.** The calculator's LINKED_FIELD rows pull from a profile row. If it isn't already linked to their row, use `setCalcRowLink` so the outputs reflect their numbers.\n\n5. **Show the result.** Summarize their key outputs (years to FIRE, FIRE number, FIRE age) and offer to tweak assumptions.\n\n## Answering FIRE questions\n\nKeep answers short and concrete. Common ones:\n\n- **What is FIRE?** Financial Independence, Retire Early. Build enough invested assets that their returns cover your living expenses, so paid work becomes optional.\n- **What's the \"FIRE number\"?** The portfolio size where you're financially independent. Rule of thumb: annual expenses × 25 (the 4% safe-withdrawal rule).\n- **Savings rate** — the single biggest lever: `(income − expenses) \/ income`. Higher rate = far fewer years to FIRE.\n- **FIRE variants:** Lean (bare-bones expenses), Regular, Fat (generous lifestyle), Coast (already saved enough that growth alone gets you there — no more contributions needed), Barista (part-time income bridges the gap).\n- **Why after-tax income & real expenses?** The model compares what comes in vs what goes out; both must be like-for-like and realistic or the projection drifts.\n\nIf a field is genuinely unknown, suggest a sensible estimate and mark it as a guess to revisit.\n",
+      "path" : "pupa\/skills\/setup\/SKILL.md"
+    }
+  ]
+}
