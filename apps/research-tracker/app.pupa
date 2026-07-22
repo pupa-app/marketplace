@@ -69,9 +69,9 @@
                 "values" : {
                   "assets" : "No — org layer only, no domain assets",
                   "last_checked" : "Mon 6 Jul",
-                  "name" : "Hermes WebUI",
+                  "name" : "Nimbus WebUI",
                   "platform" : "Web",
-                  "source_url" : "github.com\/nesquena\/hermes-webui",
+                  "source_url" : "nimbus-web.example",
                   "threat" : "Watch",
                   "what_it_is" : "Chat front-end + native org layer (sessions \/ tags \/ themes); the rest mirrors the agent."
                 }
@@ -85,9 +85,9 @@
                 "values" : {
                   "assets" : "No — pure mirror",
                   "last_checked" : "Mon 6 Jul",
-                  "name" : "hermes-workspace",
+                  "name" : "orbit-workspace",
                   "platform" : "React PWA",
-                  "source_url" : "github.com\/outsourc-e\/hermes-workspace",
+                  "source_url" : "orbit-workspace.example",
                   "threat" : "Watch",
                   "what_it_is" : "Chat \/ terminal \/ memory \/ skills \/ swarm. Builds no persistent visual assets."
                 }
@@ -101,9 +101,9 @@
                 "values" : {
                   "assets" : "Status widgets only — no user-owned typed app",
                   "last_checked" : "Mon 6 Jul",
-                  "name" : "Hermes-iOS",
+                  "name" : "Beacon iOS",
                   "platform" : "Native iOS",
-                  "source_url" : "github.com\/dylan-buck\/Hermes-iOS",
+                  "source_url" : "beacon-ios.example",
                   "threat" : "Rising",
                   "what_it_is" : "Chat + voice + sensors + widgets + Live Activities."
                 }
@@ -117,9 +117,9 @@
                 "values" : {
                   "assets" : "Ephemeral, agent-drawn — not durable or typed",
                   "last_checked" : "Mon 6 Jul",
-                  "name" : "OpenClaw Live Canvas",
+                  "name" : "LiveDraw Canvas",
                   "platform" : "Native shell",
-                  "source_url" : "docs.openclaw.ai",
+                  "source_url" : "docs.livedraw.example",
                   "threat" : "Direct",
                   "what_it_is" : "Agent draws ephemeral UIs in a WKWebView; the device adds sensors."
                 }
@@ -214,8 +214,8 @@
                   "date" : "Mon 22 Jun",
                   "finding" : "Shipped Live Activities + Lock-Screen widgets for long-running agent status.",
                   "signal" : "Strong",
-                  "source" : "GitHub release · dylan-buck\/Hermes-iOS",
-                  "subject" : "Hermes-iOS",
+                  "source" : "Release notes · Beacon iOS",
+                  "subject" : "Beacon iOS",
                   "week" : "Wk 1"
                 }
               },
@@ -232,8 +232,8 @@
                   "date" : "Tue 23 Jun",
                   "finding" : "Added a swarm view for parallel subagents — still renders no persistent assets.",
                   "signal" : "Notable",
-                  "source" : "GitHub · outsourc-e\/hermes-workspace",
-                  "subject" : "hermes-workspace",
+                  "source" : "Public repo · orbit-workspace",
+                  "subject" : "orbit-workspace",
                   "week" : "Wk 1"
                 }
               },
@@ -250,8 +250,8 @@
                   "date" : "Mon 29 Jun",
                   "finding" : "Live Canvas now lets the agent draw charts + forms in the WKWebView (ephemeral).",
                   "signal" : "Strong",
-                  "source" : "docs.openclaw.ai\/changelog",
-                  "subject" : "OpenClaw",
+                  "source" : "docs.livedraw.example\/changelog",
+                  "subject" : "LiveDraw",
                   "week" : "Wk 2"
                 }
               },
@@ -268,8 +268,8 @@
                   "date" : "Tue 30 Jun",
                   "finding" : "Session tags + themes added; org layer only, no domain assets.",
                   "signal" : "Weak",
-                  "source" : "GitHub · nesquena\/hermes-webui",
-                  "subject" : "Hermes WebUI",
+                  "source" : "Public repo · Nimbus WebUI",
+                  "subject" : "Nimbus WebUI",
                   "week" : "Wk 2"
                 }
               },
@@ -286,8 +286,8 @@
                   "date" : "Mon 6 Jul",
                   "finding" : "Device sensor nodes now feed the agent's drawn UIs — closes part of the native gap.",
                   "signal" : "Strong",
-                  "source" : "docs.openclaw.ai",
-                  "subject" : "OpenClaw",
+                  "source" : "docs.livedraw.example",
+                  "subject" : "LiveDraw",
                   "week" : "Wk 3"
                 }
               },
@@ -304,8 +304,8 @@
                   "date" : "Tue 7 Jul",
                   "finding" : "Voice mode + widget refresh; assets still status-only.",
                   "signal" : "Notable",
-                  "source" : "GitHub · dylan-buck\/Hermes-iOS",
-                  "subject" : "Hermes-iOS",
+                  "source" : "Release notes · Beacon iOS",
+                  "subject" : "Beacon iOS",
                   "week" : "Wk 3"
                 }
               },
@@ -320,10 +320,10 @@
                 "schemaVersion" : 1,
                 "values" : {
                   "date" : "Tue 7 Jul",
-                  "finding" : "Wired the agentskills.io Skills Hub — portable skills, but still no typed canvas.",
+                  "finding" : "Wired the skills-hub.example Skills Hub — portable skills, but still no typed canvas.",
                   "signal" : "Strong",
-                  "source" : "GitHub · outsourc-e\/hermes-workspace",
-                  "subject" : "hermes-workspace",
+                  "source" : "Public repo · orbit-workspace",
+                  "subject" : "orbit-workspace",
                   "week" : "Wk 3"
                 }
               }
@@ -567,7 +567,7 @@
   },
   "memories" : [
     {
-      "content" : "# Example: Research Tracker\n\nA competitive-intelligence workspace. Run a weekly sweep with the\nresearch agents, append findings, and watch the signal trend move.\nShips seeded with Pupa's own companion-app landscape as real intel.\n\n## Components\n\n- **Watchlist** (`tracker-1`) — kanban of rival apps grouped by threat\n  (Us \/ Watch \/ Rising \/ Direct). Each card carries platform, what it\n  is, whether it ships native structured assets, and a source.\n- **Findings Log** (`tracker-2`) — one dated row per piece of evidence,\n  tagged with a sweep week and a signal strength, linked back to its\n  Watchlist row.\n- **Signal Trend** (`chart-1`) — findings per sweep with a strong-only\n  overlay. Resolves live from the Findings Log.\n- **Deltas** (`calculator-1`) — signal counts + the week-over-week\n  change in strong signals.\n- **Research Room** (`slack-1`) — `@Scout` finds sources, `@Analyst`\n  scores + logs them, `@Digest` writes the weekly summary.\n\n## How to use — the weekly sweep\n\n1. Open Research Room and ask `@Scout` to find what's new for the\n   Watchlist apps this week (needs a search \/ RSS \/ web-fetch tool).\n2. `@Analyst` scores each find and appends it to the Findings Log with\n   the subject linked to its Watchlist row.\n3. Check the Signal Trend chart and Deltas — is any competitor's strong\n   signal rising?\n4. Ask `@Digest` for the \"what's new since last week\" summary; it saves\n   to `research-tracker\/digests\/`.\n5. Update Watchlist threat levels if a rival's position changed.\n\n## Keeping yourself updated\n\n- Maintain `MEMORY.md` (which sources actually pay off, recurring\n  competitor patterns) and `USER.md` (the niches and rivals the user\n  cares about) at this app's memory root. Keep both compact — prune\n  stale lines instead of appending forever.\n- Keep a `skills\/` folder. After a few sweeps, write\n  `skills\/weekly-sweep.md` (trigger + the exact source list + scoring\n  rubric that worked). When a sweep misses something, fix that skill's\n  trigger rather than starting over.\n- Each sweep, do a quick self-review: refresh `MEMORY.md`, and if you've\n  learned a better scoring or sourcing convention, propose an edit to\n  the relevant persona AGENTS.md.\n- Confirm in chat before overwriting a memory file or persona the user\n  has edited — never clobber a user edit silently.\n\n## Tips\n\n- The Watchlist is seeded with our real landscape — replace it with the\n  competitors in your space and the whole workspace retargets.",
+      "content" : "# Example: Research Tracker\n\nA competitive-intelligence workspace. Run a weekly sweep with the\nresearch agents, append findings, and watch the signal trend move.\nShips seeded with a fictional companion-app landscape as sample data.\n\n## Components\n\n- **Watchlist** (`tracker-1`) — kanban of rival apps grouped by threat\n  (Us \/ Watch \/ Rising \/ Direct). Each card carries platform, what it\n  is, whether it ships native structured assets, and a source.\n- **Findings Log** (`tracker-2`) — one dated row per piece of evidence,\n  tagged with a sweep week and a signal strength, linked back to its\n  Watchlist row.\n- **Signal Trend** (`chart-1`) — findings per sweep with a strong-only\n  overlay. Resolves live from the Findings Log.\n- **Deltas** (`calculator-1`) — signal counts + the week-over-week\n  change in strong signals.\n- **Research Room** (`slack-1`) — `@Scout` finds sources, `@Analyst`\n  scores + logs them, `@Digest` writes the weekly summary.\n\n## How to use — the weekly sweep\n\n1. Open Research Room and ask `@Scout` to find what's new for the\n   Watchlist apps this week (needs a search \/ RSS \/ web-fetch tool).\n2. `@Analyst` scores each find and appends it to the Findings Log with\n   the subject linked to its Watchlist row.\n3. Check the Signal Trend chart and Deltas — is any competitor's strong\n   signal rising?\n4. Ask `@Digest` for the \"what's new since last week\" summary; it saves\n   to `research-tracker\/digests\/`.\n5. Update Watchlist threat levels if a rival's position changed.\n\n## Keeping yourself updated\n\n- Maintain `MEMORY.md` (which sources actually pay off, recurring\n  competitor patterns) and `USER.md` (the niches and rivals the user\n  cares about) at this app's memory root. Keep both compact — prune\n  stale lines instead of appending forever.\n- Keep a `skills\/` folder. After a few sweeps, write\n  `skills\/weekly-sweep.md` (trigger + the exact source list + scoring\n  rubric that worked). When a sweep misses something, fix that skill's\n  trigger rather than starting over.\n- Each sweep, do a quick self-review: refresh `MEMORY.md`, and if you've\n  learned a better scoring or sourcing convention, propose an edit to\n  the relevant persona AGENTS.md.\n- Confirm in chat before overwriting a memory file or persona the user\n  has edited — never clobber a user edit silently.\n\n## Tips\n\n- The Watchlist is seeded with a sample landscape — replace it with the\n  competitors in your space and the whole workspace retargets.",
       "path" : "pupa\/AGENTS.md"
     },
     {

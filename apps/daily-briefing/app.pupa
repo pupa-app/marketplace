@@ -227,7 +227,7 @@
                 "values" : {
                   "priority" : "Now",
                   "section" : "GitHub",
-                  "summary" : "4 review requests, CI failing on the pupa#54 branch, 1 mention in pupa-backend."
+                  "summary" : "4 review requests, CI failing on the api-refactor branch, 1 new mention."
                 }
               },
               {
@@ -239,7 +239,7 @@
                 "values" : {
                   "priority" : "Now",
                   "section" : "One thing to focus on",
-                  "summary" : "Ship the Research Tracker template — it unblocks the marketplace demo."
+                  "summary" : "Ship the weekly research digest — it unblocks the Q3 planning review."
                 }
               }
             ],

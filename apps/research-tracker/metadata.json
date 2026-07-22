@@ -1,6 +1,6 @@
 {
   "id": "research-tracker",
-  "version": 1,
+  "version": 2,
   "author": "pupa-app",
   "summary": "Competitive-intel watchlist, weekly findings log, signal-trend chart, and a Scout/Analyst/Digest research room.",
   "tags": ["research", "competitive-intel", "dashboard"],

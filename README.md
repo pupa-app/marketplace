@@ -1,5 +1,10 @@
 # Pupa Marketplace
 
+[![validate](https://github.com/pupa-app/marketplace/actions/workflows/validate.yml/badge.svg)](https://github.com/pupa-app/marketplace/actions/workflows/validate.yml)
+[![release](https://img.shields.io/github/v/tag/pupa-app/marketplace?label=release&sort=semver)](https://github.com/pupa-app/marketplace/tags)
+[![tooling: MIT](https://img.shields.io/badge/tooling-MIT-blue.svg)](LICENSE)
+[![content: CC0 1.0](https://img.shields.io/badge/content-CC0%201.0-lightgrey.svg)](CONTENT-LICENSE)
+
 A catalog of [Pupa](https://github.com/pupa-app/pupa) MyApp bundles (`.pupa`
 files) you can browse and install from the app.
 
@@ -47,8 +52,17 @@ in the install preview before accepting it.
 - `marketplace.json` — this marketplace's identity (name, owner, description).
 - `apps/<slug>/` — one directory per published app.
 - `scripts/validate.py` — dependency-free validator + index generator.
+- `schemas/` — JSON Schemas for `index.json` and `metadata.json` (editor
+  autocomplete / third-party validation; the Python validator is authoritative).
 - `docs/spec.md` — the marketplace format spec (host-agnostic).
 - `docs/hosting.md` — host your own marketplace.
+
+## Reporting
+
+- Security (validator bypass, index tampering): [SECURITY.md](SECURITY.md) —
+  private reporting, not a public issue.
+- A harmful published app: open a [Report an app](.github/ISSUE_TEMPLATE/report_app.yml) issue.
+- Conduct: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 
 ## License
 

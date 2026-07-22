@@ -1,0 +1,36 @@
+name: Report an app
+description: Flag a published app whose agent prompts are harmful, deceptive, or abusive.
+labels: [moderation]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Installed apps run agent prompts with **your** configured tools. Use this
+        to flag a published bundle carrying prompt injection, data-exfiltration
+        instructions, deceptive personas, or disallowed content, so it can be
+        pulled. This is public triage — for a private validator/security flaw,
+        use [SECURITY.md](../../blob/main/SECURITY.md) instead.
+  - type: input
+    id: app
+    attributes:
+      label: App slug
+      placeholder: apps/<slug>
+    validations:
+      required: true
+  - type: textarea
+    id: concern
+    attributes:
+      label: What's wrong
+      description: Which prompt / memory / persona, and why it's harmful. Quote the lines.
+    validations:
+      required: true
+  - type: checkboxes
+    id: category
+    attributes:
+      label: Category
+      options:
+        - label: Prompt injection / hidden instructions
+        - label: Data exfiltration (sends user data somewhere)
+        - label: Deceptive or impersonating persona
+        - label: Names a real person/org as a target, or other PII
+        - label: Disallowed / harmful content

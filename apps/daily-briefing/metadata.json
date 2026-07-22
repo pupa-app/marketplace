@@ -1,6 +1,6 @@
 {
   "id": "daily-briefing",
-  "version": 1,
+  "version": 2,
   "author": "pupa-app",
   "summary": "A 7am briefing: named sources, today's digest, feed-volume chart, and a calendar for scheduled pulls.",
   "tags": ["briefing", "productivity", "dashboard"],

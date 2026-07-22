@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/pupa-app/marketplace/main/schemas/metadata.schema.json",
+  "title": "Pupa app metadata.json",
+  "description": "Per-app metadata contributors hand-write. See CONTRIBUTING.md and docs/spec.md. Enforced by scripts/validate.py.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "version", "author", "summary", "tags"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]{1,63}$",
+      "description": "App slug; must equal the apps/<slug>/ directory name."
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Catalog entry version; bump on every change to app.pupa."
+    },
+    "author": { "type": "string", "minLength": 1 },
+    "summary": { "type": "string", "minLength": 1, "maxLength": 200 },
+    "tags": {
+      "type": "array",
+      "maxItems": 8,
+      "items": { "type": "string", "pattern": "^[a-z0-9-]+$" }
+    },
+    "homepage": { "type": "string", "pattern": "^https://" }
+  }
+}

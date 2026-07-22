@@ -14,15 +14,15 @@
       "name": "Daily Briefing",
       "path": "apps/daily-briefing/app.pupa",
       "screenshots": [],
-      "sha256": "603fcfc03e59de5832228837b94d7f6e7a67a235527239bed539a214c35d27f7",
-      "sizeBytes": 19037,
+      "sha256": "b5248f4f1e396ab98cd20844c5cd8a358a325aeb2d3c1278514e73eccb2061e3",
+      "sizeBytes": 19029,
       "summary": "A 7am briefing: named sources, today's digest, feed-volume chart, and a calendar for scheduled pulls.",
       "tags": [
         "briefing",
         "productivity",
         "dashboard"
       ],
-      "version": 1
+      "version": 2
     },
     {
       "appFormatVersion": 1,
@@ -60,15 +60,15 @@
       "name": "Research Tracker",
       "path": "apps/research-tracker/app.pupa",
       "screenshots": [],
-      "sha256": "2570afd351ebf6a0b42f41ca10fffe26578d3d89d541f9cb14d425c7504c56fb",
-      "sizeBytes": 24688,
+      "sha256": "9daf6dde64e9651bbd10b5d1f588f267fb61aa197a4d49460eefab8867aeb1d4",
+      "sizeBytes": 24613,
       "summary": "Competitive-intel watchlist, weekly findings log, signal-trend chart, and a Scout/Analyst/Digest research room.",
       "tags": [
         "research",
         "competitive-intel",
         "dashboard"
       ],
-      "version": 1
+      "version": 2
     }
   ],
   "formatVersion": 1,
