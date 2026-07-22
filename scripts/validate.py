@@ -51,6 +51,11 @@ SLUG_RE = re.compile(r"^[a-z0-9][a-z0-9-]{1,63}$")
 TAG_RE = re.compile(r"^[a-z0-9-]+$")
 APPVERSION_RE = re.compile(r"^\d+(\.\d+)*$")
 MEMORY_EXTS = {".md", ".json"}
+# A myapp's declarative automations ride the bundle at this memory path
+# (Pupa: MemoryStore.pupaAutomationsPath). Each rule's `confirm` flag gates the
+# confirm bubble — default true (propose, wait for the user); false auto-fires
+# the reaction with the installing user's tools. See validate_automations.
+PUPA_AUTOMATIONS_PATH = "pupa/automations.json"
 SCREENSHOT_EXTS = {".png", ".jpg", ".jpeg"}
 MAX_SCREENSHOTS = 5
 MAX_SCREENSHOT_BYTES = 1 * 1024 * 1024
@@ -105,6 +110,51 @@ def _bad_memory_path(p):
 
 def _sha256(data):
     return hashlib.sha256(data).hexdigest()
+
+
+def validate_automations(memories):
+    """Reject a bundle whose automations skip user validation.
+
+    A myapp can ride declarative automation rules at `pupa/automations.json`:
+
+        {"automations": {"<event>": [ {"id", "matcher", "action", "confirm"} ]}}
+
+    Each rule's `confirm` flag is the confirm-bubble gate. It defaults to true
+    (propose the reaction, wait for the user to tap Start); `confirm: false`
+    routes the reaction to auto-fire — it runs with the *installing* user's
+    tools without asking (Pupa: RuleEngine `pendingAutoFire`, AutomationRule
+    `confirm`). Marketplace policy: never publish such a rule (spec §5 — bundled
+    automations execute with the installing user's tools; a moderator can't
+    approve a silent auto-fire on the user's behalf).
+
+    Mirrors the app's tolerant parser: unreadable / non-conforming JSON yields
+    no live rules, so it can't auto-fire and isn't flagged here. Only a rule
+    that is genuinely `confirm: false` (a real JSON boolean, matching the app's
+    `as? Bool ?? true` cast) is rejected.
+    """
+    for m in memories:
+        if not isinstance(m, dict) or m.get("path") != PUPA_AUTOMATIONS_PATH:
+            continue
+        try:
+            cfg = json.loads(m.get("content", "") or "")
+        except (json.JSONDecodeError, TypeError):
+            continue  # app treats unparseable automations.json as no rules
+        autos = cfg.get("automations") if isinstance(cfg, dict) else None
+        if not isinstance(autos, dict):
+            continue
+        offenders = []
+        for event_key, entries in autos.items():
+            if not isinstance(entries, list):
+                continue
+            for entry in entries:
+                if isinstance(entry, dict) and entry.get("confirm") is False:
+                    offenders.append(entry.get("id") or f"<unnamed {event_key} rule>")
+        if offenders:
+            raise AppError(
+                f"{PUPA_AUTOMATIONS_PATH} ships automation rule(s) that skip user "
+                f"validation (confirm: false): {sorted(offenders)}. Remove the flag "
+                f"or set confirm: true so the reaction is proposed, not auto-fired."
+            )
 
 
 def validate_metadata(slug, meta):
@@ -190,6 +240,7 @@ def validate_bundle(raw):
             raise AppError(f"memory '{m.get('path')}' content is not a string")
         if len(content.encode("utf-8")) > MAX_MEMORY_FILE_BYTES:
             raise AppError(f"memory '{m['path']}' exceeds {MAX_MEMORY_FILE_BYTES//1024} KB")
+    validate_automations(memories)
     return bundle
 
 
@@ -459,6 +510,28 @@ def cmd_self_test():
         memories=[{"path": "notes/x.txt", "content": "x"}])))
     expect_ok("memory ok path", lambda: validate_bundle(good_bundle(
         memories=[{"path": "pupa/AGENTS.md", "content": "x"}])))
+
+    def automations(*rules, event="item.moved"):
+        return good_bundle(memories=[{
+            "path": PUPA_AUTOMATIONS_PATH,
+            "content": json.dumps({"automations": {event: list(rules)}}),
+        }])
+
+    move_action = {"startThread": {"prompt": "Item moved to {{toColumn}}."}}
+    expect_error("automation confirm:false auto-fires", lambda: validate_bundle(
+        automations({"id": "r1", "action": move_action, "confirm": False})))
+    expect_error("one confirm:false among safe rules", lambda: validate_bundle(
+        automations(
+            {"id": "ok", "action": move_action, "confirm": True},
+            {"id": "bad", "action": move_action, "confirm": False})))
+    expect_ok("automation confirm:true", lambda: validate_bundle(
+        automations({"id": "r1", "action": move_action, "confirm": True})))
+    expect_ok("automation confirm omitted (defaults true)", lambda: validate_bundle(
+        automations({"id": "r1", "action": move_action})))
+    expect_ok("automation confirm:'false' string is not a bool false", lambda: validate_bundle(
+        automations({"id": "r1", "action": move_action, "confirm": "false"})))
+    expect_ok("unparseable automations.json is tolerated", lambda: validate_bundle(good_bundle(
+        memories=[{"path": PUPA_AUTOMATIONS_PATH, "content": "{not json"}])))
 
     expect_ok("valid metadata", lambda: validate_metadata("my-app", {
         "id": "my-app", "version": 1, "author": "h", "summary": "s", "tags": ["a"]}))
