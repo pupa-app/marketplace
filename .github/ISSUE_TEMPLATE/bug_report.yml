@@ -1,0 +1,34 @@
+name: Bug report
+description: A problem with the catalog, validator, or a published app not installing.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For a **security** issue (validator bypass, index tampering) use private
+        reporting instead — see [SECURITY.md](../../blob/main/SECURITY.md).
+        To report a **harmful published app**, use the "Report an app" template.
+  - type: input
+    id: app
+    attributes:
+      label: Affected app slug (if any)
+      placeholder: apps/<slug> — or "tooling" / "index.json"
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, what you got.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. …
+        2. …
+  - type: input
+    id: env
+    attributes:
+      label: Pupa app version / platform
+      placeholder: e.g. Pupa 0.0.201, macOS 15

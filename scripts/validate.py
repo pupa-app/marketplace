@@ -62,7 +62,8 @@ MAX_SCREENSHOT_BYTES = 1 * 1024 * 1024
 ALLOWED_APP_FILES = {"app.pupa", "metadata.json", "README.md", "screenshots"}
 ALLOWED_ROOT = {
     "README.md", "CONTRIBUTING.md", "CHANGELOG.md", "LICENSE", "CONTENT-LICENSE",
-    "Makefile", "marketplace.json", "index.json", "scripts", "docs", "apps",
+    "SECURITY.md", "CODE_OF_CONDUCT.md", "Makefile", "marketplace.json",
+    "index.json", "scripts", "schemas", "docs", "apps",
     ".github", ".git", ".gitignore",
 }
 IMAGE_MAGIC = {b"\x89PNG\r\n\x1a\n": "png", b"\xff\xd8\xff": "jpg"}

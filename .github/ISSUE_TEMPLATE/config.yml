@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Publish an app
+    url: https://github.com/pupa-app/marketplace/blob/main/CONTRIBUTING.md
+    about: Apps are added by pull request, not by issue. See CONTRIBUTING.md.
+  - name: Report a security vulnerability
+    url: https://github.com/pupa-app/marketplace/security/advisories/new
+    about: For validator bypass / index tampering, use private reporting (see SECURITY.md).

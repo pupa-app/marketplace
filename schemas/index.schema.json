@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/pupa-app/marketplace/main/schemas/index.schema.json",
+  "title": "Pupa marketplace index.json",
+  "description": "Generated catalog manifest. Produced by `make index`; never hand-edit. See docs/spec.md.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["formatVersion", "name", "owner", "description", "entries"],
+  "properties": {
+    "formatVersion": { "const": 1 },
+    "name": { "type": "string", "minLength": 1 },
+    "owner": { "type": "string", "minLength": 1 },
+    "description": { "type": "string" },
+    "entries": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/entry" }
+    }
+  },
+  "$defs": {
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "version", "author", "summary", "tags", "name", "path",
+        "sha256", "sizeBytes", "appFormatVersion", "appVersion", "exportedAt",
+        "icon", "screenshots", "includedMemories", "includedRecords"
+      ],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]{1,63}$" },
+        "version": { "type": "integer", "minimum": 1 },
+        "author": { "type": "string", "minLength": 1 },
+        "summary": { "type": "string", "minLength": 1, "maxLength": 200 },
+        "tags": { "type": "array", "items": { "type": "string", "pattern": "^[a-z0-9-]+$" } },
+        "homepage": { "type": "string", "pattern": "^https://" },
+        "name": { "type": "string", "minLength": 1 },
+        "icon": { "type": "string" },
+        "path": { "type": "string", "pattern": "^apps/[a-z0-9-]+/app\\.pupa$" },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "sizeBytes": { "type": "integer", "minimum": 0 },
+        "appFormatVersion": { "type": "integer" },
+        "appVersion": { "type": "string", "pattern": "^\\d+(\\.\\d+)*$" },
+        "exportedAt": { "type": "string", "format": "date-time" },
+        "screenshots": { "type": "array", "items": { "type": "string" } },
+        "includedMemories": { "type": "boolean" },
+        "includedRecords": { "type": "boolean" }
+      }
+    }
+  }
+}
