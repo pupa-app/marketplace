@@ -81,9 +81,23 @@ Full rubric: Pupa's [`docs/templates.md`](https://github.com/pupa-app/pupa/blob/
 
 By opening a PR you dedicate your app's content (`apps/<slug>/**` — bundle,
 metadata, README, screenshots) to the public domain under **CC0 1.0** (see
-[CONTENT-LICENSE](CONTENT-LICENSE)). The repo's tooling/docs are MIT (see
-[LICENSE](LICENSE)). Only submit content you have the right to release — CC0
-does not clear third-party rights in material you don't own.
+[CONTENT-LICENSE](CONTENT-LICENSE)) — **unless** you set a `license` in
+`metadata.json`. The repo's tooling/docs are MIT (see [LICENSE](LICENSE)). Only
+submit content you have the right to release — CC0 does not clear third-party
+rights in material you don't own.
+
+**Non-CC0 apps.** If your app embeds third-party content under a license that
+forbids CC0 (e.g. a validated questionnaire under CC BY-NC-SA), declare it:
+
+```json
+{ "license": "CC-BY-NC-SA-4.0",
+  "attribution": "Schema content © NovoPsych, https://novopsych.com — used under their Open Source Licence" }
+```
+
+You still attest you have the right to redistribute under that license, that the
+whole `apps/<slug>/**` tree complies with it (attribution present, any
+ShareAlike/NonCommercial terms honoured), and that any in-app medical/legal
+disclaimers it requires are included. Absent `license` ⇒ CC0, as before.
 
 ## Reviewers — moderation checklist
 
@@ -99,9 +113,14 @@ user's tools**. That is the real attack surface. Before merging:
 2. **Check for PII** in included records/memories — real emails, tokens, private
    notes. Sharing is publishing.
 3. **Check summary honesty** — does it match what the app actually does.
-4. **Confirm `make validate` passes** and `index.json` is current (CI runs this;
+4. **Check licensing** — if `metadata.json` declares a non-CC0 `license`, confirm
+   the required `attribution` is present in-bundle and the terms are honoured
+   (e.g. NonCommercial/ShareAlike). If it embeds a clinical/legal instrument,
+   confirm an in-app disclaimer. Reject copyrighted third-party content shipped
+   as CC0.
+5. **Confirm `make validate` passes** and `index.json` is current (CI runs this;
    re-run locally if Actions is billing-blocked — see below).
-5. **Update PRs:** confirm `version` bumped.
+6. **Update PRs:** confirm `version` bumped.
 
 ### CI may be billing-blocked
 

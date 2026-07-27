@@ -1,0 +1,10 @@
+{
+  "id": "maladaptive-mechanisms",
+  "version": 1,
+  "author": "pupa-app",
+  "summary": "Schema-therapy self-tracker on the openly-licensed MSS-YSQ: a 76-item questionnaire, live schema scores, domain charts, and a schema/mode diary.",
+  "tags": ["health", "schema-therapy", "self-reflection", "questionnaire", "tracker"],
+  "homepage": "https://github.com/pupa-app/pupa",
+  "license": "CC-BY-NC-SA-4.0",
+  "attribution": "Questionnaire: MSS-YSQ © NovoPsych, used under their Open Source Licence (CC BY-NC-SA). https://novopsych.com/assessments/formulation/mss-ysq-young-schema-questionnaire/"
+}

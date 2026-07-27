@@ -42,7 +42,9 @@
         "exportedAt": { "type": "string", "format": "date-time" },
         "screenshots": { "type": "array", "items": { "type": "string" } },
         "includedMemories": { "type": "boolean" },
-        "includedRecords": { "type": "boolean" }
+        "includedRecords": { "type": "boolean" },
+        "license": { "type": "string", "minLength": 1, "maxLength": 100 },
+        "attribution": { "type": "string", "minLength": 1, "maxLength": 500 }
       }
     }
   }

@@ -3,8 +3,19 @@ Content license — apps/** bundles
 The repository tooling, docs, and scripts are MIT-licensed (see LICENSE).
 Everything a contributor ships under `apps/` — every `app.pupa` bundle,
 `metadata.json`, README, and screenshot — is dedicated to the public domain
-under Creative Commons Zero 1.0 Universal (CC0). Contributors attest to this
-via the pull-request checklist. Full legal text below.
+under Creative Commons Zero 1.0 Universal (CC0) **by default**. Contributors
+attest to this via the pull-request checklist.
+
+**Exception — per-app license.** An app MAY opt out of CC0 by declaring a
+`license` (and, where required, an `attribution`) in its `metadata.json`. This
+exists for apps that embed third-party content the contributor cannot place in
+the public domain (e.g. a validated questionnaire licensed CC BY-NC-SA). For
+such apps, the declared license governs `apps/<slug>/**` instead of CC0, the
+contributor attests they may redistribute under it, and its attribution / any
+NonCommercial or ShareAlike terms travel with the app. Apps with no `license`
+field remain CC0.
+
+The full CC0 legal text (the default) follows below.
 
 ----------------------------------------------------------------------
 

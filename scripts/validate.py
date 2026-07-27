@@ -182,6 +182,15 @@ def validate_metadata(slug, meta):
     hp = meta.get("homepage")
     if hp is not None and (not isinstance(hp, str) or not hp.startswith("https://")):
         raise AppError("metadata.homepage must be an https:// URL")
+    # Content license. Absent ⇒ the repo default (CC0-1.0, per CONTENT-LICENSE).
+    # Present ⇒ this app opts out of CC0; the contributor asserts they hold the
+    # rights to release under the named license (SPDX id or short name).
+    lic = meta.get("license")
+    if lic is not None and (not isinstance(lic, str) or not lic.strip() or len(lic) > 100):
+        raise AppError("metadata.license must be a non-empty string <= 100 chars (SPDX id or license name)")
+    attr = meta.get("attribution")
+    if attr is not None and (not isinstance(attr, str) or not attr.strip() or len(attr) > 500):
+        raise AppError("metadata.attribution must be a non-empty string <= 500 chars")
 
 
 def validate_bundle(raw):
@@ -299,7 +308,7 @@ def validate_app(app_dir, warnings):
     except json.JSONDecodeError as e:
         raise AppError(f"metadata.json invalid: {e}")
     validate_metadata(slug, meta)
-    known = {"id", "version", "author", "summary", "tags", "homepage"}
+    known = {"id", "version", "author", "summary", "tags", "homepage", "license", "attribution"}
     for k in meta.keys() - known:
         warnings.append(f"{slug}: unknown metadata key '{k}' (ignored)")
 
@@ -326,6 +335,10 @@ def validate_app(app_dir, warnings):
     }
     if meta.get("homepage"):
         entry["homepage"] = meta["homepage"]
+    if meta.get("license"):
+        entry["license"] = meta["license"]
+    if meta.get("attribution"):
+        entry["attribution"] = meta["attribution"]
     return entry
 
 
@@ -546,6 +559,11 @@ def cmd_self_test():
         "id": "my-app", "version": 1, "author": "h", "summary": "s", "tags": ["Bad Tag"]}))
     expect_error("http homepage", lambda: validate_metadata("my-app", {
         "id": "my-app", "version": 1, "author": "h", "summary": "s", "tags": [], "homepage": "http://x"}))
+    expect_ok("valid license + attribution", lambda: validate_metadata("my-app", {
+        "id": "my-app", "version": 1, "author": "h", "summary": "s", "tags": [],
+        "license": "CC-BY-NC-SA-4.0", "attribution": "Schema content © NovoPsych, https://novopsych.com"}))
+    expect_error("blank license", lambda: validate_metadata("my-app", {
+        "id": "my-app", "version": 1, "author": "h", "summary": "s", "tags": [], "license": "   "}))
 
     print(f"\nself-test: {passed} passed, {failed} failed")
     return 1 if failed else 0
