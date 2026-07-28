@@ -53,7 +53,7 @@
       "filter": {},
       "items": [
        {
-        "id": "MSSYSQ-item-abandonment-1",
+        "id": "A69512DA-4505-53DC-9618-AA5F90FD540E",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -64,7 +64,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-abandonment-2",
+        "id": "C691E54E-D709-5617-B106-24A0A96EBBEE",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -75,7 +75,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-abandonment-3",
+        "id": "05DC71DD-B244-55F6-ABE3-C1C53F909637",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -86,7 +86,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-abandonment-4",
+        "id": "C9CA74C6-11F3-5734-B16E-F63111B24CFA",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -97,7 +97,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-emotional_deprivation-1",
+        "id": "923235DD-50C5-5C7E-AC67-F7D14F7F5A4F",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -108,7 +108,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-emotional_deprivation-2",
+        "id": "03649AB0-F364-51D0-845E-C3FE54B0161F",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -119,7 +119,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-emotional_deprivation-3",
+        "id": "5E03D6B6-4B0A-543A-9956-DFF30560D1ED",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -130,7 +130,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-emotional_deprivation-4",
+        "id": "FC191911-188B-5A4B-9DBC-044C95F992DB",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -141,7 +141,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-mistrust-1",
+        "id": "FC34C8D9-CD4F-57DB-9587-1851E9E06350",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -152,7 +152,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-mistrust-2",
+        "id": "4B9F432E-89C1-5076-A4F3-46D71C4F164D",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -163,7 +163,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-mistrust-3",
+        "id": "070120D2-C8B9-5B6E-AA8C-7AEE6DE88973",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -174,7 +174,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-mistrust-4",
+        "id": "A616744A-02F4-50BB-8310-AD0AAF5E755D",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -185,7 +185,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-social_isolation-1",
+        "id": "62DDCD08-F1DC-55B8-B276-2DCF742814C1",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -196,7 +196,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-social_isolation-2",
+        "id": "07E6AC62-00DF-580E-80DB-9ADF485DEECF",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -207,7 +207,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-social_isolation-3",
+        "id": "06A0E685-5564-5649-9C93-20501CAF83CD",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -218,7 +218,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-social_isolation-4",
+        "id": "320F14DC-BB7A-5D7B-B991-20394EA6F8BB",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -229,7 +229,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-defectiveness_shame-1",
+        "id": "FF2357F0-03B7-59E0-A086-35CE18F6C0EE",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -240,7 +240,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-defectiveness_shame-2",
+        "id": "FCE70342-33E4-5B1A-ACD5-9F6FA4308713",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -251,7 +251,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-defectiveness_shame-3",
+        "id": "512E8E74-A4A9-5FA8-96DE-1CF6485A90A4",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -262,7 +262,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-defectiveness_shame-4",
+        "id": "B23C6BDF-55CA-5578-BD85-C9A9806A0A3F",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -273,7 +273,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-dependence-1",
+        "id": "57AD9549-94DC-5423-9C50-7E732FF17670",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -284,7 +284,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-dependence-2",
+        "id": "BDDB6677-7555-5A4F-AFE9-2821C1779D77",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -295,7 +295,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-dependence-3",
+        "id": "25E2C462-F844-506D-948D-E5E1FFE705C2",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -306,7 +306,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-dependence-4",
+        "id": "1523656A-677F-5688-8970-063A3D724C05",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -317,7 +317,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-vulnerability-1",
+        "id": "F63BBD6E-C06E-577A-9B9C-D0F4A740EBFE",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -328,7 +328,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-vulnerability-2",
+        "id": "36B6E2E8-A2FA-58DE-BF3E-DDF6D62B0E80",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -339,7 +339,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-vulnerability-3",
+        "id": "CFD4B756-C12A-5C3A-B289-64D468B86316",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -350,7 +350,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-vulnerability-4",
+        "id": "C8644886-792A-5D79-A424-DCA2D5BF9EA4",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -361,7 +361,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-enmeshment-1",
+        "id": "EA1A7C17-EFCF-5981-9396-F7E2250B8FF7",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -372,7 +372,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-enmeshment-2",
+        "id": "16DCAAC5-052F-5E8F-9938-FEBF833E2249",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -383,7 +383,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-enmeshment-3",
+        "id": "9C8CB200-D21D-54DA-B742-4C3D5C8FFCAC",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -394,7 +394,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-enmeshment-4",
+        "id": "732B6DC7-7A52-50DE-843F-2DBF50BF2122",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -405,7 +405,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-failure-1",
+        "id": "073583AB-EBC5-543C-86A7-2D9668B464FC",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -416,7 +416,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-failure-2",
+        "id": "750BB165-FC99-559F-9F60-6F9DF444F3CF",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -427,7 +427,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-failure-3",
+        "id": "38D49EE0-BFB2-510D-A9AE-25048528B589",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -438,7 +438,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-failure-4",
+        "id": "ED5E5B50-8ACC-538D-98C6-ECA9BD5B7833",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -449,7 +449,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-low_self_efficacy-1",
+        "id": "FC557ED9-B041-56A5-AC9C-F0AAFAAA89F3",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -460,7 +460,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-low_self_efficacy-2",
+        "id": "47992E2C-1A75-585B-87AE-3465AA3E304E",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -471,7 +471,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-low_self_efficacy-3",
+        "id": "E4082025-7F7F-5081-AB86-1F0DD14EE136",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -482,7 +482,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-low_self_efficacy-4",
+        "id": "8244AD74-0614-5573-B5A0-1DD8EFF4E2AC",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -493,7 +493,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-entitlement-1",
+        "id": "6951B2C5-1867-500D-A9A1-416932C584F1",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -504,7 +504,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-entitlement-2",
+        "id": "DC6A7A16-9AF4-5DB3-B155-CF43FFFDACF9",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -515,7 +515,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-entitlement-3",
+        "id": "64E231E0-CD9C-5899-AA57-2C4B91245A6B",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -526,7 +526,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-entitlement-4",
+        "id": "3C30E7E5-3426-58BD-BB38-2E42BE334BCD",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -537,7 +537,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-subjugation-1",
+        "id": "9D5184E3-D445-5E2F-A35C-B49E954E08B8",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -548,7 +548,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-subjugation-2",
+        "id": "5B7D0254-69DE-5B2B-B48D-CDC635574C96",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -559,7 +559,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-subjugation-3",
+        "id": "963AFAFF-CC20-52F3-B45C-F75FE159675D",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -570,7 +570,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-subjugation-4",
+        "id": "E6394772-E7BE-5656-989C-B5061E1639D6",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -581,7 +581,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-self_sacrifice-1",
+        "id": "01799A74-3AFE-58EE-8150-EF02976A3D95",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -592,7 +592,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-self_sacrifice-2",
+        "id": "8A24A01D-331F-57E9-8761-9FED9B5022AC",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -603,7 +603,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-self_sacrifice-3",
+        "id": "8AD386EC-C75E-5C9F-90AB-75889FA861E9",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -614,7 +614,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-self_sacrifice-4",
+        "id": "6CC4F54B-2592-5394-B772-C46BD425A000",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -625,7 +625,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-approval_seeking-1",
+        "id": "88B70860-AF53-5C7B-8893-5E045CEA92E4",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -636,7 +636,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-approval_seeking-2",
+        "id": "D5449B07-8401-5864-AC3B-E32231F12EF7",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -647,7 +647,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-approval_seeking-3",
+        "id": "5E2B5E27-9CAA-5FBC-92B7-024D390BA1EB",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -658,7 +658,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-approval_seeking-4",
+        "id": "0C14C8A7-BE4F-5398-B704-A2D5DA5E5EFD",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -669,7 +669,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-pessimism-1",
+        "id": "B9701DAF-3D36-5950-86C3-7E8C4D50060A",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -680,7 +680,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-pessimism-2",
+        "id": "72A14D81-DA01-5DA4-8BEB-7423DA8AD18A",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -691,7 +691,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-pessimism-3",
+        "id": "3E0F499A-0582-596C-8FD2-B2600C9F415B",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -702,7 +702,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-pessimism-4",
+        "id": "935A2878-9BAC-5092-B729-52FF3DE9C0D4",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -713,7 +713,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-emotional_inhibition-1",
+        "id": "67011307-A8DC-5B8F-99BE-BADAE952D867",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -724,7 +724,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-emotional_inhibition-2",
+        "id": "226EEE24-D470-5369-8534-1C1C7C3D0642",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -735,7 +735,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-emotional_inhibition-3",
+        "id": "62C32A6F-6015-55AB-A40B-78F5F0B84E2A",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -746,7 +746,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-emotional_inhibition-4",
+        "id": "E430ED05-A673-5DE6-B41A-6B4C56BE5692",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -757,7 +757,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-unrelenting_standards-1",
+        "id": "281E4809-FD40-5340-BB51-F91B764A52B4",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -768,7 +768,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-unrelenting_standards-2",
+        "id": "D77DA545-7A63-5E94-BED3-C1CE75EB4889",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -779,7 +779,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-unrelenting_standards-3",
+        "id": "33010553-10C2-5EC7-996C-B16203326885",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -790,7 +790,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-unrelenting_standards-4",
+        "id": "97823F75-5BFC-5978-B947-F65B8BC96A47",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -801,7 +801,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-punitiveness_self-1",
+        "id": "DC188AD2-A54F-53D2-996C-7C4B385AEDBA",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -812,7 +812,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-punitiveness_self-2",
+        "id": "60EDA975-2777-5817-B9A3-AFEC30990479",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -823,7 +823,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-punitiveness_self-3",
+        "id": "B17AC0D0-D547-53B1-9D5C-E48688F336D1",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -834,7 +834,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-punitiveness_self-4",
+        "id": "DA5E8F62-9B58-5847-9672-3DAED7D86E47",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -845,7 +845,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-punitiveness_other-1",
+        "id": "338809FB-B821-54A1-BAFE-014765D8AA01",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -856,7 +856,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-punitiveness_other-2",
+        "id": "E1D4F7F8-305D-55B4-8208-2A1FA62A938E",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -867,7 +867,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-punitiveness_other-3",
+        "id": "214A6B22-1BE8-5448-B792-2AD783881820",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -878,7 +878,7 @@
         }
        },
        {
-        "id": "MSSYSQ-item-punitiveness_other-4",
+        "id": "30F1E46E-377C-5AAD-994D-3C301377826A",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -906,7 +906,7 @@
       "extraCharts": [],
       "rows": [
        {
-        "id": "MSSYSQ-hdr-disconnection",
+        "id": "A2AD84D7-2AD6-5B7B-BB4B-9BC586714AFE",
         "key": "disconnection_rejection",
         "kind": {
          "type": "header"
@@ -914,7 +914,7 @@
         "name": "Disconnection & Rejection"
        },
        {
-        "id": "MSSYSQ-agg-abandonment",
+        "id": "62A3C5DF-136F-5B86-ABA0-4846E241F1C4",
         "key": "abandonment",
         "name": "Abandonment / Anxious Attachment",
         "kind": {
@@ -924,13 +924,13 @@
           "filter": {
            "Schema": "Abandonment / Anxious Attachment"
           },
-          "reduce": "mean",
+          "reduce": "avg",
           "sourceComponentId": "tracker-1"
          }
         }
        },
        {
-        "id": "MSSYSQ-agg-emotional_deprivation",
+        "id": "4F80FCD7-239D-5E18-BDCF-D4A6F356200A",
         "key": "emotional_deprivation",
         "name": "Emotional Deprivation",
         "kind": {
@@ -940,13 +940,13 @@
           "filter": {
            "Schema": "Emotional Deprivation"
           },
-          "reduce": "mean",
+          "reduce": "avg",
           "sourceComponentId": "tracker-1"
          }
         }
        },
        {
-        "id": "MSSYSQ-agg-mistrust",
+        "id": "F023DF6A-8788-5290-9168-E805FD282604",
         "key": "mistrust",
         "name": "Mistrust of Others",
         "kind": {
@@ -956,13 +956,13 @@
           "filter": {
            "Schema": "Mistrust of Others"
           },
-          "reduce": "mean",
+          "reduce": "avg",
           "sourceComponentId": "tracker-1"
          }
         }
        },
        {
-        "id": "MSSYSQ-agg-social_isolation",
+        "id": "30D32921-4954-5F81-88C9-AB4DB9F8542C",
         "key": "social_isolation",
         "name": "Social Isolation / Outsider",
         "kind": {
@@ -972,13 +972,13 @@
           "filter": {
            "Schema": "Social Isolation / Outsider"
           },
-          "reduce": "mean",
+          "reduce": "avg",
           "sourceComponentId": "tracker-1"
          }
         }
        },
        {
-        "id": "MSSYSQ-agg-defectiveness_shame",
+        "id": "81A8D68B-6FF8-5227-A652-AD640DBBEC14",
         "key": "defectiveness_shame",
         "name": "Defectiveness / Shame",
         "kind": {
@@ -988,13 +988,13 @@
           "filter": {
            "Schema": "Defectiveness / Shame"
           },
-          "reduce": "mean",
+          "reduce": "avg",
           "sourceComponentId": "tracker-1"
          }
         }
        },
        {
-        "id": "MSSYSQ-hdr-impaired",
+        "id": "0F3BDB0D-14E5-544E-9BFF-26858D55178E",
         "key": "impaired_autonomy_performance",
         "kind": {
          "type": "header"
@@ -1002,7 +1002,7 @@
         "name": "Impaired Autonomy & Performance"
        },
        {
-        "id": "MSSYSQ-agg-dependence",
+        "id": "9EA71998-FCDB-53E8-AE9B-B28F62929443",
         "key": "dependence",
         "name": "Dependence",
         "kind": {
@@ -1012,13 +1012,13 @@
           "filter": {
            "Schema": "Dependence"
           },
-          "reduce": "mean",
+          "reduce": "avg",
           "sourceComponentId": "tracker-1"
          }
         }
        },
        {
-        "id": "MSSYSQ-agg-vulnerability",
+        "id": "1232F32C-324F-5330-B6E6-066DC04FDF1B",
         "key": "vulnerability",
         "name": "Vulnerability to Dangerous World",
         "kind": {
@@ -1028,13 +1028,13 @@
           "filter": {
            "Schema": "Vulnerability to Dangerous World"
           },
-          "reduce": "mean",
+          "reduce": "avg",
           "sourceComponentId": "tracker-1"
          }
         }
        },
        {
-        "id": "MSSYSQ-agg-enmeshment",
+        "id": "31EA485A-9DA2-5042-8840-B009DCCD9FD1",
         "key": "enmeshment",
         "name": "Enmeshment / Diffuse Boundaries",
         "kind": {
@@ -1044,13 +1044,13 @@
           "filter": {
            "Schema": "Enmeshment / Diffuse Boundaries"
           },
-          "reduce": "mean",
+          "reduce": "avg",
           "sourceComponentId": "tracker-1"
          }
         }
        },
        {
-        "id": "MSSYSQ-agg-failure",
+        "id": "BEB57CE7-0007-5D5F-B3F5-231D29FEB41F",
         "key": "failure",
         "name": "Failure / Achievement Inferiority",
         "kind": {
@@ -1060,13 +1060,13 @@
           "filter": {
            "Schema": "Failure / Achievement Inferiority"
           },
-          "reduce": "mean",
+          "reduce": "avg",
           "sourceComponentId": "tracker-1"
          }
         }
        },
        {
-        "id": "MSSYSQ-agg-low_self_efficacy",
+        "id": "182C6E67-1B39-5069-9B6B-6D7E9E3D908F",
         "key": "low_self_efficacy",
         "name": "Low Self-Efficacy / Weakness",
         "kind": {
@@ -1076,13 +1076,13 @@
           "filter": {
            "Schema": "Low Self-Efficacy / Weakness"
           },
-          "reduce": "mean",
+          "reduce": "avg",
           "sourceComponentId": "tracker-1"
          }
         }
        },
        {
-        "id": "MSSYSQ-hdr-impaired",
+        "id": "0F3BDB0D-14E5-544E-9BFF-26858D55178E",
         "key": "impaired_limits",
         "kind": {
          "type": "header"
@@ -1090,7 +1090,7 @@
         "name": "Impaired Limits"
        },
        {
-        "id": "MSSYSQ-agg-entitlement",
+        "id": "7A85429F-A1DF-57BB-B74F-4DE43499C256",
         "key": "entitlement",
         "name": "Entitlement / Specialness",
         "kind": {
@@ -1100,13 +1100,13 @@
           "filter": {
            "Schema": "Entitlement / Specialness"
           },
-          "reduce": "mean",
+          "reduce": "avg",
           "sourceComponentId": "tracker-1"
          }
         }
        },
        {
-        "id": "MSSYSQ-hdr-other-directedness",
+        "id": "4F18F390-168E-5756-956B-E83F319A87A8",
         "key": "other-directedness",
         "kind": {
          "type": "header"
@@ -1114,7 +1114,7 @@
         "name": "Other-Directedness"
        },
        {
-        "id": "MSSYSQ-agg-subjugation",
+        "id": "171C35BD-738E-5E3C-8038-CDC8D547051E",
         "key": "subjugation",
         "name": "Subjugation / Submission to Others",
         "kind": {
@@ -1124,13 +1124,13 @@
           "filter": {
            "Schema": "Subjugation / Submission to Others"
           },
-          "reduce": "mean",
+          "reduce": "avg",
           "sourceComponentId": "tracker-1"
          }
         }
        },
        {
-        "id": "MSSYSQ-agg-self_sacrifice",
+        "id": "5F04B7FB-30CD-58A3-A264-F30B41F97726",
         "key": "self_sacrifice",
         "name": "Self-Sacrifice",
         "kind": {
@@ -1140,13 +1140,13 @@
           "filter": {
            "Schema": "Self-Sacrifice"
           },
-          "reduce": "mean",
+          "reduce": "avg",
           "sourceComponentId": "tracker-1"
          }
         }
        },
        {
-        "id": "MSSYSQ-agg-approval_seeking",
+        "id": "44240A4A-9281-5CD5-A186-39D0CB23700C",
         "key": "approval_seeking",
         "name": "Approval-Seeking / Excessive Need to be Liked",
         "kind": {
@@ -1156,13 +1156,13 @@
           "filter": {
            "Schema": "Approval-Seeking / Excessive Need to be Liked"
           },
-          "reduce": "mean",
+          "reduce": "avg",
           "sourceComponentId": "tracker-1"
          }
         }
        },
        {
-        "id": "MSSYSQ-hdr-overvigilance",
+        "id": "6EF88456-5AD9-511C-BC3C-D9258D61AA6C",
         "key": "overvigilance_inhibition",
         "kind": {
          "type": "header"
@@ -1170,7 +1170,7 @@
         "name": "Overvigilance & Inhibition"
        },
        {
-        "id": "MSSYSQ-agg-pessimism",
+        "id": "2EEA42A3-204D-5F01-9A85-B01526F5F279",
         "key": "pessimism",
         "name": "Pessimism / Negativity",
         "kind": {
@@ -1180,13 +1180,13 @@
           "filter": {
            "Schema": "Pessimism / Negativity"
           },
-          "reduce": "mean",
+          "reduce": "avg",
           "sourceComponentId": "tracker-1"
          }
         }
        },
        {
-        "id": "MSSYSQ-agg-emotional_inhibition",
+        "id": "6172805C-9094-5B15-8AC2-2486BC473947",
         "key": "emotional_inhibition",
         "name": "Emotional Inhibition",
         "kind": {
@@ -1196,13 +1196,13 @@
           "filter": {
            "Schema": "Emotional Inhibition"
           },
-          "reduce": "mean",
+          "reduce": "avg",
           "sourceComponentId": "tracker-1"
          }
         }
        },
        {
-        "id": "MSSYSQ-agg-unrelenting_standards",
+        "id": "AADFC68F-9B7A-58DD-BEAE-B0FC6E4FA054",
         "key": "unrelenting_standards",
         "name": "Unrelenting Standards",
         "kind": {
@@ -1212,13 +1212,13 @@
           "filter": {
            "Schema": "Unrelenting Standards"
           },
-          "reduce": "mean",
+          "reduce": "avg",
           "sourceComponentId": "tracker-1"
          }
         }
        },
        {
-        "id": "MSSYSQ-agg-punitiveness_self",
+        "id": "3A03A0C1-937B-5663-89E3-F63A0BDEFE30",
         "key": "punitiveness_self",
         "name": "Punitiveness / Unforgiving of Self",
         "kind": {
@@ -1228,13 +1228,13 @@
           "filter": {
            "Schema": "Punitiveness / Unforgiving of Self"
           },
-          "reduce": "mean",
+          "reduce": "avg",
           "sourceComponentId": "tracker-1"
          }
         }
        },
        {
-        "id": "MSSYSQ-agg-punitiveness_other",
+        "id": "032223CA-B4FD-5AF9-8D6A-D666293DC3FB",
         "key": "punitiveness_other",
         "name": "Punitiveness / Unforgiving of Others",
         "kind": {
@@ -1244,7 +1244,7 @@
           "filter": {
            "Schema": "Punitiveness / Unforgiving of Others"
           },
-          "reduce": "mean",
+          "reduce": "avg",
           "sourceComponentId": "tracker-1"
          }
         }
@@ -1525,7 +1525,7 @@
       "kind": "bar",
       "series": [
        {
-        "id": "MSSYSQ-series-abandonment",
+        "id": "6DE3320B-64DF-59C8-9EE0-773524CF63E4",
         "source": {
          "type": "calculatorRows",
          "componentId": "calculator-2",
@@ -1554,7 +1554,7 @@
       "kind": "bar",
       "series": [
        {
-        "id": "MSSYSQ-series-dependence",
+        "id": "41F02931-001D-59D9-8DCB-A795A9A213EF",
         "source": {
          "type": "calculatorRows",
          "componentId": "calculator-2",
@@ -1583,7 +1583,7 @@
       "kind": "bar",
       "series": [
        {
-        "id": "MSSYSQ-series-entitlement",
+        "id": "D6E901E2-DA65-5518-996C-23322E61E834",
         "source": {
          "type": "calculatorRows",
          "componentId": "calculator-2",
@@ -1611,7 +1611,7 @@
       "kind": "bar",
       "series": [
        {
-        "id": "MSSYSQ-series-pessimism",
+        "id": "46896B1C-FA28-503E-AD1D-07EFD6C9C707",
         "source": {
          "type": "calculatorRows",
          "componentId": "calculator-2",
@@ -1703,7 +1703,7 @@
       "filter": {},
       "items": [
        {
-        "id": "MSSYSQ-diary-1",
+        "id": "B9C2999B-B175-54D2-B39A-B038B225FABE",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -1717,7 +1717,7 @@
         }
        },
        {
-        "id": "MSSYSQ-diary-2",
+        "id": "CEEFAA34-77C5-5E8E-9E15-7A735F7E9BC0",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {
@@ -1731,7 +1731,7 @@
         }
        },
        {
-        "id": "MSSYSQ-diary-3",
+        "id": "25341AD1-77D2-55FD-84BF-B5C97E27A913",
         "linkedItems": [],
         "schemaVersion": 1,
         "values": {

@@ -39,8 +39,8 @@
       "name": "Maladaptive Mechanisms",
       "path": "apps/maladaptive-mechanisms/app.pupa",
       "screenshots": [],
-      "sha256": "365163fafa9b1fada327b19fb03c9603c30c5c1c3831b6c426c0d223874778f9",
-      "sizeBytes": 78563,
+      "sha256": "7e0686a6ca9949f3739c29e9b021b3cafe108586aac56e72e9a5ea374307e12c",
+      "sizeBytes": 79524,
       "summary": "Schema-therapy self-tracker on the openly-licensed MSS-YSQ: a 76-item questionnaire, live schema scores, domain charts, and a schema/mode diary.",
       "tags": [
         "health",
