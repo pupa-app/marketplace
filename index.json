@@ -26,6 +26,33 @@
     },
     {
       "appFormatVersion": 1,
+      "appVersion": "0.0.212",
+      "attribution": "Questionnaire: MSS-YSQ © NovoPsych, used under their Open Source Licence (CC BY-NC-SA). https://novopsych.com/assessments/formulation/mss-ysq-young-schema-questionnaire/",
+      "author": "pupa-app",
+      "exportedAt": "2026-01-15T00:00:00Z",
+      "homepage": "https://github.com/pupa-app/pupa",
+      "icon": "brain.head.profile",
+      "id": "maladaptive-mechanisms",
+      "includedMemories": true,
+      "includedRecords": true,
+      "license": "CC-BY-NC-SA-4.0",
+      "name": "Maladaptive Mechanisms",
+      "path": "apps/maladaptive-mechanisms/app.pupa",
+      "screenshots": [],
+      "sha256": "7e0686a6ca9949f3739c29e9b021b3cafe108586aac56e72e9a5ea374307e12c",
+      "sizeBytes": 79524,
+      "summary": "Schema-therapy self-tracker on the openly-licensed MSS-YSQ: a 76-item questionnaire, live schema scores, domain charts, and a schema/mode diary.",
+      "tags": [
+        "health",
+        "schema-therapy",
+        "self-reflection",
+        "questionnaire",
+        "tracker"
+      ],
+      "version": 1
+    },
+    {
+      "appFormatVersion": 1,
       "appVersion": "0.0.201",
       "author": "pupa-app",
       "exportedAt": "2026-07-17T15:21:06Z",

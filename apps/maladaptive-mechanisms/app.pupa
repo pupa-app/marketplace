@@ -1,0 +1,1850 @@
+{
+ "app": {
+  "activeComponentId": "tracker-4",
+  "colorIndex": 7,
+  "components": [
+   {
+    "body": {
+     "data": {
+      "columnField": "Schema",
+      "fields": [
+       {
+        "label": "Item",
+        "name": "title",
+        "type": "text"
+       },
+       {
+        "label": "Schema",
+        "name": "Schema",
+        "type": "select",
+        "options": [
+         "Abandonment / Anxious Attachment",
+         "Emotional Deprivation",
+         "Mistrust of Others",
+         "Social Isolation / Outsider",
+         "Defectiveness / Shame",
+         "Dependence",
+         "Vulnerability to Dangerous World",
+         "Enmeshment / Diffuse Boundaries",
+         "Failure / Achievement Inferiority",
+         "Low Self-Efficacy / Weakness",
+         "Entitlement / Specialness",
+         "Subjugation / Submission to Others",
+         "Self-Sacrifice",
+         "Approval-Seeking / Excessive Need to be Liked",
+         "Pessimism / Negativity",
+         "Emotional Inhibition",
+         "Unrelenting Standards",
+         "Punitiveness / Unforgiving of Self",
+         "Punitiveness / Unforgiving of Others"
+        ]
+       },
+       {
+        "label": "Response (0–4)",
+        "name": "Response",
+        "type": "number"
+       },
+       {
+        "label": "Question",
+        "name": "question",
+        "type": "text"
+       }
+      ],
+      "filter": {},
+      "items": [
+       {
+        "id": "A69512DA-4505-53DC-9618-AA5F90FD540E",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "3",
+         "Schema": "Abandonment / Anxious Attachment",
+         "question": "I fear that my important relationships will end unexpectedly.",
+         "title": "Abandonment / Anxious Attachment — item 1"
+        }
+       },
+       {
+        "id": "C691E54E-D709-5617-B106-24A0A96EBBEE",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "4",
+         "Schema": "Abandonment / Anxious Attachment",
+         "question": "I worry that people I love can't be there for me in a committed way.",
+         "title": "Abandonment / Anxious Attachment — item 2"
+        }
+       },
+       {
+        "id": "05DC71DD-B244-55F6-ABE3-C1C53F909637",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "2",
+         "Schema": "Abandonment / Anxious Attachment",
+         "question": "I feel confident that other people will be there for me when I need them. (reverse-scored)",
+         "title": "Abandonment / Anxious Attachment — item 3"
+        }
+       },
+       {
+        "id": "C9CA74C6-11F3-5734-B16E-F63111B24CFA",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "3",
+         "Schema": "Abandonment / Anxious Attachment",
+         "question": "I worry about losing people that I rely on.",
+         "title": "Abandonment / Anxious Attachment — item 4"
+        }
+       },
+       {
+        "id": "923235DD-50C5-5C7E-AC67-F7D14F7F5A4F",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "1",
+         "Schema": "Emotional Deprivation",
+         "question": "I have others I can depend on for advice and emotional support. (reverse-scored)",
+         "title": "Emotional Deprivation — item 1"
+        }
+       },
+       {
+        "id": "03649AB0-F364-51D0-845E-C3FE54B0161F",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "4",
+         "Schema": "Emotional Deprivation",
+         "question": "If I was in trouble, I wouldn't know who to call.",
+         "title": "Emotional Deprivation — item 2"
+        }
+       },
+       {
+        "id": "5E03D6B6-4B0A-543A-9956-DFF30560D1ED",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "2",
+         "Schema": "Emotional Deprivation",
+         "question": "Other people don't care about my emotional needs.",
+         "title": "Emotional Deprivation — item 3"
+        }
+       },
+       {
+        "id": "FC191911-188B-5A4B-9DBC-044C95F992DB",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "3",
+         "Schema": "Emotional Deprivation",
+         "question": "I feel unsupported by others, so I wouldn’t share my emotions.",
+         "title": "Emotional Deprivation — item 4"
+        }
+       },
+       {
+        "id": "FC34C8D9-CD4F-57DB-9587-1851E9E06350",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "2",
+         "Schema": "Mistrust of Others",
+         "question": "People usually conceal their real intentions.",
+         "title": "Mistrust of Others — item 1"
+        }
+       },
+       {
+        "id": "4B9F432E-89C1-5076-A4F3-46D71C4F164D",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "3",
+         "Schema": "Mistrust of Others",
+         "question": "I don't trust people.",
+         "title": "Mistrust of Others — item 2"
+        }
+       },
+       {
+        "id": "070120D2-C8B9-5B6E-AA8C-7AEE6DE88973",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "1",
+         "Schema": "Mistrust of Others",
+         "question": "I don't believe what people say at face value.",
+         "title": "Mistrust of Others — item 3"
+        }
+       },
+       {
+        "id": "A616744A-02F4-50BB-8310-AD0AAF5E755D",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "2",
+         "Schema": "Mistrust of Others",
+         "question": "People usually tell the truth. (reverse-scored)",
+         "title": "Mistrust of Others — item 4"
+        }
+       },
+       {
+        "id": "62DDCD08-F1DC-55B8-B276-2DCF742814C1",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "3",
+         "Schema": "Social Isolation / Outsider",
+         "question": "I'm inherently different from everyone else.",
+         "title": "Social Isolation / Outsider — item 1"
+        }
+       },
+       {
+        "id": "07E6AC62-00DF-580E-80DB-9ADF485DEECF",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "4",
+         "Schema": "Social Isolation / Outsider",
+         "question": "I haven't met anyone that thinks like me.",
+         "title": "Social Isolation / Outsider — item 2"
+        }
+       },
+       {
+        "id": "06A0E685-5564-5649-9C93-20501CAF83CD",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "2",
+         "Schema": "Social Isolation / Outsider",
+         "question": "I am typically accepted by people. (reverse-scored)",
+         "title": "Social Isolation / Outsider — item 3"
+        }
+       },
+       {
+        "id": "320F14DC-BB7A-5D7B-B991-20394EA6F8BB",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "3",
+         "Schema": "Social Isolation / Outsider",
+         "question": "I am an outsider.",
+         "title": "Social Isolation / Outsider — item 4"
+        }
+       },
+       {
+        "id": "FF2357F0-03B7-59E0-A086-35CE18F6C0EE",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "2",
+         "Schema": "Defectiveness / Shame",
+         "question": "If people knew the real me, they wouldn't like me.",
+         "title": "Defectiveness / Shame — item 1"
+        }
+       },
+       {
+        "id": "FCE70342-33E4-5B1A-ACD5-9F6FA4308713",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "3",
+         "Schema": "Defectiveness / Shame",
+         "question": "I am inherently defective.",
+         "title": "Defectiveness / Shame — item 2"
+        }
+       },
+       {
+        "id": "512E8E74-A4A9-5FA8-96DE-1CF6485A90A4",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "1",
+         "Schema": "Defectiveness / Shame",
+         "question": "My flaws make me unlovable.",
+         "title": "Defectiveness / Shame — item 3"
+        }
+       },
+       {
+        "id": "B23C6BDF-55CA-5578-BD85-C9A9806A0A3F",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "2",
+         "Schema": "Defectiveness / Shame",
+         "question": "I have reasons to be ashamed of myself and my character.",
+         "title": "Defectiveness / Shame — item 4"
+        }
+       },
+       {
+        "id": "57AD9549-94DC-5423-9C50-7E732FF17670",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "1",
+         "Schema": "Dependence",
+         "question": "I cannot take care of myself, so I need others to take care of me.",
+         "title": "Dependence — item 1"
+        }
+       },
+       {
+        "id": "BDDB6677-7555-5A4F-AFE9-2821C1779D77",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "2",
+         "Schema": "Dependence",
+         "question": "I feel incapable of managing daily tasks without help from others.",
+         "title": "Dependence — item 2"
+        }
+       },
+       {
+        "id": "25E2C462-F844-506D-948D-E5E1FFE705C2",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "0",
+         "Schema": "Dependence",
+         "question": "I often worry about making decisions on my own and prefer someone else to make them for me.",
+         "title": "Dependence — item 3"
+        }
+       },
+       {
+        "id": "1523656A-677F-5688-8970-063A3D724C05",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "3",
+         "Schema": "Dependence",
+         "question": "I feel confident making decisions on my own. (reverse-scored)",
+         "title": "Dependence — item 4"
+        }
+       },
+       {
+        "id": "F63BBD6E-C06E-577A-9B9C-D0F4A740EBFE",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "2",
+         "Schema": "Vulnerability to Dangerous World",
+         "question": "I’m afraid of venturing too far because there are so many bad things happening.",
+         "title": "Vulnerability to Dangerous World — item 1"
+        }
+       },
+       {
+        "id": "36B6E2E8-A2FA-58DE-BF3E-DDF6D62B0E80",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "1",
+         "Schema": "Vulnerability to Dangerous World",
+         "question": "The world is safe for me. (reverse-scored)",
+         "title": "Vulnerability to Dangerous World — item 2"
+        }
+       },
+       {
+        "id": "CFD4B756-C12A-5C3A-B289-64D468B86316",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "1",
+         "Schema": "Vulnerability to Dangerous World",
+         "question": "The world is a dangerous and unforgiving place, and I worry it will spiral into catastrophe.",
+         "title": "Vulnerability to Dangerous World — item 3"
+        }
+       },
+       {
+        "id": "C8644886-792A-5D79-A424-DCA2D5BF9EA4",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "2",
+         "Schema": "Vulnerability to Dangerous World",
+         "question": "The world is a bad place and will harm me.",
+         "title": "Vulnerability to Dangerous World — item 4"
+        }
+       },
+       {
+        "id": "EA1A7C17-EFCF-5981-9396-F7E2250B8FF7",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "1",
+         "Schema": "Enmeshment / Diffuse Boundaries",
+         "question": "I am responsible for the emotions of the person I am closest to.",
+         "title": "Enmeshment / Diffuse Boundaries — item 1"
+        }
+       },
+       {
+        "id": "16DCAAC5-052F-5E8F-9938-FEBF833E2249",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "2",
+         "Schema": "Enmeshment / Diffuse Boundaries",
+         "question": "With those closest to me, I don’t know where my needs and emotions end and where theirs begin.",
+         "title": "Enmeshment / Diffuse Boundaries — item 2"
+        }
+       },
+       {
+        "id": "9C8CB200-D21D-54DA-B742-4C3D5C8FFCAC",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "0",
+         "Schema": "Enmeshment / Diffuse Boundaries",
+         "question": "I am so close to someone it feels like I have merged with them.",
+         "title": "Enmeshment / Diffuse Boundaries — item 3"
+        }
+       },
+       {
+        "id": "732B6DC7-7A52-50DE-843F-2DBF50BF2122",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "1",
+         "Schema": "Enmeshment / Diffuse Boundaries",
+         "question": "The needs of the person closest to me consume me.",
+         "title": "Enmeshment / Diffuse Boundaries — item 4"
+        }
+       },
+       {
+        "id": "073583AB-EBC5-543C-86A7-2D9668B464FC",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "2",
+         "Schema": "Failure / Achievement Inferiority",
+         "question": "Most other people have achieved more than me.",
+         "title": "Failure / Achievement Inferiority — item 1"
+        }
+       },
+       {
+        "id": "750BB165-FC99-559F-9F60-6F9DF444F3CF",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "1",
+         "Schema": "Failure / Achievement Inferiority",
+         "question": "I feel proud of my accomplishments. (reverse-scored)",
+         "title": "Failure / Achievement Inferiority — item 2"
+        }
+       },
+       {
+        "id": "38D49EE0-BFB2-510D-A9AE-25048528B589",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "1",
+         "Schema": "Failure / Achievement Inferiority",
+         "question": "I feel inferior when I think of the accomplishments of others.",
+         "title": "Failure / Achievement Inferiority — item 3"
+        }
+       },
+       {
+        "id": "ED5E5B50-8ACC-538D-98C6-ECA9BD5B7833",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "2",
+         "Schema": "Failure / Achievement Inferiority",
+         "question": "I compare my achievements with others and feel that I am not as successful.",
+         "title": "Failure / Achievement Inferiority — item 4"
+        }
+       },
+       {
+        "id": "FC557ED9-B041-56A5-AC9C-F0AAFAAA89F3",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "2",
+         "Schema": "Low Self-Efficacy / Weakness",
+         "question": "If a task is difficult, I'm unlikely to be able to accomplish it.",
+         "title": "Low Self-Efficacy / Weakness — item 1"
+        }
+       },
+       {
+        "id": "47992E2C-1A75-585B-87AE-3465AA3E304E",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "3",
+         "Schema": "Low Self-Efficacy / Weakness",
+         "question": "I can rarely come up with solutions to my own problems.",
+         "title": "Low Self-Efficacy / Weakness — item 2"
+        }
+       },
+       {
+        "id": "E4082025-7F7F-5081-AB86-1F0DD14EE136",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "3",
+         "Schema": "Low Self-Efficacy / Weakness",
+         "question": "I can handle anything that comes my way. (reverse-scored)",
+         "title": "Low Self-Efficacy / Weakness — item 3"
+        }
+       },
+       {
+        "id": "8244AD74-0614-5573-B5A0-1DD8EFF4E2AC",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "2",
+         "Schema": "Low Self-Efficacy / Weakness",
+         "question": "Most problems are too hard for me to deal with.",
+         "title": "Low Self-Efficacy / Weakness — item 4"
+        }
+       },
+       {
+        "id": "6951B2C5-1867-500D-A9A1-416932C584F1",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "0",
+         "Schema": "Entitlement / Specialness",
+         "question": "When I ask someone for something they should agree to it.",
+         "title": "Entitlement / Specialness — item 1"
+        }
+       },
+       {
+        "id": "DC6A7A16-9AF4-5DB3-B155-CF43FFFDACF9",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "1",
+         "Schema": "Entitlement / Specialness",
+         "question": "I am above the usual rules that others follow.",
+         "title": "Entitlement / Specialness — item 2"
+        }
+       },
+       {
+        "id": "64E231E0-CD9C-5899-AA57-2C4B91245A6B",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "0",
+         "Schema": "Entitlement / Specialness",
+         "question": "Other people should appreciate how unique I am.",
+         "title": "Entitlement / Specialness — item 3"
+        }
+       },
+       {
+        "id": "3C30E7E5-3426-58BD-BB38-2E42BE334BCD",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "0",
+         "Schema": "Entitlement / Specialness",
+         "question": "I deserve special privileges.",
+         "title": "Entitlement / Specialness — item 4"
+        }
+       },
+       {
+        "id": "9D5184E3-D445-5E2F-A35C-B49E954E08B8",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "3",
+         "Schema": "Subjugation / Submission to Others",
+         "question": "Other people know better than I do.",
+         "title": "Subjugation / Submission to Others — item 1"
+        }
+       },
+       {
+        "id": "5B7D0254-69DE-5B2B-B48D-CDC635574C96",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "4",
+         "Schema": "Subjugation / Submission to Others",
+         "question": "I should always do as I'm told.",
+         "title": "Subjugation / Submission to Others — item 2"
+        }
+       },
+       {
+        "id": "963AFAFF-CC20-52F3-B45C-F75FE159675D",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "2",
+         "Schema": "Subjugation / Submission to Others",
+         "question": "Other people know what is best for me.",
+         "title": "Subjugation / Submission to Others — item 3"
+        }
+       },
+       {
+        "id": "E6394772-E7BE-5656-989C-B5061E1639D6",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "3",
+         "Schema": "Subjugation / Submission to Others",
+         "question": "I feel like I have to let others take control in relationships.",
+         "title": "Subjugation / Submission to Others — item 4"
+        }
+       },
+       {
+        "id": "01799A74-3AFE-58EE-8150-EF02976A3D95",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "4",
+         "Schema": "Self-Sacrifice",
+         "question": "I always prioritise others no matter what's going on for me.",
+         "title": "Self-Sacrifice — item 1"
+        }
+       },
+       {
+        "id": "8A24A01D-331F-57E9-8761-9FED9B5022AC",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "4",
+         "Schema": "Self-Sacrifice",
+         "question": "I believe it is my duty to listen to other people's problems.",
+         "title": "Self-Sacrifice — item 2"
+        }
+       },
+       {
+        "id": "8AD386EC-C75E-5C9F-90AB-75889FA861E9",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "1",
+         "Schema": "Self-Sacrifice",
+         "question": "My needs are as important as other people's needs. (reverse-scored)",
+         "title": "Self-Sacrifice — item 3"
+        }
+       },
+       {
+        "id": "6CC4F54B-2592-5394-B772-C46BD425A000",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "4",
+         "Schema": "Self-Sacrifice",
+         "question": "No matter how much I give to others, I can never give enough.",
+         "title": "Self-Sacrifice — item 4"
+        }
+       },
+       {
+        "id": "88B70860-AF53-5C7B-8893-5E045CEA92E4",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "3",
+         "Schema": "Approval-Seeking / Excessive Need to be Liked",
+         "question": "Gaining the approval of others is often more important to me than following my own desires.",
+         "title": "Approval-Seeking / Excessive Need to be Liked — item 1"
+        }
+       },
+       {
+        "id": "D5449B07-8401-5864-AC3B-E32231F12EF7",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "4",
+         "Schema": "Approval-Seeking / Excessive Need to be Liked",
+         "question": "I want people to like me, so I would tend to agree with people even if I know they are factually wrong.",
+         "title": "Approval-Seeking / Excessive Need to be Liked — item 2"
+        }
+       },
+       {
+        "id": "5E2B5E27-9CAA-5FBC-92B7-024D390BA1EB",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "2",
+         "Schema": "Approval-Seeking / Excessive Need to be Liked",
+         "question": "Even if I don’t like someone, I still strongly desire for them to like me.",
+         "title": "Approval-Seeking / Excessive Need to be Liked — item 3"
+        }
+       },
+       {
+        "id": "0C14C8A7-BE4F-5398-B704-A2D5DA5E5EFD",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "3",
+         "Schema": "Approval-Seeking / Excessive Need to be Liked",
+         "question": "I find it hard to make a decision unless I know what other people think.",
+         "title": "Approval-Seeking / Excessive Need to be Liked — item 4"
+        }
+       },
+       {
+        "id": "B9701DAF-3D36-5950-86C3-7E8C4D50060A",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "2",
+         "Schema": "Pessimism / Negativity",
+         "question": "Things almost always go wrong for me.",
+         "title": "Pessimism / Negativity — item 1"
+        }
+       },
+       {
+        "id": "72A14D81-DA01-5DA4-8BEB-7423DA8AD18A",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "1",
+         "Schema": "Pessimism / Negativity",
+         "question": "In uncertain times, I usually expect the best. (reverse-scored)",
+         "title": "Pessimism / Negativity — item 2"
+        }
+       },
+       {
+        "id": "3E0F499A-0582-596C-8FD2-B2600C9F415B",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "1",
+         "Schema": "Pessimism / Negativity",
+         "question": "Things inevitably don't go my way, so I prefer to expect the worst to avoid disappointment.",
+         "title": "Pessimism / Negativity — item 3"
+        }
+       },
+       {
+        "id": "935A2878-9BAC-5092-B729-52FF3DE9C0D4",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "2",
+         "Schema": "Pessimism / Negativity",
+         "question": "I am pessimistic about the future.",
+         "title": "Pessimism / Negativity — item 4"
+        }
+       },
+       {
+        "id": "67011307-A8DC-5B8F-99BE-BADAE952D867",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "1",
+         "Schema": "Emotional Inhibition",
+         "question": "Tuning into my emotions is helpful. (reverse-scored)",
+         "title": "Emotional Inhibition — item 1"
+        }
+       },
+       {
+        "id": "226EEE24-D470-5369-8534-1C1C7C3D0642",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "4",
+         "Schema": "Emotional Inhibition",
+         "question": "My emotions do more harm than good.",
+         "title": "Emotional Inhibition — item 2"
+        }
+       },
+       {
+        "id": "62C32A6F-6015-55AB-A40B-78F5F0B84E2A",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "2",
+         "Schema": "Emotional Inhibition",
+         "question": "Emotions are not useful, so I need to ignore them.",
+         "title": "Emotional Inhibition — item 3"
+        }
+       },
+       {
+        "id": "E430ED05-A673-5DE6-B41A-6B4C56BE5692",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "3",
+         "Schema": "Emotional Inhibition",
+         "question": "It is dangerous to feel emotions too strongly.",
+         "title": "Emotional Inhibition — item 4"
+        }
+       },
+       {
+        "id": "281E4809-FD40-5340-BB51-F91B764A52B4",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "1",
+         "Schema": "Unrelenting Standards",
+         "question": "If I make a mistake, I can let it go easily. (reverse-scored)",
+         "title": "Unrelenting Standards — item 1"
+        }
+       },
+       {
+        "id": "D77DA545-7A63-5E94-BED3-C1CE75EB4889",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "4",
+         "Schema": "Unrelenting Standards",
+         "question": "Achieving high standards is more important than my own happiness.",
+         "title": "Unrelenting Standards — item 2"
+        }
+       },
+       {
+        "id": "33010553-10C2-5EC7-996C-B16203326885",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "2",
+         "Schema": "Unrelenting Standards",
+         "question": "I should always perform at an extremely high level.",
+         "title": "Unrelenting Standards — item 3"
+        }
+       },
+       {
+        "id": "97823F75-5BFC-5978-B947-F65B8BC96A47",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "1",
+         "Schema": "Unrelenting Standards",
+         "question": "It is ok for me not to be a high performer. (reverse-scored)",
+         "title": "Unrelenting Standards — item 4"
+        }
+       },
+       {
+        "id": "DC188AD2-A54F-53D2-996C-7C4B385AEDBA",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "3",
+         "Schema": "Punitiveness / Unforgiving of Self",
+         "question": "If something goes wrong, I shouldn't get away with it.",
+         "title": "Punitiveness / Unforgiving of Self — item 1"
+        }
+       },
+       {
+        "id": "60EDA975-2777-5817-B9A3-AFEC30990479",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "0",
+         "Schema": "Punitiveness / Unforgiving of Self",
+         "question": "I try to be compassionate and understanding to myself when I make a mistake. (reverse-scored)",
+         "title": "Punitiveness / Unforgiving of Self — item 2"
+        }
+       },
+       {
+        "id": "B17AC0D0-D547-53B1-9D5C-E48688F336D1",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "2",
+         "Schema": "Punitiveness / Unforgiving of Self",
+         "question": "If I fail, I should suffer the consequences.",
+         "title": "Punitiveness / Unforgiving of Self — item 3"
+        }
+       },
+       {
+        "id": "DA5E8F62-9B58-5847-9672-3DAED7D86E47",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "3",
+         "Schema": "Punitiveness / Unforgiving of Self",
+         "question": "It doesn't matter how small a mistake I make is, I deserve to be punished for it.",
+         "title": "Punitiveness / Unforgiving of Self — item 4"
+        }
+       },
+       {
+        "id": "338809FB-B821-54A1-BAFE-014765D8AA01",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "1",
+         "Schema": "Punitiveness / Unforgiving of Others",
+         "question": "People should be held to account for their failings.",
+         "title": "Punitiveness / Unforgiving of Others — item 1"
+        }
+       },
+       {
+        "id": "E1D4F7F8-305D-55B4-8208-2A1FA62A938E",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "2",
+         "Schema": "Punitiveness / Unforgiving of Others",
+         "question": "I try to be compassionate and understanding to others when they make a mistake. (reverse-scored)",
+         "title": "Punitiveness / Unforgiving of Others — item 2"
+        }
+       },
+       {
+        "id": "214A6B22-1BE8-5448-B792-2AD783881820",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "0",
+         "Schema": "Punitiveness / Unforgiving of Others",
+         "question": "If someone fails, they should face the consequences.",
+         "title": "Punitiveness / Unforgiving of Others — item 3"
+        }
+       },
+       {
+        "id": "30F1E46E-377C-5AAD-994D-3C301377826A",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "Response": "1",
+         "Schema": "Punitiveness / Unforgiving of Others",
+         "question": "People deserve to be disciplined for their mistakes.",
+         "title": "Punitiveness / Unforgiving of Others — item 4"
+        }
+       }
+      ],
+      "title": "MSS-YSQ Questionnaire",
+      "viewMode": "kanban"
+     },
+     "kind": "tracker"
+    },
+    "iconSystemName": "brain.head.profile",
+    "id": "tracker-1",
+    "isLocked": false,
+    "name": "MSS-YSQ Items",
+    "summary": "MSS-YSQ questionnaire host (tracker-1). 76 items, 4 per schema across 19 schemas, each rated 0–4 (Strongly Disagree 0 … Strongly Agree 4). Feeds calculator-2 (Schema Scores) via Schema + Response. Demo answers are synthetic (a fictional profile); clear them and re-answer via /complete-questionnaire. Reverse-scored items store the inverted answer."
+   },
+   {
+    "body": {
+     "data": {
+      "extraCharts": [],
+      "rows": [
+       {
+        "id": "A2AD84D7-2AD6-5B7B-BB4B-9BC586714AFE",
+        "key": "disconnection_rejection",
+        "kind": {
+         "type": "header"
+        },
+        "name": "Disconnection & Rejection"
+       },
+       {
+        "id": "62A3C5DF-136F-5B86-ABA0-4846E241F1C4",
+        "key": "abandonment",
+        "name": "Abandonment / Anxious Attachment",
+        "kind": {
+         "type": "aggregate",
+         "aggregate": {
+          "fieldName": "Response",
+          "filter": {
+           "Schema": "Abandonment / Anxious Attachment"
+          },
+          "reduce": "avg",
+          "sourceComponentId": "tracker-1"
+         }
+        }
+       },
+       {
+        "id": "4F80FCD7-239D-5E18-BDCF-D4A6F356200A",
+        "key": "emotional_deprivation",
+        "name": "Emotional Deprivation",
+        "kind": {
+         "type": "aggregate",
+         "aggregate": {
+          "fieldName": "Response",
+          "filter": {
+           "Schema": "Emotional Deprivation"
+          },
+          "reduce": "avg",
+          "sourceComponentId": "tracker-1"
+         }
+        }
+       },
+       {
+        "id": "F023DF6A-8788-5290-9168-E805FD282604",
+        "key": "mistrust",
+        "name": "Mistrust of Others",
+        "kind": {
+         "type": "aggregate",
+         "aggregate": {
+          "fieldName": "Response",
+          "filter": {
+           "Schema": "Mistrust of Others"
+          },
+          "reduce": "avg",
+          "sourceComponentId": "tracker-1"
+         }
+        }
+       },
+       {
+        "id": "30D32921-4954-5F81-88C9-AB4DB9F8542C",
+        "key": "social_isolation",
+        "name": "Social Isolation / Outsider",
+        "kind": {
+         "type": "aggregate",
+         "aggregate": {
+          "fieldName": "Response",
+          "filter": {
+           "Schema": "Social Isolation / Outsider"
+          },
+          "reduce": "avg",
+          "sourceComponentId": "tracker-1"
+         }
+        }
+       },
+       {
+        "id": "81A8D68B-6FF8-5227-A652-AD640DBBEC14",
+        "key": "defectiveness_shame",
+        "name": "Defectiveness / Shame",
+        "kind": {
+         "type": "aggregate",
+         "aggregate": {
+          "fieldName": "Response",
+          "filter": {
+           "Schema": "Defectiveness / Shame"
+          },
+          "reduce": "avg",
+          "sourceComponentId": "tracker-1"
+         }
+        }
+       },
+       {
+        "id": "0F3BDB0D-14E5-544E-9BFF-26858D55178E",
+        "key": "impaired_autonomy_performance",
+        "kind": {
+         "type": "header"
+        },
+        "name": "Impaired Autonomy & Performance"
+       },
+       {
+        "id": "9EA71998-FCDB-53E8-AE9B-B28F62929443",
+        "key": "dependence",
+        "name": "Dependence",
+        "kind": {
+         "type": "aggregate",
+         "aggregate": {
+          "fieldName": "Response",
+          "filter": {
+           "Schema": "Dependence"
+          },
+          "reduce": "avg",
+          "sourceComponentId": "tracker-1"
+         }
+        }
+       },
+       {
+        "id": "1232F32C-324F-5330-B6E6-066DC04FDF1B",
+        "key": "vulnerability",
+        "name": "Vulnerability to Dangerous World",
+        "kind": {
+         "type": "aggregate",
+         "aggregate": {
+          "fieldName": "Response",
+          "filter": {
+           "Schema": "Vulnerability to Dangerous World"
+          },
+          "reduce": "avg",
+          "sourceComponentId": "tracker-1"
+         }
+        }
+       },
+       {
+        "id": "31EA485A-9DA2-5042-8840-B009DCCD9FD1",
+        "key": "enmeshment",
+        "name": "Enmeshment / Diffuse Boundaries",
+        "kind": {
+         "type": "aggregate",
+         "aggregate": {
+          "fieldName": "Response",
+          "filter": {
+           "Schema": "Enmeshment / Diffuse Boundaries"
+          },
+          "reduce": "avg",
+          "sourceComponentId": "tracker-1"
+         }
+        }
+       },
+       {
+        "id": "BEB57CE7-0007-5D5F-B3F5-231D29FEB41F",
+        "key": "failure",
+        "name": "Failure / Achievement Inferiority",
+        "kind": {
+         "type": "aggregate",
+         "aggregate": {
+          "fieldName": "Response",
+          "filter": {
+           "Schema": "Failure / Achievement Inferiority"
+          },
+          "reduce": "avg",
+          "sourceComponentId": "tracker-1"
+         }
+        }
+       },
+       {
+        "id": "182C6E67-1B39-5069-9B6B-6D7E9E3D908F",
+        "key": "low_self_efficacy",
+        "name": "Low Self-Efficacy / Weakness",
+        "kind": {
+         "type": "aggregate",
+         "aggregate": {
+          "fieldName": "Response",
+          "filter": {
+           "Schema": "Low Self-Efficacy / Weakness"
+          },
+          "reduce": "avg",
+          "sourceComponentId": "tracker-1"
+         }
+        }
+       },
+       {
+        "id": "0F3BDB0D-14E5-544E-9BFF-26858D55178E",
+        "key": "impaired_limits",
+        "kind": {
+         "type": "header"
+        },
+        "name": "Impaired Limits"
+       },
+       {
+        "id": "7A85429F-A1DF-57BB-B74F-4DE43499C256",
+        "key": "entitlement",
+        "name": "Entitlement / Specialness",
+        "kind": {
+         "type": "aggregate",
+         "aggregate": {
+          "fieldName": "Response",
+          "filter": {
+           "Schema": "Entitlement / Specialness"
+          },
+          "reduce": "avg",
+          "sourceComponentId": "tracker-1"
+         }
+        }
+       },
+       {
+        "id": "4F18F390-168E-5756-956B-E83F319A87A8",
+        "key": "other-directedness",
+        "kind": {
+         "type": "header"
+        },
+        "name": "Other-Directedness"
+       },
+       {
+        "id": "171C35BD-738E-5E3C-8038-CDC8D547051E",
+        "key": "subjugation",
+        "name": "Subjugation / Submission to Others",
+        "kind": {
+         "type": "aggregate",
+         "aggregate": {
+          "fieldName": "Response",
+          "filter": {
+           "Schema": "Subjugation / Submission to Others"
+          },
+          "reduce": "avg",
+          "sourceComponentId": "tracker-1"
+         }
+        }
+       },
+       {
+        "id": "5F04B7FB-30CD-58A3-A264-F30B41F97726",
+        "key": "self_sacrifice",
+        "name": "Self-Sacrifice",
+        "kind": {
+         "type": "aggregate",
+         "aggregate": {
+          "fieldName": "Response",
+          "filter": {
+           "Schema": "Self-Sacrifice"
+          },
+          "reduce": "avg",
+          "sourceComponentId": "tracker-1"
+         }
+        }
+       },
+       {
+        "id": "44240A4A-9281-5CD5-A186-39D0CB23700C",
+        "key": "approval_seeking",
+        "name": "Approval-Seeking / Excessive Need to be Liked",
+        "kind": {
+         "type": "aggregate",
+         "aggregate": {
+          "fieldName": "Response",
+          "filter": {
+           "Schema": "Approval-Seeking / Excessive Need to be Liked"
+          },
+          "reduce": "avg",
+          "sourceComponentId": "tracker-1"
+         }
+        }
+       },
+       {
+        "id": "6EF88456-5AD9-511C-BC3C-D9258D61AA6C",
+        "key": "overvigilance_inhibition",
+        "kind": {
+         "type": "header"
+        },
+        "name": "Overvigilance & Inhibition"
+       },
+       {
+        "id": "2EEA42A3-204D-5F01-9A85-B01526F5F279",
+        "key": "pessimism",
+        "name": "Pessimism / Negativity",
+        "kind": {
+         "type": "aggregate",
+         "aggregate": {
+          "fieldName": "Response",
+          "filter": {
+           "Schema": "Pessimism / Negativity"
+          },
+          "reduce": "avg",
+          "sourceComponentId": "tracker-1"
+         }
+        }
+       },
+       {
+        "id": "6172805C-9094-5B15-8AC2-2486BC473947",
+        "key": "emotional_inhibition",
+        "name": "Emotional Inhibition",
+        "kind": {
+         "type": "aggregate",
+         "aggregate": {
+          "fieldName": "Response",
+          "filter": {
+           "Schema": "Emotional Inhibition"
+          },
+          "reduce": "avg",
+          "sourceComponentId": "tracker-1"
+         }
+        }
+       },
+       {
+        "id": "AADFC68F-9B7A-58DD-BEAE-B0FC6E4FA054",
+        "key": "unrelenting_standards",
+        "name": "Unrelenting Standards",
+        "kind": {
+         "type": "aggregate",
+         "aggregate": {
+          "fieldName": "Response",
+          "filter": {
+           "Schema": "Unrelenting Standards"
+          },
+          "reduce": "avg",
+          "sourceComponentId": "tracker-1"
+         }
+        }
+       },
+       {
+        "id": "3A03A0C1-937B-5663-89E3-F63A0BDEFE30",
+        "key": "punitiveness_self",
+        "name": "Punitiveness / Unforgiving of Self",
+        "kind": {
+         "type": "aggregate",
+         "aggregate": {
+          "fieldName": "Response",
+          "filter": {
+           "Schema": "Punitiveness / Unforgiving of Self"
+          },
+          "reduce": "avg",
+          "sourceComponentId": "tracker-1"
+         }
+        }
+       },
+       {
+        "id": "032223CA-B4FD-5AF9-8D6A-D666293DC3FB",
+        "key": "punitiveness_other",
+        "name": "Punitiveness / Unforgiving of Others",
+        "kind": {
+         "type": "aggregate",
+         "aggregate": {
+          "fieldName": "Response",
+          "filter": {
+           "Schema": "Punitiveness / Unforgiving of Others"
+          },
+          "reduce": "avg",
+          "sourceComponentId": "tracker-1"
+         }
+        }
+       }
+      ],
+      "title": "Schema Scores"
+     },
+     "kind": "calculator"
+    },
+    "iconSystemName": "function",
+    "id": "calculator-2",
+    "isLocked": false,
+    "name": "Schema Scores",
+    "summary": "Auto-scored from the MSS-YSQ tracker. Each row is that schema's MEAN item response (0–4). Rough guide: ≥2.5 moderate; a schema is 'strong' when above the ~90th percentile for a clinical sample (varies by schema, ≈2.75–3.75). Updates live. Reverse-scored items are stored pre-inverted so the mean is directionally correct. Not a diagnosis — see the disclaimer."
+   },
+   {
+    "body": {
+     "data": {
+      "items": [
+       {
+        "done": false,
+        "id": "6C0FD97D-41B7-4BE9-954E-6F86506FD9E1",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "text": "### Phase 1: Understanding"
+       },
+       {
+        "done": false,
+        "id": "C1299B3D-CB44-4F1A-AF01-CE2253C06117",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "text": "Review my top 3–5 schemas and what they mean"
+       },
+       {
+        "done": false,
+        "id": "A6A1244C-00C5-4145-8EC4-C57571C003E6",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "text": "Map which domain my high scores cluster in"
+       },
+       {
+        "done": false,
+        "id": "79A34F38-1BA7-4136-AA9F-ED29B94E738A",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "text": "Identify my go-to coping style: surrender, avoidance, overcompensation"
+       },
+       {
+        "done": false,
+        "id": "78C9644D-0ECA-41E7-87E0-A054A388B07C",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "text": "Name my most frequent mode (Detached Protector, Punitive Parent, Vulnerable Child...)"
+       },
+       {
+        "done": false,
+        "id": "B3B2F9B5-D4DB-4053-9D7F-9E7AA9258E40",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "text": "Read my schema interpretations from the Calculator and Research doc"
+       },
+       {
+        "done": false,
+        "id": "2122D194-2CCD-40C0-BA69-13D6BFEBDAFC",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "text": "### Phase 2: Awareness"
+       },
+       {
+        "done": false,
+        "id": "99AE3E88-1E69-4E22-A8FD-6477C882F21F",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "text": "Complete my first Schema Mode Observation entry"
+       },
+       {
+        "done": false,
+        "id": "36E6E05B-68E7-4B8A-B2D1-981F7F256538",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "text": "Complete my first Schema Diary entry"
+       },
+       {
+        "done": false,
+        "id": "9EEE1F00-CFB8-490A-B29D-E67653857590",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "text": "Identify 3 common triggers for my top schema"
+       },
+       {
+        "done": false,
+        "id": "D9B500C7-C77A-49C3-A704-0AD969AA878A",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "text": "Notice body sensations when my schema activates"
+       },
+       {
+        "done": false,
+        "id": "6401B3D3-B460-4A47-A0AD-1ED1DE1B9022",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "text": "Write a journal response: Describe a moment when a schema was triggered"
+       },
+       {
+        "done": false,
+        "id": "AC2065F6-2319-404B-856A-51D65FA6095A",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "text": "Identify people/situations that consistently trigger my schemas"
+       },
+       {
+        "done": false,
+        "id": "8BCA1384-B125-430E-96B0-00CBA1C81914",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "text": "### Phase 3: Working"
+       },
+       {
+        "done": false,
+        "id": "83196870-1254-47AC-857F-F87755EB934A",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "text": "Write a schema flashcard challenging my core belief"
+       },
+       {
+        "done": false,
+        "id": "F23C1644-5BAE-4F12-82D4-B274275947B5",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "text": "Do a chair dialogue: Vulnerable Child ↔ Punitive Parent"
+       },
+       {
+        "done": false,
+        "id": "4B878F13-CF3E-4689-BD06-652CDA082865",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "text": "Journal: Imagine standing next to my child self during a painful moment"
+       },
+       {
+        "done": false,
+        "id": "8591D490-9ACB-4FDF-B895-3D16FE551746",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "text": "Write: One small act of self-care addressing my dominant schema's wound"
+       },
+       {
+        "done": false,
+        "id": "0429540A-46EB-4597-B0B9-3DB9FFBF5FDD",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "text": "Map one schema origin: What childhood experience created this pattern?"
+       },
+       {
+        "done": false,
+        "id": "4D9DFAA9-4297-4CA2-8F42-A46351C25F04",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "text": "### Phase 4: Integration"
+       },
+       {
+        "done": false,
+        "id": "40A4CC2A-22FA-4B03-A91A-58031A225E04",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "text": "Strengthen my Healthy Adult voice — practice one assertion today"
+       },
+       {
+        "done": false,
+        "id": "248BD325-04FA-4849-B10F-689ADA297753",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "text": "Practice a boundary related to a subjugation/self-sacrifice schema"
+       },
+       {
+        "done": false,
+        "id": "4E49E558-D154-4DB9-AA00-B4D1D13A867F",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "text": "Write: What I learned about my coping patterns this week"
+       },
+       {
+        "done": false,
+        "id": "906AD332-0053-4F68-B56F-4E4E5C73A0A1",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "text": "Review Schema Diary entries and spot patterns"
+       },
+       {
+        "done": false,
+        "id": "0FDC2559-7B82-4CCD-A8A0-479C664832A0",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "text": "Reflect: How did I respond differently this week? Celebrate progress."
+       }
+      ],
+      "title": "Schema Work Exercises"
+     },
+     "kind": "checklist"
+    },
+    "iconSystemName": "checkmark.circle",
+    "id": "checklist-1",
+    "isLocked": false,
+    "name": "Schema Work Exercises",
+    "summary": "Phased schema work: Understanding → Awareness → Working → Integration. 23 exercises from evidence-based schema therapy."
+   },
+   {
+    "body": {
+     "data": {
+      "fields": [
+       {
+        "label": "Schema",
+        "name": "schema",
+        "options": [
+         "Abandonment / Anxious Attachment",
+         "Emotional Deprivation",
+         "Mistrust of Others",
+         "Social Isolation / Outsider",
+         "Defectiveness / Shame",
+         "Dependence",
+         "Vulnerability to Dangerous World",
+         "Enmeshment / Diffuse Boundaries",
+         "Failure / Achievement Inferiority",
+         "Low Self-Efficacy / Weakness",
+         "Entitlement / Specialness",
+         "Subjugation / Submission to Others",
+         "Self-Sacrifice",
+         "Approval-Seeking / Excessive Need to be Liked",
+         "Pessimism / Negativity",
+         "Emotional Inhibition",
+         "Unrelenting Standards",
+         "Punitiveness / Unforgiving of Self",
+         "Punitiveness / Unforgiving of Others"
+        ],
+        "type": "select"
+       },
+       {
+        "label": "Childhood Memory / Origin",
+        "name": "childhood_memory",
+        "type": "text"
+       },
+       {
+        "label": "Parent / Caregiver Role",
+        "name": "caregiver_role",
+        "type": "text"
+       },
+       {
+        "label": "Present-Day Trigger Pattern",
+        "name": "present_day_trigger",
+        "type": "text"
+       },
+       {
+        "label": "Relationship Pattern",
+        "name": "relationship_pattern",
+        "type": "text"
+       },
+       {
+        "label": "Insight — What I Understand Now",
+        "name": "insight",
+        "type": "text"
+       }
+      ],
+      "filter": {},
+      "items": [],
+      "title": "Schema Origins & Links",
+      "viewMode": "grid"
+     },
+     "kind": "tracker"
+    },
+    "iconSystemName": "sparkles",
+    "id": "tracker-3",
+    "isLocked": false,
+    "name": "Schema Origins & Links",
+    "summary": "Connect schemas to their childhood origins, present-day triggers, relationship patterns, and key insights."
+   },
+   {
+    "body": {
+     "data": {
+      "kind": "bar",
+      "series": [
+       {
+        "id": "6DE3320B-64DF-59C8-9EE0-773524CF63E4",
+        "source": {
+         "type": "calculatorRows",
+         "componentId": "calculator-2",
+         "keys": [
+          "abandonment",
+          "emotional_deprivation",
+          "mistrust",
+          "social_isolation",
+          "defectiveness_shame"
+         ]
+        }
+       }
+      ],
+      "title": "Disconnection & Rejection"
+     },
+     "kind": "chart"
+    },
+    "iconSystemName": "chart.pie",
+    "id": "chart-6",
+    "isLocked": false,
+    "name": "Disconnection & Rejection"
+   },
+   {
+    "body": {
+     "data": {
+      "kind": "bar",
+      "series": [
+       {
+        "id": "41F02931-001D-59D9-8DCB-A795A9A213EF",
+        "source": {
+         "type": "calculatorRows",
+         "componentId": "calculator-2",
+         "keys": [
+          "dependence",
+          "vulnerability",
+          "enmeshment",
+          "failure",
+          "low_self_efficacy"
+         ]
+        }
+       }
+      ],
+      "title": "Impaired Autonomy & Performance"
+     },
+     "kind": "chart"
+    },
+    "iconSystemName": "chart.pie",
+    "id": "chart-7",
+    "isLocked": false,
+    "name": "Impaired Autonomy & Performance"
+   },
+   {
+    "body": {
+     "data": {
+      "kind": "bar",
+      "series": [
+       {
+        "id": "D6E901E2-DA65-5518-996C-23322E61E834",
+        "source": {
+         "type": "calculatorRows",
+         "componentId": "calculator-2",
+         "keys": [
+          "entitlement",
+          "subjugation",
+          "self_sacrifice",
+          "approval_seeking"
+         ]
+        }
+       }
+      ],
+      "title": "Impaired Limits & Other-Directedness"
+     },
+     "kind": "chart"
+    },
+    "iconSystemName": "chart.pie",
+    "id": "chart-8",
+    "isLocked": false,
+    "name": "Impaired Limits & Other-Directedness"
+   },
+   {
+    "body": {
+     "data": {
+      "kind": "bar",
+      "series": [
+       {
+        "id": "46896B1C-FA28-503E-AD1D-07EFD6C9C707",
+        "source": {
+         "type": "calculatorRows",
+         "componentId": "calculator-2",
+         "keys": [
+          "pessimism",
+          "emotional_inhibition",
+          "unrelenting_standards",
+          "punitiveness_self",
+          "punitiveness_other"
+         ]
+        }
+       }
+      ],
+      "title": "Overvigilance & Inhibition"
+     },
+     "kind": "chart"
+    },
+    "iconSystemName": "chart.pie",
+    "id": "chart-9",
+    "isLocked": false,
+    "name": "Overvigilance & Inhibition"
+   },
+   {
+    "body": {
+     "data": {
+      "columnField": "schema",
+      "fields": [
+       {
+        "label": "Date & Time",
+        "name": "date",
+        "type": "text"
+       },
+       {
+        "label": "Schema Triggered",
+        "name": "schema",
+        "options": [
+         "Subjugation / Submission to Others",
+         "Self-Sacrifice",
+         "Emotional Deprivation",
+         "Unrelenting Standards",
+         "Social Isolation / Outsider",
+         "Abandonment / Anxious Attachment",
+         "Defectiveness / Shame",
+         "Other"
+        ],
+        "type": "select"
+       },
+       {
+        "label": "Trigger Event",
+        "name": "trigger",
+        "type": "text"
+       },
+       {
+        "label": "Mode Activated",
+        "name": "mode",
+        "options": [
+         "Vulnerable Child",
+         "Punitive Parent",
+         "Detached Protector",
+         "Compliant Surrender",
+         "Self-Damaging Avoider",
+         "Bully/Attack",
+         "Healthy Adult",
+         "Angry Child"
+        ],
+        "type": "select"
+       },
+       {
+        "label": "Coping Style",
+        "name": "coping_style",
+        "options": [
+         "Surrender",
+         "Avoidance",
+         "Overcompensation"
+        ],
+        "type": "select"
+       },
+       {
+        "label": "Emotions & Body Sensations",
+        "name": "emotions",
+        "type": "text"
+       },
+       {
+        "label": "Healthier Response / Alternative",
+        "name": "healthier_response",
+        "type": "text"
+       }
+      ],
+      "filter": {},
+      "items": [
+       {
+        "id": "B9C2999B-B175-54D2-B39A-B038B225FABE",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "date": "2026-01-05",
+         "schema": "Self-Sacrifice",
+         "trigger": "(demo) Asked to cover a coworker's shift again",
+         "mode": "Compliant Surrender",
+         "coping_style": "Surrender",
+         "emotions": "Resentment, then guilt for feeling it; tight chest.",
+         "healthier_response": "Notice the urge to over-give; practise a calm 'I can't this time.'"
+        }
+       },
+       {
+        "id": "CEEFAA34-77C5-5E8E-9E15-7A735F7E9BC0",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "date": "2026-01-09",
+         "schema": "Social Isolation / Outsider",
+         "trigger": "(demo) Group lunch invite",
+         "mode": "Detached Protector",
+         "coping_style": "Avoidance",
+         "emotions": "Wanted to make an excuse and stay in.",
+         "healthier_response": "Accept one low-stakes invite; treat 'I don't belong' as a thought, not a fact."
+        }
+       },
+       {
+        "id": "25341AD1-77D2-55FD-84BF-B5C97E27A913",
+        "linkedItems": [],
+        "schemaVersion": 1,
+        "values": {
+         "date": "2026-01-14",
+         "schema": "Unrelenting Standards",
+         "trigger": "(demo) Small typo in a sent email",
+         "mode": "Punitive Parent",
+         "coping_style": "Overcompensation",
+         "emotions": "Harsh self-criticism, replayed it for an hour.",
+         "healthier_response": "Ask: would I judge a friend this way? Aim for 'good enough.'"
+        }
+       }
+      ],
+      "title": "Schema Diary & Mode Mapping",
+      "viewMode": "grid"
+     },
+     "kind": "tracker"
+    },
+    "iconSystemName": "list.bullet.rectangle",
+    "id": "tracker-4",
+    "isLocked": false,
+    "name": "Schema Diary & Mode Mapping",
+    "summary": "Schema Diary & Mode Mapping — log when a schema activates, which mode takes over, your coping response, and a healthier alternative. Sample entries are fictional demo data."
+   }
+  ],
+  "createdAt": "2026-07-10T14:46:10Z",
+  "currentThreadId": "5A7B2B4B-8DC3-46F1-B821-46CF864CF117",
+  "iconSystemName": "brain.head.profile",
+  "id": "59B2DBBA-7A26-465E-AC69-83D564C56E2E",
+  "name": "Maladaptive Mechanisms",
+  "settings": {
+   "llm.model": {
+    "type": "string",
+    "value": "qwen3.6-35b-a3b"
+   },
+   "llm.provider": {
+    "type": "string",
+    "value": "openrouter"
+   }
+  },
+  "threads": [
+   {
+    "createdAt": "2026-07-24T09:43:50Z",
+    "id": "5A7B2B4B-8DC3-46F1-B821-46CF864CF117",
+    "title": ""
+   }
+  ],
+  "typeId": "tracker"
+ },
+ "header": {
+  "format": "pupa.myapp.bundle",
+  "formatVersion": 1,
+  "appVersion": "0.0.212",
+  "exportedAt": "2026-01-15T00:00:00Z",
+  "includedMemories": true,
+  "includedRecords": true
+ },
+ "memories": [
+  {
+   "content": "# Maladaptive Mechanisms\n\n**Type:** tracker\n\n## Role\nThis MyApp helps the user explore their maladaptive schemas using the **MSS-YSQ**\n(Maladaptive Schema Scale – Young Schema Aligned, by NovoPsych) — a validated,\nopenly-licensed alternative to the copyrighted YSQ. It hosts a 76-item\nquestionnaire tracker, a calculator (`calculator-2`) that scores 19 schemas by\nmean response, domain charts, a schema diary, and follow-up work.\n\n## What the agent does\n- **Run the questionnaire** — `/complete-questionnaire`: guides the user through\n  the 76 items in batches, one-tap 0–4 answers, resumable.\n- **Mentor** — `/mentor-me`: reads app state + the interpretation guide and\n  suggests a tailored next step.\n- **Ground advice in the guide** — `pupa/research/mss-ysq-interpretation-guide.md`\n  holds scoring bands, domains, follow-up exercises, and caveats. Always frame as\n  self-understanding, **never diagnosis** — see `pupa/DISCLAIMER.md`.\n\n## Attribution & license\nThe MSS-YSQ items and scoring are © NovoPsych, used under their Open Source\nLicence (CC BY-NC-SA). See `pupa/LICENSE-NOTICE.md`. Keep that notice with the app.\n\n## Canvas mechanics\nCanvas hosts COMPONENTS (sub-canvases, ids like \"tracker-1\") — pass `componentId`\nto target one. Per-kind tools unlock only after `addComponent` introduces that\nkind. LINKING — linkItem / unlinkItem attach refs between any two items.\n",
+   "path": "pupa/AGENTS.md"
+  },
+  {
+   "content": "---\ndescription: Skills, subagents and multi-agent slack rooms\nwhen_to_use: when creating skills or subagents, using /commands, or working with slack rooms\nversion: 9\n---\n- **Skills** — reusable playbooks that double as `/commands` in chat.\n  Each app has its own set (this guide is one). Ask the agent to create\n  one, or write it yourself in the memory tree under `pupa/skills/`.\n- **Subagents** — named delegates with their own persona and\n  instructions. The main agent creates them and hands off focused tasks.\n- **Orchestrator** — the top-level agent: creates and manages myapps and\n  delegates work to each app's agent.\n\n**Slack rooms.** A component with channels, group DMs and DMs. The\nworkspace roster is simply *all* the myapp's subagents — creating a\nsubagent adds it to the roster; nothing lives in the component but rooms\nand their transcripts. @-mention an agent (or post in its DM) to wake it:\nit reads the channel's history for context, works with the app's tools,\nand posts its reply back to the channel. Agents can @-mention each other,\nso one message can start a chain of replies. Exporting the app keeps the\nchannels and the agent personas but strips the transcripts.",
+   "path": "pupa/plugins/pupa-guide/skills/pupa-agents/SKILL.md"
+  },
+  {
+   "content": "---\ndescription: React to canvas events (an item moved) by proposing a chat — the pupa/automations.json rule format and its guards\nwhen_to_use: when the user wants the app to act automatically on a canvas change, or when authoring or editing automation rules\nversion: 9\n---\nAn **automation** reacts *inside* a myapp to a canvas event by proposing a\nchat. Declarative config, no code — rules ride the `.pupa` bundle and only\never start a model turn, always behind a confirm bubble unless a rule\nexplicitly opts out.\n\n**Trigger (v1).** `item.moved` — a user drags an item into a different\nkanban column. Agent moves never trigger (so a reaction can't loop on\nitself).\n\n**Where.** One file per app: `pupa/automations.json`. Shape mirrors Claude\nCode hook config — an `automations` map keyed by event name, each a list of\nrules — but these are Pupa domain events, not harness hooks.\n\n```json\n{\"automations\":{\"item.moved\":[\n  {\"id\":\"review-on-move\",\n   \"matcher\":{\"toColumn\":\"Review\"},\n   \"action\":{\"startThread\":{\"prompt\":\"Review {{item.title}}.\"}},\n   \"confirm\":true}\n]}}\n```\n\n**Fields.**\n- `id` (required) — unique per rule; also the lock key.\n- `matcher` — field-equality predicates, **all must hold (AND)**; omit or\n  `{}` to match every move. Keys are any of the item's own fields plus the\n  transition keys `toColumn` / `fromColumn`.\n- `action.startThread.prompt` (required) — the chat prompt. Templates:\n  `{{item.title}}`, `{{item.<field>}}`, `{{toColumn}}`, `{{fromColumn}}`,\n  substituted literally (no code).\n- `confirm` — `true` (default) proposes a Start/Dismiss bubble; `false`\n  auto-fires with no prompt. Only ship `confirm:false` in bundles you\n  trust — it invokes the model on a plain canvas move.\n\n**Guards (automatic — you don't configure them).**\n- **Self-mutation** — the reaction's own edits don't re-trigger the rule.\n- **Once-per-transition** — the same move fires once within a short window.\n- **In-flight lock** — while a rule's reaction for an item is running, the\n  same item won't re-fire it (a timeout backstop frees a stuck one).\n\n**Limits.** v1 has one event (`item.moved`), one action (`startThread`),\nequality-only matching, and no chaining. A malformed rule is skipped, not\nfatal — the rest of the file still loads.",
+   "path": "pupa/plugins/pupa-guide/skills/pupa-automations/SKILL.md"
+  },
+  {
+   "content": "---\ndescription: The component shapes a myapp canvas can hold and how they combine\nwhen_to_use: when choosing, combining or linking components, or asked what shapes exist\nversion: 9\n---\nA myapp's canvas holds components. Available shapes:\n\n- **calculator** — live numeric model with tunable inputs + formula rows\n- **calendar** — time-indexed events in a list or month grid\n- **chart** — pie/bar/line visualisation of tracker or calculator data\n- **checklist** — simple done/not-done items, no per-row fields\n- **slack** — multi-agent chat rooms (subagent personas, channels, @-mentions)\n- **tracker** — multi-field records in a table/kanban (fields, filters, cards)\n\n**Combining.** One myapp mixes shapes freely. Items link across\ncomponents — a tracker row to a calendar event, a task to a parent\nrecord. Calculators and charts read live from other components, and a\nchart can be embedded straight into chat.\n\n**Views, not shapes.** Kanban is a tracker view mode (table ⇄ cards),\nnot a separate component.",
+   "path": "pupa/plugins/pupa-guide/skills/pupa-components/SKILL.md"
+  },
+  {
+   "content": "---\ndescription: How Pupa remembers: memories, sessions, change history, archive\nwhen_to_use: when asked what persists, how to undo changes, or how to hide an app\nversion: 9\n---\n- **Memories** — a filesystem-like tree of markdown notes and folders\n  that lives *inside* the app, not on the device's file system. Browse\n  and edit it from the Memories tab; the agent reads and writes it too.\n  Persists across sessions.\n- **Sessions** — \"New session\" starts a fresh conversation. The canvas\n  and memories stay. Past conversations are kept on-device and re-open with\n  their full history when you reopen the app — even after a long time away.\n- **History** — every canvas change is recorded per myapp. Browse the\n  History tab and restore any earlier state in one tap. Tap **Take\n  snapshot** to pin the current state permanently (kept forever); pinned\n  snapshots can be **Export**ed as a `.pupa` file. Pins survive deleting\n  the myapp — find them all in **Settings ▸ Pinned snapshots**, where a\n  deleted app can be restored (revived) from a pin.\n- **Archive** — hide a myapp without deleting it (its data and memories\n  are kept). Browse, restore or delete from Settings ▸ Archive.",
+   "path": "pupa/plugins/pupa-guide/skills/pupa-memory/SKILL.md"
+  },
+  {
+   "content": "---\ndescription: Share and install myapps as .pupa files\nwhen_to_use: when exporting, sharing, importing or installing an app\nversion: 9\n---\nA `.pupa` file is an inert snapshot of a myapp: its components, optionally\nyour records and memories, plus the app's agent instructions and skills.\nNo code runs from the file itself.\n\n**Export.** Settings ▸ Import & Export: pick components, choose whether\nrecords and memories ride along, then Share (AirDrop, Messages, Files…).\n\n**Install.** Open a `.pupa` file (or import from Settings). A confirmation\nsheet shows what's inside before anything is added. Imported agent\ninstructions run with your tools once installed — only install bundles\nyou trust.",
+   "path": "pupa/plugins/pupa-guide/skills/pupa-sharing/SKILL.md"
+  },
+  {
+   "content": "---\ndescription: Where things live: the on-device app vs the backend, and standing instructions\nwhen_to_use: when unsure whether something belongs in the app or the backend, which skill system you're touching, or how to change standing behaviour\nversion: 9\n---\n**App vs backend.** Everything the user sees — components and their\nitems, memories, skills, `AGENTS.md` — is app state, created and edited\n**on the user's device** through the app's own tools. The backend only\nruns the model plus a few server-side tools (web search, shell, …) and\nstores **no app data**. Never write app content to a backend path or via\na shell unless explicitly told to; if unsure where something belongs, ask.\n\n**Canvas vs memory.** Components hold data items; memory is a *separate*\nper-app markdown note tree for durable context — not canvas data. Two\ndifferent stores; don't cross them. Memory paths are an in-app structure,\nnot host file paths — never reach for it via a shell.\n\n**Two skill systems.** *App* skills are on-device `SKILL.md` files —\nyours under `pupa/skills/<name>/`, bundled ones under\n`pupa/plugins/<plugin>/skills/<name>/` (this guide is one). A backend may\nseparately expose its own read-only skills library. App skills are\nalways the on-device files.\n\n**Standing behaviour.** Persistent instructions for an app's main agent\nlive at `pupa/AGENTS.md` (subagents: `pupa/agents/<name>/AGENTS.md`).\nEdit those to change behaviour permanently — not memory, not a skill.",
+   "path": "pupa/plugins/pupa-guide/skills/pupa-system/SKILL.md"
+  },
+  {
+   "content": "---\ndescription: What Pupa is and what it can do — guide entry point\nwhen_to_use: when the user asks what Pupa is, what it can do, or how its pieces fit together\nversion: 9\n---\nPupa builds apps around you: describe what you need in chat and the agent\nassembles a **myapp** — a canvas of components it edits live while you talk.\n\n**Boundaries — who is what**\n- **Orchestrator** — the top-level chat. Creates, renames, archives and\n  deletes myapps and delegates work to their agents. Has its own memories\n  and skills; no canvas of its own.\n- **Myapp** — one workspace: its own agent, canvas, memories, skills and\n  subagents.\n- **Component** — one shape on a myapp's canvas (tracker, calendar, …).\n- **Item** — one record inside a component (row, event, task…).\n- **Memories** — each myapp (and the orchestrator) keeps its own\n  filesystem-like tree of markdown notes and folders living *inside* the\n  app — not on the device's file system. Edited by you and the agent\n  alike; persists across sessions. Durable context, not records.\n\nItems can link across components *within one myapp*. Myapps don't share\ndata — an app moves between devices or people as a `.pupa` file.\n\n**Go deeper** (users: type the `/command`; agents: `app_skill_view`)\n- /pupa-components — the shapes a canvas can hold and how they combine\n- /pupa-sharing — export and install myapps as `.pupa` files\n- /pupa-memory — memories, sessions, change history, archive\n- /pupa-agents — skills, subagents and slack rooms\n- /pupa-automations — react to canvas events (an item moved) by proposing a chat\n- /pupa-system — where things live: on-device app vs backend, standing instructions",
+   "path": "pupa/plugins/pupa-guide/skills/pupa/SKILL.md"
+  },
+  {
+   "content": "---\ndescription: Receive schema diary info from the user, prompt for missing fields, and save a complete entry to the Schema Diary tracker.\nwhen_to_use: When the user wants to quickly log a schema trigger without manually filling out all fields.\n---\n\n# /add-diary-entry\n\nYou are a schema diary assistant. Collect the user's experience and save it to the\n`Schema Diary & Mode Mapping` tracker (componentId: `tracker-4`).\n\n## Fields to capture\n1. **date** (YYYY-MM-DD)\n2. **schema** (select: Subjugation / Submission to Others | Self-Sacrifice |\n   Emotional Deprivation | Unrelenting Standards | Social Isolation / Outsider |\n   Abandonment / Anxious Attachment | Defectiveness / Shame | Other)\n3. **trigger** (text)\n4. **mode** (select: Vulnerable Child | Punitive Parent | Detached Protector |\n   Compliant Surrender | Self-Damaging Avoider | Bully/Attack | Healthy Adult |\n   Angry Child)\n5. **coping_style** (select: Surrender | Avoidance | Overcompensation)\n6. **emotions** (text)\n7. **healthier_response** (text)\n\n## Process\n1. Read the user's input; extract whatever fields you can.\n2. Ask concisely for missing fields (max 3 questions at a time).\n3. With all 7 fields, call `addTrackerItems` with `componentId: \"tracker-4\"`.\n4. Confirm and briefly reflect what was logged.\n\n## Rules\n- Validate `schema`, `mode`, `coping_style` against the exact options above.\n- Keep prompts warm and concise. **Never diagnose.**\n- Normalize freeform dates to YYYY-MM-DD.\n",
+   "path": "pupa/skills/add-diary-entry/SKILL.md"
+  },
+  {
+   "content": "---\nname: complete-questionnaire\ndescription: Guide the user through the MSS-YSQ (Maladaptive Schema Scale – Young Schema Aligned, NovoPsych) — 76 items across 19 schemas, each rated 0-4.\nwhen_to_use: When the user wants to take, resume, or complete the MSS-YSQ schema questionnaire.\n---\n# complete-questionnaire\n\nGuides users through the **MSS-YSQ** (Maladaptive Schema Scale – Young Schema\nAligned, NovoPsych). The tracker has 76 items grouped into 19 schemas (4 each),\neach rated 0–4 (0 = Strongly Disagree, 1 = Disagree, 2 = Neutral, 3 = Agree,\n4 = Strongly Agree).\n\n## Process\n1. **Check existing answers:** list tracker items, note which already have a\n   Response 0–4. The app ships with *synthetic demo answers* — offer to clear\n   them first so the user starts fresh.\n2. Ask the user's preferred batch size (5, 10, or all 76), then present only the\n   items to (re)answer.\n3. **One-tap batch:** use `ask_user_questions`; each item is one question entry\n   with the item text and `options: ['0','1','2','3','4']`.\n4. Collect answers and update items with patchTrackerItems (field `Response`).\n5. Show schema scores from calculator (componentId: calculator-2) after batches.\n6. Continue until all 76 items are complete.\n\n## Notes\n- **Reverse-scored items** are marked \"(reverse-scored)\" in the question text and\n  are stored **pre-inverted** — enter the user's raw agreement; the app already\n  flipped the stored demo value, so when re-answering, store `4 - answer` for a\n  reverse item (or let the user answer plainly and invert on save).\n- Scoring is the **mean** per schema (not a sum). See the interpretation guide.\n\n## The 19 schemas\nAbandonment / Anxious Attachment · Emotional Deprivation · Mistrust of Others ·\nSocial Isolation / Outsider · Defectiveness / Shame · Dependence · Vulnerability\nto Dangerous World · Enmeshment / Diffuse Boundaries · Failure / Achievement\nInferiority · Low Self-Efficacy / Weakness · Entitlement / Specialness ·\nSubjugation / Submission to Others · Self-Sacrifice · Approval-Seeking /\nExcessive Need to be Liked · Pessimism / Negativity · Emotional Inhibition ·\nUnrelenting Standards · Punitiveness / Unforgiving of Self · Punitiveness /\nUnforgiving of Others.\n",
+   "path": "pupa/skills/complete-questionnaire/SKILL.md"
+  },
+  {
+   "content": "---\nname: mentor-me\ndescription: Acts as a schema-therapy mentor — reads the current app state (questionnaire progress, schema scores) plus the MSS-YSQ interpretation guide and suggests concrete, personalized next steps.\nwhen_to_use: When the user asks for guidance, \"what should I do next\", coaching, or mentoring on their schema work / questionnaire results.\n---\n# mentor-me\n\nYou are a warm, knowledgeable schema-therapy mentor. Look at where the user is —\nin both the app and the guide — and suggest the single most useful next step,\nthen a couple of alternatives. Encouraging, non-judgmental, **never diagnostic**.\n\n## Process\n1. **Read the app state.** Use `getCanvasState` (or per-kind list tools):\n   - The questionnaire tracker: how many of the 76 items are answered (and whether\n     the current answers are still the synthetic demo set).\n   - The calculator (`calculator-2`): current schema **mean** scores, if any.\n   - Any diary / checklist / other components.\n2. **Read the guide.** Load `pupa/research/mss-ysq-interpretation-guide.md` with\n   `readMemoryFile` (and `grepMemories`). Ground every suggestion in it — scoring\n   bands, domains, follow-up exercises, caveats.\n3. **Assess the stage** and tailor:\n   - **Demo data still loaded / partial** → encourage `/complete-questionnaire`;\n     note how many of 76 are genuinely answered.\n   - **Complete, not interpreted** → summarize their top 3–5 schemas by mean score\n     using the bands, as gentle hypotheses, not verdicts.\n   - **Results understood** → suggest a concrete follow-up exercise matched to\n     their highest schema (schema diary, journaling, imagery rescripting), or set\n     up a tracker/checklist.\n   - **Already practicing** → suggest re-testing to monitor change, or mode mapping.\n4. **Deliver** a short plain message: one sentence on where they are; one\n   recommended next step (with the \"why\", tied to the guide); 1–2 alternatives;\n   offer to set it up.\n5. **Respect the caveats:** self-understanding not diagnosis; recommend a qualified\n   professional for deep work (see `pupa/DISCLAIMER.md`); be culturally sensitive.\n\n## Style\n- Concise, mobile-friendly. Lead with the recommendation.\n- Reference actual numbers on the 0–4 mean scale (\"your Self-Sacrifice mean is 3.5\n  — in the strong range\").\n- Surface at most the top few schemas, not all 19. Offer, don't push.\n",
+   "path": "pupa/skills/mentor-me/SKILL.md"
+  },
+  {
+   "path": "pupa/research/mss-ysq-interpretation-guide.md",
+   "content": "# MSS-YSQ Interpretation Guide\n\n*Original guide for this app. Instrument: the Maladaptive Schema Scale – Young\nSchema Aligned (MSS-YSQ) by NovoPsych. This guide is educational, not clinical\nadvice — see `pupa/DISCLAIMER.md`.*\n\n## 1. What this measures\nMaladaptive schemas are broad, self-perpetuating themes about oneself and one's\nrelationships, formed early in life when core childhood needs go chronically\nunmet, and reactivated by situations that echo their origin. The MSS-YSQ covers\n**19 schemas** aligned to Jeffrey Young's schema model, grouped into five\ndomains of unmet need.\n\n## 2. The 5 domains (Young-aligned)\n- **Disconnection & Rejection** — security, nurturance, acceptance.\n  Abandonment, Emotional Deprivation, Mistrust, Social Isolation, Defectiveness.\n- **Impaired Autonomy & Performance** — independence, competence, safety.\n  Dependence, Vulnerability, Enmeshment, Failure, Low Self-Efficacy.\n- **Impaired Limits** — realistic limits, self-discipline. Entitlement.\n- **Other-Directedness** — expressing one's own needs. Subjugation,\n  Self-Sacrifice, Approval-Seeking.\n- **Overvigilance & Inhibition** — spontaneity, self-acceptance. Pessimism,\n  Emotional Inhibition, Unrelenting Standards, Punitiveness (of self / of others).\n\n## 3. Scoring (0–4, mean)\nEach item is rated 0 (Strongly Disagree) → 4 (Strongly Agree). A schema's score\nis the **mean** of its four items.\n- **≈2.5 or above** — moderate; a theme worth reflecting on.\n- **\"Strong\"** — above roughly the 90th percentile for people in mental-health\n  care; the threshold varies by schema (≈2.75 to 3.75). Treat high scores as\n  *hypotheses to explore*, not labels.\n- **Reverse-scored items** (marked \"(reverse-scored)\") are stored pre-inverted so\n  the mean points the same direction for every item.\n- **Percent in Agreement** — optionally, the share of a schema's items the person\n  Agreed / Strongly Agreed with, as a second, plain-language view.\n\n## 4. Reading a profile\nLook at the domain **pattern**, not one number. A cluster of high scores in one\ndomain points to which early needs were most disrupted. Start with the top 3–5\nschemas by mean; connect them to recent triggers using the Schema Diary.\n\n## 5. Follow-up work\n- **Schema diary** — log trigger → schema → mode → coping style → healthier\n  response (the diary component is built for this).\n- **Journaling / imagery** — trace a top schema to its origin; write a compassionate\n  reframe.\n- **Re-test** — retake periodically to watch change over time.\n\n## 6. Caveats\nSelf-report; a snapshot, not a diagnosis. Culture, mood, and life stage all colour\nanswers. For distress or deep work, involve a qualified schema-therapy clinician.\n\n## Sources\n- MSS / MSS-YSQ: NovoPsych — https://novopsych.com/assessments/formulation/mss-ysq-young-schema-questionnaire/\n- Buchanan, B., Bartholomew, E., Smyth, C., & Hegarty, D. (2025). The Maladaptive\n  Schema Scale (MSS). *Assessment.* Manual + materials: https://osf.io/c3upr/\n"
+  },
+  {
+   "path": "pupa/DISCLAIMER.md",
+   "content": "# Disclaimer — please read\n\n**Not medical advice.** Maladaptive Mechanisms is a self-reflection tool. It is\n**not** a diagnostic instrument, not a medical device, and not a substitute for\nassessment, diagnosis, or treatment by a qualified mental-health professional.\n\n- Scores are self-report snapshots, not clinical conclusions. A high score is a\n  prompt for reflection, not a diagnosis of any condition.\n- Nothing here establishes a therapeutic relationship.\n- If you are in distress, or thinking about harming yourself, contact a local\n  crisis line or emergency services now. In the US: call or text **988**. In the\n  UK/ROI: **Samaritans 116 123**. Elsewhere: https://findahelpline.com.\n- Use of this app is at your own discretion; the authors and distributors accept\n  no liability for decisions made based on it.\n\nThe MSS-YSQ instrument is provided for personal, non-commercial reflection under\nits license (see `pupa/LICENSE-NOTICE.md`). It should ideally be interpreted with\na clinician trained in schema therapy.\n"
+  },
+  {
+   "path": "pupa/LICENSE-NOTICE.md",
+   "content": "# License & attribution\n\n## App content\nThe structure of this MyApp (components, layout, agent skills, this guide, and the\ndiary) is released under **CC0 1.0** by its author, EXCEPT the questionnaire items\nand scoring described below.\n\n## Questionnaire instrument — MSS-YSQ (third-party)\nThe 76 questionnaire items, the 19-schema structure, and the scoring method are\nthe **Maladaptive Schema Scale – Young Schema Aligned (MSS-YSQ)**, © **NovoPsych\nPty Ltd**, used under NovoPsych's **Open Source Licence** (modelled on\n**CC BY-NC-SA**: Attribution — NonCommercial — ShareAlike).\n\n- **Attribution:** MSS-YSQ © NovoPsych — https://novopsych.com/assessments/formulation/mss-ysq-young-schema-questionnaire/\n- **NonCommercial:** do not sell this app or the instrument, or bundle it into a\n  paid product, without a separate license from NovoPsych.\n- **ShareAlike:** redistribute the instrument (and adaptations of it) only under\n  the same terms, carrying this notice.\n- **App-integration cap:** NovoPsych's licence limits software integration to\n  ≤100 users (or ≤1,000 administrations) per calendar year; beyond that, obtain a\n  separate licence from NovoPsych.\n- Citation: Buchanan, B., Bartholomew, E., Smyth, C., & Hegarty, D. (2025).\n  *The Maladaptive Schema Scale (MSS).* Assessment. https://osf.io/c3upr/\n\nBecause the instrument is NonCommercial + ShareAlike, this app as a whole is\ndistributed under **CC BY-NC-SA 4.0**, not CC0. Keep this notice with the bundle.\n"
+  }
+ ]
+}

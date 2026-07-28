@@ -47,6 +47,18 @@ MAX_ITEMS_PER_COMPONENT = 5_000              # maxItemsPerComponent / maxSlackMe
 MAX_MEMORY_FILES = 2_000                     # maxMemoryFiles
 MAX_MEMORY_FILE_BYTES = 1 * 1024 * 1024      # maxMemoryFileBytes
 
+# Decode-shape mirrors: the Pupa client decodes bundles with strict Swift
+# `Codable`, which rejects things valid JSON can't express. These two bit us in
+# practice, so pre-check them at PR time (keep in sync with the client models):
+#   • record ids in these collections are typed `UUID`
+#     (TrackerItem/CalcRow/ChartSeriesSpec/CalendarEvent/ChecklistItem .id).
+#   • calculator/chart `reduce` is the `CalcReduce` enum.
+# Slack ids (channel/message) are plain strings and live under other keys, so
+# they are intentionally out of scope here.
+UUID_RE = re.compile(r"^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$")
+CALC_REDUCERS = {"sum", "avg", "min", "max", "count"}
+UUID_ID_LIST_KEYS = {"items", "rows", "events", "series"}
+
 SLUG_RE = re.compile(r"^[a-z0-9][a-z0-9-]{1,63}$")
 TAG_RE = re.compile(r"^[a-z0-9-]+$")
 APPVERSION_RE = re.compile(r"^\d+(\.\d+)*$")
@@ -158,6 +170,35 @@ def validate_automations(memories):
             )
 
 
+def validate_component_typing(app):
+    """Reject decode-blockers the Swift importer enforces but JSON can't express.
+
+    Mirrors client `Codable` types so a bundle that passes here won't fail
+    `MyAppImporter` with an opaque "isn't a valid Pupa app bundle": record ids in
+    UUID_ID_LIST_KEYS collections must be canonical UUIDs, and any `reduce` must
+    be a CalcReduce case. Walks the whole app tree (rows/items live nested under
+    component bodies, charts under calculators, etc.).
+    """
+    def walk(node):
+        if isinstance(node, dict):
+            r = node.get("reduce")
+            if isinstance(r, str) and r not in CALC_REDUCERS:
+                raise AppError(f"invalid reduce '{r}' (CalcReduce is {sorted(CALC_REDUCERS)})")
+            for k, v in node.items():
+                if k in UUID_ID_LIST_KEYS and isinstance(v, list):
+                    for el in v:
+                        if isinstance(el, dict) and "id" in el and not (
+                            isinstance(el["id"], str) and UUID_RE.match(el["id"])
+                        ):
+                            raise AppError(f"{k} entry has non-UUID id {el['id']!r} "
+                                           "(the client decodes these ids as UUID)")
+                walk(v)
+        elif isinstance(node, list):
+            for v in node:
+                walk(v)
+    walk(app)
+
+
 def validate_metadata(slug, meta):
     if not isinstance(meta, dict):
         raise AppError("metadata.json is not an object")
@@ -182,6 +223,15 @@ def validate_metadata(slug, meta):
     hp = meta.get("homepage")
     if hp is not None and (not isinstance(hp, str) or not hp.startswith("https://")):
         raise AppError("metadata.homepage must be an https:// URL")
+    # Content license. Absent ⇒ the repo default (CC0-1.0, per CONTENT-LICENSE).
+    # Present ⇒ this app opts out of CC0; the contributor asserts they hold the
+    # rights to release under the named license (SPDX id or short name).
+    lic = meta.get("license")
+    if lic is not None and (not isinstance(lic, str) or not lic.strip() or len(lic) > 100):
+        raise AppError("metadata.license must be a non-empty string <= 100 chars (SPDX id or license name)")
+    attr = meta.get("attribution")
+    if attr is not None and (not isinstance(attr, str) or not attr.strip() or len(attr) > 500):
+        raise AppError("metadata.attribution must be a non-empty string <= 500 chars")
 
 
 def validate_bundle(raw):
@@ -225,6 +275,7 @@ def validate_bundle(raw):
     items = _count_listy(app, {"items", "events"})
     if items > MAX_ITEMS_PER_COMPONENT:
         raise AppError(f"a component has {items} items (> {MAX_ITEMS_PER_COMPONENT})")
+    validate_component_typing(app)
     memories = bundle.get("memories", [])
     if not isinstance(memories, list):
         raise AppError("bundle memories must be a list")
@@ -299,7 +350,7 @@ def validate_app(app_dir, warnings):
     except json.JSONDecodeError as e:
         raise AppError(f"metadata.json invalid: {e}")
     validate_metadata(slug, meta)
-    known = {"id", "version", "author", "summary", "tags", "homepage"}
+    known = {"id", "version", "author", "summary", "tags", "homepage", "license", "attribution"}
     for k in meta.keys() - known:
         warnings.append(f"{slug}: unknown metadata key '{k}' (ignored)")
 
@@ -326,6 +377,10 @@ def validate_app(app_dir, warnings):
     }
     if meta.get("homepage"):
         entry["homepage"] = meta["homepage"]
+    if meta.get("license"):
+        entry["license"] = meta["license"]
+    if meta.get("attribution"):
+        entry["attribution"] = meta["attribution"]
     return entry
 
 
@@ -512,6 +567,21 @@ def cmd_self_test():
     expect_ok("memory ok path", lambda: validate_bundle(good_bundle(
         memories=[{"path": "pupa/AGENTS.md", "content": "x"}])))
 
+    _UUID = "512D4EF1-C329-4FB3-91AB-B88439DF6FBA"
+    def typed(**over):
+        comp = {"id": "tracker-1", "body": {"data": {}}}
+        comp["body"]["data"].update(over)
+        return good_bundle(app={"name": "T", "iconSystemName": "s", "components": [comp]})
+    expect_ok("uuid row id ok", lambda: validate_bundle(typed(rows=[{"id": _UUID, "name": "r"}])))
+    expect_error("non-uuid row id", lambda: validate_bundle(typed(rows=[{"id": "calc-row-1", "name": "r"}])))
+    expect_error("non-uuid tracker item id", lambda: validate_bundle(typed(items=[{"id": "x1"}])))
+    expect_ok("valid reduce avg", lambda: validate_bundle(typed(
+        rows=[{"id": _UUID, "kind": {"aggregate": {"reduce": "avg"}}}])))
+    expect_error("invalid reduce mean", lambda: validate_bundle(typed(
+        rows=[{"id": _UUID, "kind": {"aggregate": {"reduce": "mean"}}}])))
+    expect_ok("slack channel string id not flagged", lambda: validate_bundle(typed(
+        channels=[{"id": "c1", "name": "general"}])))
+
     def automations(*rules, event="item.moved"):
         return good_bundle(memories=[{
             "path": PUPA_AUTOMATIONS_PATH,
@@ -546,6 +616,11 @@ def cmd_self_test():
         "id": "my-app", "version": 1, "author": "h", "summary": "s", "tags": ["Bad Tag"]}))
     expect_error("http homepage", lambda: validate_metadata("my-app", {
         "id": "my-app", "version": 1, "author": "h", "summary": "s", "tags": [], "homepage": "http://x"}))
+    expect_ok("valid license + attribution", lambda: validate_metadata("my-app", {
+        "id": "my-app", "version": 1, "author": "h", "summary": "s", "tags": [],
+        "license": "CC-BY-NC-SA-4.0", "attribution": "Schema content © NovoPsych, https://novopsych.com"}))
+    expect_error("blank license", lambda: validate_metadata("my-app", {
+        "id": "my-app", "version": 1, "author": "h", "summary": "s", "tags": [], "license": "   "}))
 
     print(f"\nself-test: {passed} passed, {failed} failed")
     return 1 if failed else 0
