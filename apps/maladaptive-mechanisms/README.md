@@ -56,13 +56,13 @@ Nothing — no backend tools, no network. Your responses and diary stay on devic
 
 ## Licence and attribution
 
-Unlike the other apps here, this one is **not** CC0. The questionnaire items, the
+The questionnaire items, the
 19-schema structure, and the scoring method are the **Maladaptive Schema Scale –
 Young Schema Aligned (MSS-YSQ)**, © **NovoPsych Pty Ltd**, used under NovoPsych's
 Open Source Licence (modelled on CC BY-NC-SA). So the app as a whole is
 distributed under **CC BY-NC-SA 4.0**.
 
-That carries real conditions:
+That carries the conditions:
 
 - **Attribution** — [MSS-YSQ © NovoPsych](https://novopsych.com/assessments/formulation/mss-ysq-young-schema-questionnaire/).
 - **NonCommercial** — don't sell this app or the instrument, or bundle it into a
