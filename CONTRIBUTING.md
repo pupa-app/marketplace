@@ -59,6 +59,16 @@ make index         # regenerates index.json (never hand-edit it)
 
 Commit both your `apps/<slug>/` directory **and** the regenerated `index.json`.
 
+Sign off every commit — CI enforces [DCO](https://developercertificate.org/):
+
+```
+git commit -s
+```
+
+The `Signed-off-by` trailer certifies you wrote the change and may submit it
+under this repo's license. Missing it fails the `DCO` check; fix with
+`git commit --amend -s` and force-push.
+
 ### 4. Updating an app you already published
 
 Change `app.pupa`, then **bump `version`** in `metadata.json`. CI rejects a
