@@ -19,6 +19,7 @@ inert, but these prompts run with the installing user's tools.
 
 - [ ] I exported this from Pupa and it re-imports cleanly on my device.
 - [ ] I ran `make validate` locally and it passed.
+- [ ] Every commit is signed off (`git commit -s`) — CI enforces DCO.
 - [ ] I ran `make index` and committed the regenerated `index.json`.
 - [ ] I pasted every agent prompt above.
 - [ ] No personal data: I reviewed the included records/memories ("sharing is

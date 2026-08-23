@@ -76,6 +76,31 @@
     },
     {
       "appFormatVersion": 1,
+      "appVersion": "0.0.257",
+      "author": "pupa-app",
+      "exportedAt": "2026-08-23T14:57:27Z",
+      "homepage": "https://github.com/pupa-app/pupa",
+      "icon": "cart",
+      "id": "product-event-finder",
+      "includedMemories": true,
+      "includedRecords": true,
+      "name": "Product & Event Finder",
+      "path": "apps/product-event-finder/app.pupa",
+      "screenshots": [],
+      "sha256": "adb4628c0b071dc9eeb199fb72d1b0480853602777fa6f9c8f96e315a3d90913",
+      "sizeBytes": 30418,
+      "summary": "Find any product or event: searches sellers, browser-verifies real stock, legitimacy-checks unknown sites, and tracks results — then preps checkout without ever touching your credentials.",
+      "tags": [
+        "shopping",
+        "search",
+        "tracker",
+        "events",
+        "tickets"
+      ],
+      "version": 1
+    },
+    {
+      "appFormatVersion": 1,
       "appVersion": "0.0.180",
       "author": "pupa-app",
       "exportedAt": "2026-07-10T08:00:47Z",
