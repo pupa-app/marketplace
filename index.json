@@ -26,6 +26,31 @@
     },
     {
       "appFormatVersion": 1,
+      "appVersion": "0.0.257",
+      "author": "pupa-app",
+      "exportedAt": "2026-08-23T20:46:01Z",
+      "homepage": "https://github.com/pupa-app/pupa",
+      "icon": "briefcase",
+      "id": "job-search-apply",
+      "includedMemories": true,
+      "includedRecords": false,
+      "name": "Job Search & Apply",
+      "path": "apps/job-search-apply/app.pupa",
+      "screenshots": [],
+      "sha256": "5a1ee4fc9042996bad6996de05f2c3e899509fb14717ff539bcb5185226acfdf",
+      "sizeBytes": 53305,
+      "summary": "Job-application pipeline: scouts boards, scores openings against your own rubric, tailors and submits each application, tracks deadlines. Needs host pandoc plus Playwright to submit.",
+      "tags": [
+        "jobs",
+        "career",
+        "tracker",
+        "automation",
+        "productivity"
+      ],
+      "version": 1
+    },
+    {
+      "appFormatVersion": 1,
       "appVersion": "0.0.212",
       "attribution": "Questionnaire: MSS-YSQ © NovoPsych, used under their Open Source Licence (CC BY-NC-SA). https://novopsych.com/assessments/formulation/mss-ysq-young-schema-questionnaire/",
       "author": "pupa-app",

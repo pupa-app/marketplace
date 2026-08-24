@@ -1,0 +1,14 @@
+{
+  "id": "job-search-apply",
+  "version": 1,
+  "author": "pupa-app",
+  "summary": "Job-application pipeline: scouts boards, scores openings against your own rubric, tailors and submits each application, tracks deadlines. Needs host pandoc plus Playwright to submit.",
+  "tags": [
+    "jobs",
+    "career",
+    "tracker",
+    "automation",
+    "productivity"
+  ],
+  "homepage": "https://github.com/pupa-app/pupa"
+}

@@ -9,6 +9,12 @@ that clients can pin.
 
 ### Added
 
+- `job-search-apply` app — job-application pipeline: parallel board scouts, a
+  user-owned scoring rubric, per-application CV/cover-letter tailoring, host
+  rendering, linked deadline and checklist tracking, and a confirm-gated
+  Playwright submit that never enters credentials and always pauses before the
+  final submit. Bundle ships in a clean first-run state — empty tracker, blank
+  profile templates filled by `/setup`.
 - `product-event-finder` app — product/event search that browser-verifies real
   stock, legitimacy-checks unknown sellers, tracks results, and preps checkout
   up to the credential boundary (never enters credentials or places orders).
