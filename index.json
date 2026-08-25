@@ -146,6 +146,32 @@
         "dashboard"
       ],
       "version": 2
+    },
+    {
+      "appFormatVersion": 1,
+      "appVersion": "0.0.257",
+      "author": "pupa-app",
+      "exportedAt": "2026-08-25T21:19:24Z",
+      "homepage": "https://github.com/pupa-app/pupa",
+      "icon": "laptopcomputer.and.arrow.down",
+      "id": "tidy-laptop",
+      "includedMemories": true,
+      "includedRecords": false,
+      "name": "Tidy Laptop",
+      "path": "apps/tidy-laptop/app.pupa",
+      "screenshots": [],
+      "sha256": "f112bbf2a55c9c4f06a124f5a2a79e925b05ed132ed8f6335a96c4d0bbd098aa",
+      "sizeBytes": 27596,
+      "summary": "Scan approved folders for junk, clutter, disk hogs, and exposed secrets; triage findings on a kanban and apply each fix recoverably (Trash/move, never rm) with a logged, reversible change record.",
+      "tags": [
+        "productivity",
+        "cleanup",
+        "disk",
+        "tracker",
+        "automation",
+        "macos"
+      ],
+      "version": 1
     }
   ],
   "formatVersion": 1,
