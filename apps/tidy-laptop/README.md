@@ -7,7 +7,8 @@ scope and topics, then scan produces the first suggestions.
 ## Flow
 
 1. **Setup** (`/setup`) — confirm `scanScope.allow` (default `~/Desktop`), pick
-   active topics, optionally add recurring scan reminders.
+   active topics, optionally add recurring scan reminders (`tidy-notify`
+   registers them as local notification banners that re-run the scan on tap).
 2. **Scan** (`/tidy-scan`) — read-only. Populates the *Cleanup Jobs* tracker
    with `Suggested` items across four topics: **Junk/Delete**, **Reorganize**,
    **Security**, **Disk hogs**. Never modifies files.
@@ -26,9 +27,22 @@ scope and topics, then scan produces the first suggestions.
 - **Scope-bound.** Acts only inside `scanScope.allow`; system dirs, other
   users, and cloud-synced dirs are denied unless you add them.
 - **Every action is logged and reversible** via `tidy-log/`.
+- **Secrets are located, not copied.** A Security finding records the path and
+  the kind of credential; the value never lands in a card, a log, or the chat.
 
 ## Requirements
 
-macOS host with shell access (uses `du`/`find`/`mdfind` for scans and Finder
-Trash for recoverable deletes). Cleanup skills act only when you move a card to
-**Apply** and confirm.
+**Needs shell access, which is not granted by default.** Every scan and every
+fix shells out (`du`, `find`, `mdfind`, `osascript`, `mv`, `chmod`). Without it
+the app installs and opens fine, but no scan can return anything.
+
+Those commands run wherever your shell runs — not necessarily the laptop in
+front of you — and they assume **macOS**: recoverable delete is `osascript`
+driving Finder, so Trash and "Put Back" work. Somewhere without Finder, the app
+stops rather than delete without a way back.
+
+Recurring reminders use local notifications, so they need notification
+permission. Only daily, weekly and every-N-hours cadences repeat; there is no
+monthly trigger.
+
+Cleanup skills act only when you move a card to **Apply** and confirm.

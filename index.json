@@ -160,8 +160,8 @@
       "name": "Tidy Laptop",
       "path": "apps/tidy-laptop/app.pupa",
       "screenshots": [],
-      "sha256": "f112bbf2a55c9c4f06a124f5a2a79e925b05ed132ed8f6335a96c4d0bbd098aa",
-      "sizeBytes": 27596,
+      "sha256": "105875092436e257c627987b5ca24dc7f156426d65f451ddf9b2816f258279fd",
+      "sizeBytes": 32626,
       "summary": "Scan approved folders for junk, clutter, disk hogs, and exposed secrets; triage findings on a kanban and apply each fix recoverably (Trash/move, never rm) with a logged, reversible change record.",
       "tags": [
         "productivity",
