@@ -8,8 +8,7 @@
     "cleanup",
     "disk",
     "tracker",
-    "automation",
-    "macos"
+    "automation"
   ],
   "homepage": "https://github.com/pupa-app/pupa"
 }

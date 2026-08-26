@@ -32,14 +32,15 @@ scope and topics, then scan produces the first suggestions.
 
 ## Requirements
 
-**Needs shell access, which is not granted by default.** Every scan and every
-fix shells out (`du`, `find`, `mdfind`, `osascript`, `mv`, `chmod`). Without it
+**Needs shell access.** Every scan and every fix shells out. Without a shell
 the app installs and opens fine, but no scan can return anything.
 
-Those commands run wherever your shell runs — not necessarily the laptop in
-front of you — and they assume **macOS**: recoverable delete is `osascript`
-driving Finder, so Trash and "Put Back" work. Somewhere without Finder, the app
-stops rather than delete without a way back.
+Those commands run wherever your shell runs, which is not necessarily the
+laptop in front of you. macOS, Linux and Windows are all fine — the agent
+checks which it is and picks the matching commands, since the trash and
+permission steps differ per platform (Finder on macOS, `gio trash`/trash-cli on
+Linux, the Recycle Bin on Windows). If the host has no trash mechanism at all,
+the app stops rather than delete without a way back.
 
 Recurring reminders use local notifications, so they need notification
 permission. Only daily, weekly and every-N-hours cadences repeat; there is no
