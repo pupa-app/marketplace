@@ -1,0 +1,14 @@
+{
+  "id": "tidy-laptop",
+  "version": 1,
+  "author": "pupa-app",
+  "summary": "Scan approved folders for junk, clutter, disk hogs, and exposed secrets; triage findings on a kanban and apply each fix recoverably (Trash/move, never rm) with a logged, reversible change record.",
+  "tags": [
+    "productivity",
+    "cleanup",
+    "disk",
+    "tracker",
+    "automation"
+  ],
+  "homepage": "https://github.com/pupa-app/pupa"
+}
