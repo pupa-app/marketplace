@@ -1,7 +1,6 @@
 # Tidy Laptop
 
-A recoverable desktop-cleanup workflow. Ships **records off** — an empty
-tracker plus the agent capability. On first open, run `/setup` to confirm scan
+A recoverable desktop-cleanup workflow. On first open, run `/setup` to confirm scan
 scope and topics, then scan produces the first suggestions.
 
 ## Flow
@@ -43,7 +42,6 @@ Linux, the Recycle Bin on Windows). If the host has no trash mechanism at all,
 the app stops rather than delete without a way back.
 
 Recurring reminders use local notifications, so they need notification
-permission. Only daily, weekly and every-N-hours cadences repeat; there is no
-monthly trigger.
+permission.
 
-Cleanup skills act only when you move a card to **Apply** and confirm.
+Cleanup skills auto-act only when you move a card to **Apply**.
