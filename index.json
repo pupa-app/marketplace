@@ -3,29 +3,6 @@
   "entries": [
     {
       "appFormatVersion": 1,
-      "appVersion": "0.0.180",
-      "author": "pupa-app",
-      "exportedAt": "2026-07-10T08:00:47Z",
-      "homepage": "https://github.com/pupa-app/pupa",
-      "icon": "sun.horizon",
-      "id": "daily-briefing",
-      "includedMemories": true,
-      "includedRecords": true,
-      "name": "Daily Briefing",
-      "path": "apps/daily-briefing/app.pupa",
-      "screenshots": [],
-      "sha256": "b5248f4f1e396ab98cd20844c5cd8a358a325aeb2d3c1278514e73eccb2061e3",
-      "sizeBytes": 19029,
-      "summary": "A 7am briefing: named sources, today's digest, feed-volume chart, and a calendar for scheduled pulls.",
-      "tags": [
-        "briefing",
-        "productivity",
-        "dashboard"
-      ],
-      "version": 2
-    },
-    {
-      "appFormatVersion": 1,
       "appVersion": "0.0.257",
       "author": "pupa-app",
       "exportedAt": "2026-08-23T20:46:01Z",
@@ -171,6 +148,29 @@
         "automation"
       ],
       "version": 1
+    },
+    {
+      "appFormatVersion": 1,
+      "appVersion": "0.0.180",
+      "author": "pupa-app",
+      "exportedAt": "2026-07-10T08:00:47Z",
+      "homepage": "https://github.com/pupa-app/pupa",
+      "icon": "sun.horizon",
+      "id": "daily-briefing",
+      "includedMemories": true,
+      "includedRecords": true,
+      "name": "Daily Briefing",
+      "path": "apps/daily-briefing/app.pupa",
+      "screenshots": [],
+      "sha256": "b5248f4f1e396ab98cd20844c5cd8a358a325aeb2d3c1278514e73eccb2061e3",
+      "sizeBytes": 19029,
+      "summary": "A 7am briefing: named sources, today's digest, feed-volume chart, and a calendar for scheduled pulls.",
+      "tags": [
+        "briefing",
+        "productivity",
+        "dashboard"
+      ],
+      "version": 2
     }
   ],
   "formatVersion": 1,

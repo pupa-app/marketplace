@@ -36,6 +36,10 @@
       "minLength": 1,
       "maxLength": 500,
       "description": "Required credit line + link when the license demands attribution (e.g. CC BY / BY-NC-SA)."
+    },
+    "order": {
+      "type": "integer",
+      "description": "Catalog sort weight. Apps sort by (order, id) ascending; omit for the default of 0 (sorts alphabetically by id among other order:0 apps). Higher pushes later in the listing."
     }
   }
 }
