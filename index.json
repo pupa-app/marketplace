@@ -89,8 +89,8 @@
       "name": "Product & Event Finder",
       "path": "apps/product-event-finder/app.pupa",
       "screenshots": [],
-      "sha256": "adb4628c0b071dc9eeb199fb72d1b0480853602777fa6f9c8f96e315a3d90913",
-      "sizeBytes": 30418,
+      "sha256": "f2bbda8ddb2c43e01fb203ce6a59ae62d4a6c6a3bc7be7c01349a37a6eb16a3b",
+      "sizeBytes": 30993,
       "summary": "Find any product or event: searches sellers, browser-verifies real stock, legitimacy-checks unknown sites, and tracks results — then preps checkout without ever touching your credentials.",
       "tags": [
         "shopping",
@@ -99,7 +99,7 @@
         "events",
         "tickets"
       ],
-      "version": 1
+      "version": 2
     },
     {
       "appFormatVersion": 1,
