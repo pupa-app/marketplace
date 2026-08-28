@@ -32,7 +32,7 @@ Top-level object:
 | `name` | string | ✓ | Display name of the marketplace. |
 | `owner` | string | ✓ | Who runs it (handle/org). |
 | `description` | string | ✓ | One-line description. |
-| `entries` | array | ✓ | The apps, sorted by `id`. |
+| `entries` | array | ✓ | The apps, sorted by `metadata.order` (default 0) then `id`. |
 
 Each entry:
 

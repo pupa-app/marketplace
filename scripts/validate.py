@@ -210,6 +210,9 @@ def validate_metadata(slug, meta):
         raise AppError(f"metadata.id '{meta['id']}' != directory '{slug}'")
     if not isinstance(meta["version"], int) or isinstance(meta["version"], bool) or meta["version"] < 1:
         raise AppError("metadata.version must be an int >= 1")
+    order = meta.get("order")
+    if order is not None and (not isinstance(order, int) or isinstance(order, bool)):
+        raise AppError("metadata.order must be an int")
     if not isinstance(meta["author"], str) or not meta["author"]:
         raise AppError("metadata.author must be a non-empty string")
     summary = meta["summary"]
@@ -350,7 +353,7 @@ def validate_app(app_dir, warnings):
     except json.JSONDecodeError as e:
         raise AppError(f"metadata.json invalid: {e}")
     validate_metadata(slug, meta)
-    known = {"id", "version", "author", "summary", "tags", "homepage", "license", "attribution"}
+    known = {"id", "version", "author", "summary", "tags", "homepage", "license", "attribution", "order"}
     for k in meta.keys() - known:
         warnings.append(f"{slug}: unknown metadata key '{k}' (ignored)")
 
@@ -374,6 +377,7 @@ def validate_app(app_dir, warnings):
         "sizeBytes": len(raw),
         "sha256": _sha256(raw),
         "screenshots": screenshots,
+        "_order": meta.get("order", 0),
     }
     if meta.get("homepage"):
         entry["homepage"] = meta["homepage"]
@@ -412,7 +416,9 @@ def build_index():
                 warnings.append(f"duplicate app name '{entry['name']}' ({names_seen[entry['name']]}, {entry['id']})")
             names_seen[entry["name"]] = entry["id"]
             entries.append(entry)
-    entries.sort(key=lambda e: e["id"])
+    entries.sort(key=lambda e: (e["_order"], e["id"]))
+    for e in entries:
+        del e["_order"]
     index = {
         "formatVersion": CATALOG_FORMAT_VERSION,
         "name": market["name"],
