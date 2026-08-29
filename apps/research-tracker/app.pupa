@@ -1,586 +1,564 @@
 {
-  "app" : {
-    "activeComponentId" : "tracker-1",
-    "components" : [
+  "app": {
+    "activeComponentId": "tracker-1",
+    "components": [
       {
-        "body" : {
-          "data" : {
-            "columnField" : "threat",
-            "fields" : [
+        "body": {
+          "data": {
+            "columnField": "threat",
+            "fields": [
               {
-                "label" : "App",
-                "name" : "name",
-                "type" : "text"
+                "label": "App",
+                "name": "name",
+                "type": "text"
               },
               {
-                "label" : "Platform",
-                "name" : "platform",
-                "options" : [
+                "label": "Platform",
+                "name": "platform",
+                "options": [
                   "Web",
                   "React PWA",
                   "Native iOS",
                   "Native shell",
                   "Native SwiftUI"
                 ],
-                "type" : "select"
+                "type": "select"
               },
               {
-                "label" : "What it is",
-                "name" : "what_it_is",
-                "type" : "text"
+                "label": "What it is",
+                "name": "what_it_is",
+                "type": "text"
               },
               {
-                "label" : "Native structured assets?",
-                "name" : "assets",
-                "type" : "text"
+                "label": "Native structured assets?",
+                "name": "assets",
+                "type": "text"
               },
               {
-                "label" : "Threat",
-                "name" : "threat",
-                "options" : [
+                "label": "Threat",
+                "name": "threat",
+                "options": [
                   "Us",
                   "Watch",
                   "Rising",
                   "Direct"
                 ],
-                "type" : "select"
+                "type": "select"
               },
               {
-                "label" : "Source",
-                "name" : "source_url",
-                "type" : "text"
+                "label": "Source",
+                "name": "source_url",
+                "type": "text"
               },
               {
-                "label" : "Last checked",
-                "name" : "last_checked",
-                "type" : "text"
+                "label": "Last checked",
+                "name": "last_checked",
+                "type": "text"
               }
             ],
-            "filter" : {
-
-            },
-            "items" : [
+            "filter": {},
+            "items": [
               {
-                "id" : "D86489FD-4023-4395-9AB5-23AB7D26B001",
-                "linkedItems" : [
-
-                ],
-                "schemaVersion" : 1,
-                "values" : {
-                  "assets" : "No — org layer only, no domain assets",
-                  "last_checked" : "Mon 6 Jul",
-                  "name" : "Nimbus WebUI",
-                  "platform" : "Web",
-                  "source_url" : "nimbus-web.example",
-                  "threat" : "Watch",
-                  "what_it_is" : "Chat front-end + native org layer (sessions \/ tags \/ themes); the rest mirrors the agent."
+                "id": "D86489FD-4023-4395-9AB5-23AB7D26B001",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "values": {
+                  "assets": "No — org layer only, no domain assets",
+                  "last_checked": "Mon 6 Jul",
+                  "name": "Nimbus WebUI",
+                  "platform": "Web",
+                  "source_url": "nimbus-web.example",
+                  "threat": "Watch",
+                  "what_it_is": "Chat front-end + native org layer (sessions / tags / themes); the rest mirrors the agent."
                 }
               },
               {
-                "id" : "88522D1B-1365-4C53-9CA6-767EDAE004F4",
-                "linkedItems" : [
-
-                ],
-                "schemaVersion" : 1,
-                "values" : {
-                  "assets" : "No — pure mirror",
-                  "last_checked" : "Mon 6 Jul",
-                  "name" : "orbit-workspace",
-                  "platform" : "React PWA",
-                  "source_url" : "orbit-workspace.example",
-                  "threat" : "Watch",
-                  "what_it_is" : "Chat \/ terminal \/ memory \/ skills \/ swarm. Builds no persistent visual assets."
+                "id": "88522D1B-1365-4C53-9CA6-767EDAE004F4",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "values": {
+                  "assets": "No — pure mirror",
+                  "last_checked": "Mon 6 Jul",
+                  "name": "orbit-workspace",
+                  "platform": "React PWA",
+                  "source_url": "orbit-workspace.example",
+                  "threat": "Watch",
+                  "what_it_is": "Chat / terminal / memory / skills / swarm. Builds no persistent visual assets."
                 }
               },
               {
-                "id" : "55020EB4-C0EB-4D9C-B30D-6A1C9B7B7265",
-                "linkedItems" : [
-
-                ],
-                "schemaVersion" : 1,
-                "values" : {
-                  "assets" : "Status widgets only — no user-owned typed app",
-                  "last_checked" : "Mon 6 Jul",
-                  "name" : "Beacon iOS",
-                  "platform" : "Native iOS",
-                  "source_url" : "beacon-ios.example",
-                  "threat" : "Rising",
-                  "what_it_is" : "Chat + voice + sensors + widgets + Live Activities."
+                "id": "55020EB4-C0EB-4D9C-B30D-6A1C9B7B7265",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "values": {
+                  "assets": "Status widgets only — no user-owned typed app",
+                  "last_checked": "Mon 6 Jul",
+                  "name": "Beacon iOS",
+                  "platform": "Native iOS",
+                  "source_url": "beacon-ios.example",
+                  "threat": "Rising",
+                  "what_it_is": "Chat + voice + sensors + widgets + Live Activities."
                 }
               },
               {
-                "id" : "43844AF0-891D-4EE0-AF9A-18CCFEBB71FD",
-                "linkedItems" : [
-
-                ],
-                "schemaVersion" : 1,
-                "values" : {
-                  "assets" : "Ephemeral, agent-drawn — not durable or typed",
-                  "last_checked" : "Mon 6 Jul",
-                  "name" : "LiveDraw Canvas",
-                  "platform" : "Native shell",
-                  "source_url" : "docs.livedraw.example",
-                  "threat" : "Direct",
-                  "what_it_is" : "Agent draws ephemeral UIs in a WKWebView; the device adds sensors."
+                "id": "43844AF0-891D-4EE0-AF9A-18CCFEBB71FD",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "values": {
+                  "assets": "Ephemeral, agent-drawn — not durable or typed",
+                  "last_checked": "Mon 6 Jul",
+                  "name": "LiveDraw Canvas",
+                  "platform": "Native shell",
+                  "source_url": "docs.livedraw.example",
+                  "threat": "Direct",
+                  "what_it_is": "Agent draws ephemeral UIs in a WKWebView; the device adds sensors."
                 }
               },
               {
-                "id" : "608B37B1-7D09-4BDC-BFE6-304256575D80",
-                "linkedItems" : [
-
-                ],
-                "schemaVersion" : 1,
-                "values" : {
-                  "assets" : "Yes — the only one",
-                  "last_checked" : "Fri 10 Jul",
-                  "name" : "Pupa (us)",
-                  "platform" : "Native SwiftUI",
-                  "source_url" : "—",
-                  "threat" : "Us",
-                  "what_it_is" : "Typed persistent shapes + undo + inert .pupa export."
+                "id": "608B37B1-7D09-4BDC-BFE6-304256575D80",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "values": {
+                  "assets": "Yes — the only one",
+                  "last_checked": "Fri 10 Jul",
+                  "name": "Pupa (us)",
+                  "platform": "Native SwiftUI",
+                  "source_url": "—",
+                  "threat": "Us",
+                  "what_it_is": "Typed persistent shapes + undo + inert .pupa export."
                 }
               }
             ],
-            "title" : "Watchlist",
-            "viewMode" : "kanban"
+            "title": "Watchlist",
+            "viewMode": "kanban"
           },
-          "kind" : "tracker"
+          "kind": "tracker"
         },
-        "iconSystemName" : "binoculars",
-        "id" : "tracker-1",
-        "isLocked" : false,
-        "name" : "Watchlist",
-        "summary" : "Companion-app landscape, kanban-grouped by threat (Us \/ Watch \/ Rising \/ Direct). Each card is a rival with platform, what-it-is, whether it ships native structured assets, and a source. The Findings Log links new evidence back to these rows."
+        "iconSystemName": "binoculars",
+        "id": "tracker-1",
+        "isLocked": false,
+        "name": "Watchlist",
+        "summary": "Companion-app landscape, kanban-grouped by threat (Us / Watch / Rising / Direct). Each card is a rival with platform, what-it-is, whether it ships native structured assets, and a source. The Findings Log links new evidence back to these rows."
       },
       {
-        "body" : {
-          "data" : {
-            "fields" : [
+        "body": {
+          "data": {
+            "fields": [
               {
-                "label" : "Date",
-                "name" : "date",
-                "type" : "text"
+                "label": "Date",
+                "name": "date",
+                "type": "text"
               },
               {
-                "label" : "Sweep",
-                "name" : "week",
-                "options" : [
+                "label": "Sweep",
+                "name": "week",
+                "options": [
                   "Wk 1",
                   "Wk 2",
                   "Wk 3"
                 ],
-                "type" : "select"
+                "type": "select"
               },
               {
-                "label" : "Subject",
-                "name" : "subject",
-                "type" : "text"
+                "label": "Subject",
+                "name": "subject",
+                "type": "text"
               },
               {
-                "label" : "Signal",
-                "name" : "signal",
-                "options" : [
+                "label": "Signal",
+                "name": "signal",
+                "options": [
                   "Weak",
                   "Notable",
                   "Strong"
                 ],
-                "type" : "select"
+                "type": "select"
               },
               {
-                "label" : "Finding",
-                "name" : "finding",
-                "type" : "text"
+                "label": "Finding",
+                "name": "finding",
+                "type": "text"
               },
               {
-                "label" : "Source",
-                "name" : "source",
-                "type" : "text"
+                "label": "Source",
+                "name": "source",
+                "type": "text"
               }
             ],
-            "filter" : {
-
-            },
-            "items" : [
+            "filter": {},
+            "items": [
               {
-                "id" : "515E9D85-9BB2-4CAD-B996-C697E529426E",
-                "linkedItems" : [
+                "id": "515E9D85-9BB2-4CAD-B996-C697E529426E",
+                "linkedItems": [
                   {
-                    "componentId" : "tracker-1",
-                    "itemId" : "55020EB4-C0EB-4D9C-B30D-6A1C9B7B7265"
+                    "componentId": "tracker-1",
+                    "itemId": "55020EB4-C0EB-4D9C-B30D-6A1C9B7B7265"
                   }
                 ],
-                "schemaVersion" : 1,
-                "values" : {
-                  "date" : "Mon 22 Jun",
-                  "finding" : "Shipped Live Activities + Lock-Screen widgets for long-running agent status.",
-                  "signal" : "Strong",
-                  "source" : "Release notes · Beacon iOS",
-                  "subject" : "Beacon iOS",
-                  "week" : "Wk 1"
+                "schemaVersion": 1,
+                "values": {
+                  "date": "Mon 22 Jun",
+                  "finding": "Shipped Live Activities + Lock-Screen widgets for long-running agent status.",
+                  "signal": "Strong",
+                  "source": "Release notes · Beacon iOS",
+                  "subject": "Beacon iOS",
+                  "week": "Wk 1"
                 }
               },
               {
-                "id" : "4B6CB4B7-7A5B-4400-AA72-9718409EAD37",
-                "linkedItems" : [
+                "id": "4B6CB4B7-7A5B-4400-AA72-9718409EAD37",
+                "linkedItems": [
                   {
-                    "componentId" : "tracker-1",
-                    "itemId" : "88522D1B-1365-4C53-9CA6-767EDAE004F4"
+                    "componentId": "tracker-1",
+                    "itemId": "88522D1B-1365-4C53-9CA6-767EDAE004F4"
                   }
                 ],
-                "schemaVersion" : 1,
-                "values" : {
-                  "date" : "Tue 23 Jun",
-                  "finding" : "Added a swarm view for parallel subagents — still renders no persistent assets.",
-                  "signal" : "Notable",
-                  "source" : "Public repo · orbit-workspace",
-                  "subject" : "orbit-workspace",
-                  "week" : "Wk 1"
+                "schemaVersion": 1,
+                "values": {
+                  "date": "Tue 23 Jun",
+                  "finding": "Added a swarm view for parallel subagents — still renders no persistent assets.",
+                  "signal": "Notable",
+                  "source": "Public repo · orbit-workspace",
+                  "subject": "orbit-workspace",
+                  "week": "Wk 1"
                 }
               },
               {
-                "id" : "420E30B0-5FBF-408C-A089-CB7EC5917FF9",
-                "linkedItems" : [
+                "id": "420E30B0-5FBF-408C-A089-CB7EC5917FF9",
+                "linkedItems": [
                   {
-                    "componentId" : "tracker-1",
-                    "itemId" : "43844AF0-891D-4EE0-AF9A-18CCFEBB71FD"
+                    "componentId": "tracker-1",
+                    "itemId": "43844AF0-891D-4EE0-AF9A-18CCFEBB71FD"
                   }
                 ],
-                "schemaVersion" : 1,
-                "values" : {
-                  "date" : "Mon 29 Jun",
-                  "finding" : "Live Canvas now lets the agent draw charts + forms in the WKWebView (ephemeral).",
-                  "signal" : "Strong",
-                  "source" : "docs.livedraw.example\/changelog",
-                  "subject" : "LiveDraw",
-                  "week" : "Wk 2"
+                "schemaVersion": 1,
+                "values": {
+                  "date": "Mon 29 Jun",
+                  "finding": "Live Canvas now lets the agent draw charts + forms in the WKWebView (ephemeral).",
+                  "signal": "Strong",
+                  "source": "docs.livedraw.example/changelog",
+                  "subject": "LiveDraw",
+                  "week": "Wk 2"
                 }
               },
               {
-                "id" : "112547C8-24BB-4664-8523-9B568550DA5D",
-                "linkedItems" : [
+                "id": "112547C8-24BB-4664-8523-9B568550DA5D",
+                "linkedItems": [
                   {
-                    "componentId" : "tracker-1",
-                    "itemId" : "D86489FD-4023-4395-9AB5-23AB7D26B001"
+                    "componentId": "tracker-1",
+                    "itemId": "D86489FD-4023-4395-9AB5-23AB7D26B001"
                   }
                 ],
-                "schemaVersion" : 1,
-                "values" : {
-                  "date" : "Tue 30 Jun",
-                  "finding" : "Session tags + themes added; org layer only, no domain assets.",
-                  "signal" : "Weak",
-                  "source" : "Public repo · Nimbus WebUI",
-                  "subject" : "Nimbus WebUI",
-                  "week" : "Wk 2"
+                "schemaVersion": 1,
+                "values": {
+                  "date": "Tue 30 Jun",
+                  "finding": "Session tags + themes added; org layer only, no domain assets.",
+                  "signal": "Weak",
+                  "source": "Public repo · Nimbus WebUI",
+                  "subject": "Nimbus WebUI",
+                  "week": "Wk 2"
                 }
               },
               {
-                "id" : "C9202DA3-5062-4364-B123-E511D8CB148D",
-                "linkedItems" : [
+                "id": "C9202DA3-5062-4364-B123-E511D8CB148D",
+                "linkedItems": [
                   {
-                    "componentId" : "tracker-1",
-                    "itemId" : "43844AF0-891D-4EE0-AF9A-18CCFEBB71FD"
+                    "componentId": "tracker-1",
+                    "itemId": "43844AF0-891D-4EE0-AF9A-18CCFEBB71FD"
                   }
                 ],
-                "schemaVersion" : 1,
-                "values" : {
-                  "date" : "Mon 6 Jul",
-                  "finding" : "Device sensor nodes now feed the agent's drawn UIs — closes part of the native gap.",
-                  "signal" : "Strong",
-                  "source" : "docs.livedraw.example",
-                  "subject" : "LiveDraw",
-                  "week" : "Wk 3"
+                "schemaVersion": 1,
+                "values": {
+                  "date": "Mon 6 Jul",
+                  "finding": "Device sensor nodes now feed the agent's drawn UIs — closes part of the native gap.",
+                  "signal": "Strong",
+                  "source": "docs.livedraw.example",
+                  "subject": "LiveDraw",
+                  "week": "Wk 3"
                 }
               },
               {
-                "id" : "F901DA91-7416-4EEE-A5B4-F9D20D293BC9",
-                "linkedItems" : [
+                "id": "F901DA91-7416-4EEE-A5B4-F9D20D293BC9",
+                "linkedItems": [
                   {
-                    "componentId" : "tracker-1",
-                    "itemId" : "55020EB4-C0EB-4D9C-B30D-6A1C9B7B7265"
+                    "componentId": "tracker-1",
+                    "itemId": "55020EB4-C0EB-4D9C-B30D-6A1C9B7B7265"
                   }
                 ],
-                "schemaVersion" : 1,
-                "values" : {
-                  "date" : "Tue 7 Jul",
-                  "finding" : "Voice mode + widget refresh; assets still status-only.",
-                  "signal" : "Notable",
-                  "source" : "Release notes · Beacon iOS",
-                  "subject" : "Beacon iOS",
-                  "week" : "Wk 3"
+                "schemaVersion": 1,
+                "values": {
+                  "date": "Tue 7 Jul",
+                  "finding": "Voice mode + widget refresh; assets still status-only.",
+                  "signal": "Notable",
+                  "source": "Release notes · Beacon iOS",
+                  "subject": "Beacon iOS",
+                  "week": "Wk 3"
                 }
               },
               {
-                "id" : "C761EED4-B032-40DD-BDF6-917A31BE5C50",
-                "linkedItems" : [
+                "id": "C761EED4-B032-40DD-BDF6-917A31BE5C50",
+                "linkedItems": [
                   {
-                    "componentId" : "tracker-1",
-                    "itemId" : "88522D1B-1365-4C53-9CA6-767EDAE004F4"
+                    "componentId": "tracker-1",
+                    "itemId": "88522D1B-1365-4C53-9CA6-767EDAE004F4"
                   }
                 ],
-                "schemaVersion" : 1,
-                "values" : {
-                  "date" : "Tue 7 Jul",
-                  "finding" : "Wired the skills-hub.example Skills Hub — portable skills, but still no typed canvas.",
-                  "signal" : "Strong",
-                  "source" : "Public repo · orbit-workspace",
-                  "subject" : "orbit-workspace",
-                  "week" : "Wk 3"
+                "schemaVersion": 1,
+                "values": {
+                  "date": "Tue 7 Jul",
+                  "finding": "Wired the skills-hub.example Skills Hub — portable skills, but still no typed canvas.",
+                  "signal": "Strong",
+                  "source": "Public repo · orbit-workspace",
+                  "subject": "orbit-workspace",
+                  "week": "Wk 3"
                 }
               }
             ],
-            "title" : "Findings Log",
-            "viewMode" : "grid"
+            "title": "Findings Log",
+            "viewMode": "grid"
           },
-          "kind" : "tracker"
+          "kind": "tracker"
         },
-        "iconSystemName" : "doc.text.magnifyingglass",
-        "id" : "tracker-2",
-        "isLocked" : false,
-        "name" : "Findings Log",
-        "summary" : "Dated evidence, one row per weekly sweep. Each finding carries a sweep week, a signal strength (Weak \/ Notable \/ Strong), and links its subject back to the Watchlist. The Signal Trend chart and Deltas calculator read this log."
+        "iconSystemName": "doc.text.magnifyingglass",
+        "id": "tracker-2",
+        "isLocked": false,
+        "name": "Findings Log",
+        "summary": "Dated evidence, one row per weekly sweep. Each finding carries a sweep week, a signal strength (Weak / Notable / Strong), and links its subject back to the Watchlist. The Signal Trend chart and Deltas calculator read this log."
       },
       {
-        "body" : {
-          "data" : {
-            "kind" : "line",
-            "series" : [
+        "body": {
+          "data": {
+            "kind": "line",
+            "series": [
               {
-                "id" : "CE1E1D1C-F086-449B-BEFB-151CFDA3D24C",
-                "name" : "All findings",
-                "source" : {
-                  "componentId" : "tracker-2",
-                  "filter" : {
-
-                  },
-                  "groupBy" : "week",
-                  "reduce" : "count",
-                  "type" : "tracker",
-                  "valueField" : "signal",
-                  "xIsNumericOrDate" : false
+                "id": "CE1E1D1C-F086-449B-BEFB-151CFDA3D24C",
+                "name": "All findings",
+                "source": {
+                  "componentId": "tracker-2",
+                  "filter": {},
+                  "groupBy": "week",
+                  "reduce": "count",
+                  "type": "tracker",
+                  "valueField": "signal",
+                  "xIsNumericOrDate": false
                 }
               },
               {
-                "id" : "B4C7476C-2DCB-40E2-988B-CF395C86636D",
-                "name" : "Strong signals",
-                "source" : {
-                  "componentId" : "tracker-2",
-                  "filter" : {
-                    "signal" : "Strong"
+                "id": "B4C7476C-2DCB-40E2-988B-CF395C86636D",
+                "name": "Strong signals",
+                "source": {
+                  "componentId": "tracker-2",
+                  "filter": {
+                    "signal": "Strong"
                   },
-                  "groupBy" : "week",
-                  "reduce" : "count",
-                  "type" : "tracker",
-                  "valueField" : "signal",
-                  "xIsNumericOrDate" : false
+                  "groupBy": "week",
+                  "reduce": "count",
+                  "type": "tracker",
+                  "valueField": "signal",
+                  "xIsNumericOrDate": false
                 }
               }
             ],
-            "title" : "Research signal trend"
+            "title": "Research signal trend"
           },
-          "kind" : "chart"
+          "kind": "chart"
         },
-        "iconSystemName" : "chart.xyaxis.line",
-        "id" : "chart-1",
-        "isLocked" : false,
-        "name" : "Signal Trend",
-        "summary" : "Findings per weekly sweep, with a strong-only overlay. A rising strong-signal line means a competitor is closing the gap. Resolves live from the Findings Log — append a finding and the trend redraws."
+        "iconSystemName": "chart.xyaxis.line",
+        "id": "chart-1",
+        "isLocked": false,
+        "name": "Signal Trend",
+        "summary": "Findings per weekly sweep, with a strong-only overlay. A rising strong-signal line means a competitor is closing the gap. Resolves live from the Findings Log — append a finding and the trend redraws."
       },
       {
-        "body" : {
-          "data" : {
-            "extraCharts" : [
-
-            ],
-            "rows" : [
+        "body": {
+          "data": {
+            "extraCharts": [],
+            "rows": [
               {
-                "id" : "D99F8E17-E4DA-4F0F-A677-868D583E3DB5",
-                "key" : "signal_counts",
-                "kind" : {
-                  "type" : "header"
+                "id": "D99F8E17-E4DA-4F0F-A677-868D583E3DB5",
+                "key": "signal_counts",
+                "kind": {
+                  "type": "header"
                 },
-                "name" : "Signal counts (all sweeps)"
+                "name": "Signal counts (all sweeps)"
               },
               {
-                "id" : "333538FC-F445-4719-86DC-C3F1774A4443",
-                "key" : "strong",
-                "kind" : {
-                  "aggregate" : {
-                    "fieldName" : "signal",
-                    "filter" : {
-                      "signal" : "Strong"
+                "id": "333538FC-F445-4719-86DC-C3F1774A4443",
+                "key": "strong",
+                "kind": {
+                  "aggregate": {
+                    "fieldName": "signal",
+                    "filter": {
+                      "signal": "Strong"
                     },
-                    "reduce" : "count",
-                    "sourceComponentId" : "tracker-2"
+                    "reduce": "count",
+                    "sourceComponentId": "tracker-2"
                   },
-                  "type" : "aggregate"
+                  "type": "aggregate"
                 },
-                "name" : "Strong"
+                "name": "Strong"
               },
               {
-                "id" : "9CF91ED3-6919-4D6C-ACE7-B1BE8B829C23",
-                "key" : "notable",
-                "kind" : {
-                  "aggregate" : {
-                    "fieldName" : "signal",
-                    "filter" : {
-                      "signal" : "Notable"
+                "id": "9CF91ED3-6919-4D6C-ACE7-B1BE8B829C23",
+                "key": "notable",
+                "kind": {
+                  "aggregate": {
+                    "fieldName": "signal",
+                    "filter": {
+                      "signal": "Notable"
                     },
-                    "reduce" : "count",
-                    "sourceComponentId" : "tracker-2"
+                    "reduce": "count",
+                    "sourceComponentId": "tracker-2"
                   },
-                  "type" : "aggregate"
+                  "type": "aggregate"
                 },
-                "name" : "Notable"
+                "name": "Notable"
               },
               {
-                "id" : "C2FBFFFF-6BA7-41F5-AEEA-071681D49FE8",
-                "key" : "weak",
-                "kind" : {
-                  "aggregate" : {
-                    "fieldName" : "signal",
-                    "filter" : {
-                      "signal" : "Weak"
+                "id": "C2FBFFFF-6BA7-41F5-AEEA-071681D49FE8",
+                "key": "weak",
+                "kind": {
+                  "aggregate": {
+                    "fieldName": "signal",
+                    "filter": {
+                      "signal": "Weak"
                     },
-                    "reduce" : "count",
-                    "sourceComponentId" : "tracker-2"
+                    "reduce": "count",
+                    "sourceComponentId": "tracker-2"
                   },
-                  "type" : "aggregate"
+                  "type": "aggregate"
                 },
-                "name" : "Weak"
+                "name": "Weak"
               },
               {
-                "id" : "FB9791F6-323E-4734-84D2-5ED789437792",
-                "key" : "wow",
-                "kind" : {
-                  "type" : "header"
+                "id": "FB9791F6-323E-4734-84D2-5ED789437792",
+                "key": "wow",
+                "kind": {
+                  "type": "header"
                 },
-                "name" : "Week over week"
+                "name": "Week over week"
               },
               {
-                "id" : "C1AAA9C3-FBE4-42F0-83BD-AFCB71EB916F",
-                "key" : "strong_w2",
-                "kind" : {
-                  "aggregate" : {
-                    "fieldName" : "signal",
-                    "filter" : {
-                      "signal" : "Strong",
-                      "week" : "Wk 2"
+                "id": "C1AAA9C3-FBE4-42F0-83BD-AFCB71EB916F",
+                "key": "strong_w2",
+                "kind": {
+                  "aggregate": {
+                    "fieldName": "signal",
+                    "filter": {
+                      "signal": "Strong",
+                      "week": "Wk 2"
                     },
-                    "reduce" : "count",
-                    "sourceComponentId" : "tracker-2"
+                    "reduce": "count",
+                    "sourceComponentId": "tracker-2"
                   },
-                  "type" : "aggregate"
+                  "type": "aggregate"
                 },
-                "name" : "Strong signals · Wk 2"
+                "name": "Strong signals · Wk 2"
               },
               {
-                "id" : "F3B71653-663C-4C2E-A991-15185A45DD2B",
-                "key" : "strong_w3",
-                "kind" : {
-                  "aggregate" : {
-                    "fieldName" : "signal",
-                    "filter" : {
-                      "signal" : "Strong",
-                      "week" : "Wk 3"
+                "id": "F3B71653-663C-4C2E-A991-15185A45DD2B",
+                "key": "strong_w3",
+                "kind": {
+                  "aggregate": {
+                    "fieldName": "signal",
+                    "filter": {
+                      "signal": "Strong",
+                      "week": "Wk 3"
                     },
-                    "reduce" : "count",
-                    "sourceComponentId" : "tracker-2"
+                    "reduce": "count",
+                    "sourceComponentId": "tracker-2"
                   },
-                  "type" : "aggregate"
+                  "type": "aggregate"
                 },
-                "name" : "Strong signals · Wk 3"
+                "name": "Strong signals · Wk 3"
               },
               {
-                "format" : "%+.0f",
-                "id" : "A0AF9B41-D18E-43EC-8925-1A9CA0CD045D",
-                "key" : "new_strong",
-                "kind" : {
-                  "expression" : "strong_w3 - strong_w2",
-                  "type" : "formula"
+                "format": "%+.0f",
+                "id": "A0AF9B41-D18E-43EC-8925-1A9CA0CD045D",
+                "key": "new_strong",
+                "kind": {
+                  "expression": "strong_w3 - strong_w2",
+                  "type": "formula"
                 },
-                "name" : "Change in strong signals"
+                "name": "Change in strong signals"
               }
             ],
-            "title" : "Deltas"
+            "title": "Deltas"
           },
-          "kind" : "calculator"
+          "kind": "calculator"
         },
-        "iconSystemName" : "plusminus.circle",
-        "id" : "calculator-1",
-        "isLocked" : false,
-        "name" : "Deltas",
-        "summary" : "Counts findings by signal tier and computes the week-over-week change in strong signals. A positive 'Change in strong signals' means competitive pressure is rising this sweep. All rows resolve live from the Findings Log."
+        "iconSystemName": "plusminus.circle",
+        "id": "calculator-1",
+        "isLocked": false,
+        "name": "Deltas",
+        "summary": "Counts findings by signal tier and computes the week-over-week change in strong signals. A positive 'Change in strong signals' means competitive pressure is rising this sweep. All rows resolve live from the Findings Log."
       },
       {
-        "body" : {
-          "data" : {
-            "activeChannelId" : "general",
-            "channels" : [
+        "body": {
+          "data": {
+            "activeChannelId": "general",
+            "channels": [
               {
-                "id" : "general",
-                "memberAgentIds" : [
+                "id": "general",
+                "memberAgentIds": [
                   "scout",
                   "analyst",
                   "digest"
                 ],
-                "name" : "research",
-                "subscriberAgentIds" : [
-
-                ],
-                "type" : "channel"
+                "name": "research",
+                "subscriberAgentIds": [],
+                "type": "channel"
               }
             ],
-            "messagesByChannel" : {
-
-            }
+            "messagesByChannel": {}
           },
-          "kind" : "slack"
+          "kind": "slack"
         },
-        "iconSystemName" : "bubble.left.and.bubble.right",
-        "id" : "slack-1",
-        "isLocked" : false,
-        "name" : "Research Room",
-        "summary" : "Multi-agent research room. @Scout finds fresh sources and releases; @Analyst scores each into Weak \/ Notable \/ Strong and appends to the Findings Log; @Digest writes the weekly 'what's new since last week' summary to memory."
+        "iconSystemName": "bubble.left.and.bubble.right",
+        "id": "slack-1",
+        "isLocked": false,
+        "name": "Research Room",
+        "summary": "Multi-agent research room. @Scout finds fresh sources and releases; @Analyst scores each into Weak / Notable / Strong and appends to the Findings Log; @Digest writes the weekly 'what's new since last week' summary to memory."
       }
     ],
-    "createdAt" : "2026-07-10T08:00:47Z",
-    "currentThreadId" : "FE86C483-2F9F-4A6F-9E77-BCCBCEFCE82A",
-    "iconSystemName" : "chart.line.uptrend.xyaxis.circle",
-    "id" : "AFA0466A-FD9E-4660-8804-E12B48334587",
-    "name" : "Research Tracker",
-    "threads" : [
+    "createdAt": "2026-07-10T08:00:47Z",
+    "currentThreadId": "FE86C483-2F9F-4A6F-9E77-BCCBCEFCE82A",
+    "iconSystemName": "chart.line.uptrend.xyaxis.circle",
+    "id": "AFA0466A-FD9E-4660-8804-E12B48334587",
+    "name": "Research Tracker",
+    "threads": [
       {
-        "createdAt" : "2026-07-10T08:00:47Z",
-        "id" : "FE86C483-2F9F-4A6F-9E77-BCCBCEFCE82A",
-        "title" : ""
+        "createdAt": "2026-07-10T08:00:47Z",
+        "id": "FE86C483-2F9F-4A6F-9E77-BCCBCEFCE82A",
+        "title": ""
       }
     ],
-    "typeId" : "tracker"
+    "typeId": "tracker"
   },
-  "header" : {
-    "appVersion" : "0.0.180",
-    "exportedAt" : "2026-07-10T08:00:47Z",
-    "format" : "pupa.myapp.bundle",
-    "formatVersion" : 1,
-    "includedMemories" : true,
-    "includedRecords" : true
+  "header": {
+    "appVersion": "0.0.180",
+    "exportedAt": "2026-07-10T08:00:47Z",
+    "format": "pupa.myapp.bundle",
+    "formatVersion": 1,
+    "includedMemories": true,
+    "includedRecords": true
   },
-  "memories" : [
+  "memories": [
     {
-      "content" : "# Example: Research Tracker\n\nA competitive-intelligence workspace. Run a weekly sweep with the\nresearch agents, append findings, and watch the signal trend move.\nShips seeded with a fictional companion-app landscape as sample data.\n\n## Components\n\n- **Watchlist** (`tracker-1`) — kanban of rival apps grouped by threat\n  (Us \/ Watch \/ Rising \/ Direct). Each card carries platform, what it\n  is, whether it ships native structured assets, and a source.\n- **Findings Log** (`tracker-2`) — one dated row per piece of evidence,\n  tagged with a sweep week and a signal strength, linked back to its\n  Watchlist row.\n- **Signal Trend** (`chart-1`) — findings per sweep with a strong-only\n  overlay. Resolves live from the Findings Log.\n- **Deltas** (`calculator-1`) — signal counts + the week-over-week\n  change in strong signals.\n- **Research Room** (`slack-1`) — `@Scout` finds sources, `@Analyst`\n  scores + logs them, `@Digest` writes the weekly summary.\n\n## How to use — the weekly sweep\n\n1. Open Research Room and ask `@Scout` to find what's new for the\n   Watchlist apps this week (needs a search \/ RSS \/ web-fetch tool).\n2. `@Analyst` scores each find and appends it to the Findings Log with\n   the subject linked to its Watchlist row.\n3. Check the Signal Trend chart and Deltas — is any competitor's strong\n   signal rising?\n4. Ask `@Digest` for the \"what's new since last week\" summary; it saves\n   to `research-tracker\/digests\/`.\n5. Update Watchlist threat levels if a rival's position changed.\n\n## Keeping yourself updated\n\n- Maintain `MEMORY.md` (which sources actually pay off, recurring\n  competitor patterns) and `USER.md` (the niches and rivals the user\n  cares about) at this app's memory root. Keep both compact — prune\n  stale lines instead of appending forever.\n- Keep a `skills\/` folder. After a few sweeps, write\n  `skills\/weekly-sweep.md` (trigger + the exact source list + scoring\n  rubric that worked). When a sweep misses something, fix that skill's\n  trigger rather than starting over.\n- Each sweep, do a quick self-review: refresh `MEMORY.md`, and if you've\n  learned a better scoring or sourcing convention, propose an edit to\n  the relevant persona AGENTS.md.\n- Confirm in chat before overwriting a memory file or persona the user\n  has edited — never clobber a user edit silently.\n\n## Tips\n\n- The Watchlist is seeded with a sample landscape — replace it with the\n  competitors in your space and the whole workspace retargets.",
-      "path" : "pupa\/AGENTS.md"
+      "content": "# Example: Research Tracker\n\nA competitive-intelligence workspace. Run a weekly sweep with the\nresearch agents, append findings, and watch the signal trend move.\nShips seeded with a fictional companion-app landscape as sample data.\n\n## Components\n\n- **Watchlist** (`tracker-1`) — kanban of rival apps grouped by threat\n  (Us / Watch / Rising / Direct). Each card carries platform, what it\n  is, whether it ships native structured assets, and a source.\n- **Findings Log** (`tracker-2`) — one dated row per piece of evidence,\n  tagged with a sweep week and a signal strength, linked back to its\n  Watchlist row.\n- **Signal Trend** (`chart-1`) — findings per sweep with a strong-only\n  overlay. Resolves live from the Findings Log.\n- **Deltas** (`calculator-1`) — signal counts + the week-over-week\n  change in strong signals.\n- **Research Room** (`slack-1`) — `@Scout` finds sources, `@Analyst`\n  scores + logs them, `@Digest` writes the weekly summary.\n\n## How to use — the weekly sweep\n\n1. Open Research Room and ask `@Scout` to find what's new for the\n   Watchlist apps this week (needs a search / RSS / web-fetch tool).\n2. `@Analyst` scores each find and appends it to the Findings Log with\n   the subject linked to its Watchlist row.\n3. Check the Signal Trend chart and Deltas — is any competitor's strong\n   signal rising?\n4. Ask `@Digest` for the \"what's new since last week\" summary; it saves\n   to `research-tracker/digests/`.\n5. Update Watchlist threat levels if a rival's position changed.\n\n## Keeping yourself updated\n\n- Maintain `MEMORY.md` (which sources actually pay off, recurring\n  competitor patterns) and `USER.md` (the niches and rivals the user\n  cares about) at this app's memory root. Keep both compact — prune\n  stale lines instead of appending forever.\n- Keep a `skills/` folder. After a few sweeps, write\n  `skills/weekly-sweep.md` (trigger + the exact source list + scoring\n  rubric that worked). When a sweep misses something, fix that skill's\n  trigger rather than starting over.\n- Each sweep, do a quick self-review: refresh `MEMORY.md`, and if you've\n  learned a better scoring or sourcing convention, propose an edit to\n  the relevant persona AGENTS.md.\n- Confirm in chat before overwriting a memory file or persona the user\n  has edited — never clobber a user edit silently.\n\n## Tips\n\n- The Watchlist is seeded with a sample landscape — replace it with the\n  competitors in your space and the whole workspace retargets.",
+      "path": "pupa/AGENTS.md"
     },
     {
-      "content" : "# Analyst\n\n**Role:** Signal analyst\n\n## Persona\n\nYou decide what a find *means* for our competitive position and record\nit.\n\n## How you work\n\n- Score each find from `@Scout`: **Strong** (changes our position \/\n  closes our wedge), **Notable** (worth watching), **Weak** (noise).\n- Append a row to the Findings Log (tracker-2): set `week`, `signal`,\n  `finding`, `source`, and link `subject` to the right Watchlist row.\n- Say *why* a signal is strong — name the specific capability gap it\n  closes.\n\n## What you don't do\n\n- You don't search for sources — that's `@Scout`.\n- You don't write the digest — that's `@Digest`.\n- You don't inflate signals; most findings are Weak or Notable.",
-      "path" : "pupa\/agents\/analyst\/AGENTS.md"
+      "content": "# Analyst\n\n**Role:** Signal analyst\n\n## Persona\n\nYou decide what a find *means* for our competitive position and record\nit.\n\n## How you work\n\n- Score each find from `@Scout`: **Strong** (changes our position /\n  closes our wedge), **Notable** (worth watching), **Weak** (noise).\n- Append a row to the Findings Log (tracker-2): set `week`, `signal`,\n  `finding`, `source`, and link `subject` to the right Watchlist row.\n- Say *why* a signal is strong — name the specific capability gap it\n  closes.\n\n## What you don't do\n\n- You don't search for sources — that's `@Scout`.\n- You don't write the digest — that's `@Digest`.\n- You don't inflate signals; most findings are Weak or Notable.",
+      "path": "pupa/agents/analyst/AGENTS.md"
     },
     {
-      "content" : "# Digest\n\n**Role:** Weekly summariser\n\n## Persona\n\nYou turn the week's Findings Log into a short \"what's new since last\nweek\" brief.\n\n## How you work\n\n- Read the latest sweep's rows + the Deltas calculator. Lead with the\n  strongest signals and the week-over-week change in strong signals.\n- Keep it tight — a few bullets, each with the subject and source.\n- Save to memory at `research-tracker\/digests\/` dated by sweep, so next\n  week you can diff against it.\n\n## What you don't do\n\n- You don't search (`@Scout`) or score (`@Analyst`).\n- You don't pad the summary — if nothing strong landed, say so.",
-      "path" : "pupa\/agents\/digest\/AGENTS.md"
+      "content": "# Digest\n\n**Role:** Weekly summariser\n\n## Persona\n\nYou turn the week's Findings Log into a short \"what's new since last\nweek\" brief.\n\n## How you work\n\n- Read the latest sweep's rows + the Deltas calculator. Lead with the\n  strongest signals and the week-over-week change in strong signals.\n- Keep it tight — a few bullets, each with the subject and source.\n- Save to memory at `research-tracker/digests/` dated by sweep, so next\n  week you can diff against it.\n\n## What you don't do\n\n- You don't search (`@Scout`) or score (`@Analyst`).\n- You don't pad the summary — if nothing strong landed, say so.",
+      "path": "pupa/agents/digest/AGENTS.md"
     },
     {
-      "content" : "# Scout\n\n**Role:** Source finder\n\n## Persona\n\nYou hunt for fresh, citable evidence about the apps on the Watchlist —\nreleases, changelogs, launch posts, HN \/ Reddit \/ X threads, funding\nnews.\n\n## How you work\n\n- Use `tavily_search` or any web-fetch \/ RSS tool for live lookups.\n  Prefer sources < 2 weeks old; always cite the URL.\n- Read the Watchlist (tracker-1) first so you search the right apps and\n  don't re-surface what's already logged.\n- Hand each find to `@Analyst` with a one-line \"why this might matter\".\n\n## What you don't do\n\n- You don't score signals — that's `@Analyst`.\n- You don't write the weekly summary — that's `@Digest`.\n- You don't log a finding without a source URL.",
-      "path" : "pupa\/agents\/scout\/AGENTS.md"
+      "content": "# Scout\n\n**Role:** Source finder\n\n## Persona\n\nYou hunt for fresh, citable evidence about the apps on the Watchlist —\nreleases, changelogs, launch posts, HN / Reddit / X threads, funding\nnews.\n\n## How you work\n\n- Use `tavily_search` or any web-fetch / RSS tool for live lookups.\n  Prefer sources < 2 weeks old; always cite the URL.\n- Read the Watchlist (tracker-1) first so you search the right apps and\n  don't re-surface what's already logged.\n- Hand each find to `@Analyst` with a one-line \"why this might matter\".\n\n## What you don't do\n\n- You don't score signals — that's `@Analyst`.\n- You don't write the weekly summary — that's `@Digest`.\n- You don't log a finding without a source URL.",
+      "path": "pupa/agents/scout/AGENTS.md"
     }
   ]
 }

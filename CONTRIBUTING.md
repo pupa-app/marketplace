@@ -30,6 +30,18 @@ apps/<slug>/
   screenshots/        # optional, ≤5 files, .png/.jpg, ≤1 MB each
 ```
 
+Bundles are stored as indented JSON so diffs read line by line. The export is
+one long line — reformat it once after exporting:
+
+```sh
+python3 -c 'import json,sys; p=sys.argv[1]; d=json.load(open(p)); \
+  open(p,"w").write(json.dumps(d,indent=2,ensure_ascii=False)+"\n")' \
+  apps/<slug>/app.pupa
+```
+
+Re-serialization only: indentation and escape form change (`\/`→`/`,
+`\uXXXX`→UTF-8). The parsed bundle is identical.
+
 `<slug>` matches `^[a-z0-9][a-z0-9-]{1,63}$` and is the app's stable id. Pick it
 once; renaming it later reads as a different app.
 
@@ -72,7 +84,8 @@ under this repo's license. Missing it fails the `DCO` check; fix with
 ### 4. Updating an app you already published
 
 Change `app.pupa`, then **bump `version`** in `metadata.json`. CI rejects a
-changed bundle without a version bump. `make index` picks up the new size and
+bundle whose content changed without a version bump — it compares parsed JSON,
+so a pure reformat needs no bump. `make index` picks up the new size and
 checksum.
 
 ### 5. The realism bar
