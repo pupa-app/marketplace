@@ -14,8 +14,8 @@
       "name": "Job Search & Apply",
       "path": "apps/job-search-apply/app.pupa",
       "screenshots": [],
-      "sha256": "886c9b3772359e2341ebcdc32917bb33a6da5e51fd5091110a3c618eed25ff80",
-      "sizeBytes": 56786,
+      "sha256": "f4654ce705bb1582a3bcf6dcb392097f0a3fc891853bc32d9d77d850fff815ba",
+      "sizeBytes": 66008,
       "summary": "Job-application pipeline: scouts boards, scores openings against your own rubric, tailors and submits each application, tracks deadlines. Needs host pandoc plus Playwright to submit.",
       "tags": [
         "jobs",
@@ -24,7 +24,7 @@
         "automation",
         "productivity"
       ],
-      "version": 1
+      "version": 2
     },
     {
       "appFormatVersion": 1,
