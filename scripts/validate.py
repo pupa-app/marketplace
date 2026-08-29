@@ -445,8 +445,22 @@ def git_show(ref, path):
         return None  # new file at base
 
 
+def bundle_content_changed(old_raw, new_raw):
+    """Compare bundles by parsed value, so a reformat alone is not a change.
+
+    Falls back to bytes if either side won't parse (a malformed bundle is
+    caught by validate_bundle; here it just means "assume changed").
+    """
+    if old_raw == new_raw:
+        return False
+    try:
+        return json.loads(old_raw) != json.loads(new_raw)
+    except (ValueError, UnicodeDecodeError):
+        return True
+
+
 def check_version_bumps(base):
-    """Fail if any app.pupa changed vs base without a metadata version bump."""
+    """Fail if any app.pupa's content changed vs base without a version bump."""
     problems = []
     for app_dir in sorted(p for p in APPS.iterdir() if p.is_dir()) if APPS.exists() else []:
         slug = app_dir.name
@@ -455,7 +469,7 @@ def check_version_bumps(base):
         if old_bundle is None:
             continue  # new app
         new_bundle = (app_dir / "app.pupa").read_bytes()
-        if old_bundle == new_bundle:
+        if not bundle_content_changed(old_bundle, new_bundle):
             continue
         old_meta_raw = git_show(base, f"apps/{slug}/metadata.json")
         old_v = json.loads(old_meta_raw).get("version") if old_meta_raw else 0
@@ -539,6 +553,15 @@ def cmd_self_test():
         except AppError as e:
             failed += 1
             print(f"  FAIL (unexpected error): {desc} -> {e}")
+
+    def expect_is(desc, got, want):
+        nonlocal passed, failed
+        if got == want:
+            passed += 1
+            print(f"  ok: {desc}")
+        else:
+            failed += 1
+            print(f"  FAIL: {desc} -> got {got!r}, want {want!r}")
 
     def good_bundle(**over):
         b = {
@@ -627,6 +650,15 @@ def cmd_self_test():
         "license": "CC-BY-NC-SA-4.0", "attribution": "Schema content © NovoPsych, https://novopsych.com"}))
     expect_error("blank license", lambda: validate_metadata("my-app", {
         "id": "my-app", "version": 1, "author": "h", "summary": "s", "tags": [], "license": "   "}))
+
+    raw = good_bundle()
+    pretty = json.dumps(json.loads(raw), indent=2).encode("utf-8")
+    renamed = good_bundle(app={"name": "Renamed", "iconSystemName": "star",
+                               "components": [{"id": "tracker-1"}]})
+    expect_is("reformat is not a content change", bundle_content_changed(raw, pretty), False)
+    expect_is("identical bytes are not a change", bundle_content_changed(raw, raw), False)
+    expect_is("content edit is a change", bundle_content_changed(raw, renamed), True)
+    expect_is("unparseable side counts as changed", bundle_content_changed(raw, b"{not json"), True)
 
     print(f"\nself-test: {passed} passed, {failed} failed")
     return 1 if failed else 0
