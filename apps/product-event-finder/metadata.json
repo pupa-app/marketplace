@@ -1,6 +1,6 @@
 {
   "id": "product-event-finder",
-  "version": 1,
+  "version": 2,
   "author": "pupa-app",
   "summary": "Find any product or event: searches sellers, browser-verifies real stock, legitimacy-checks unknown sites, and tracks results — then preps checkout without ever touching your credentials.",
   "tags": ["shopping", "search", "tracker", "events", "tickets"],
