@@ -10,5 +10,6 @@
     "automation",
     "productivity"
   ],
-  "homepage": "https://github.com/pupa-app/pupa"
+  "homepage": "https://github.com/pupa-app/pupa",
+  "order": -1
 }
