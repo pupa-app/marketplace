@@ -1,0 +1,405 @@
+{
+  "app": {
+    "activeComponentId": "tracker-1",
+    "colorIndex": 11,
+    "components": [
+      {
+        "body": {
+          "data": {
+            "fields": [
+              {
+                "label": "Image",
+                "name": "Image",
+                "type": "image"
+              },
+              {
+                "label": "Title",
+                "name": "Title",
+                "type": "text"
+              },
+              {
+                "label": "Source",
+                "name": "Source",
+                "type": "link"
+              },
+              {
+                "label": "Cuisine",
+                "name": "Cuisine",
+                "options": [
+                  "Indonesian",
+                  "Italian",
+                  "Japanese",
+                  "Other",
+                  "Indonesian-Italian"
+                ],
+                "type": "select"
+              },
+              {
+                "label": "Servings",
+                "name": "Servings",
+                "type": "text"
+              },
+              {
+                "label": "Time",
+                "name": "Time",
+                "type": "text"
+              },
+              {
+                "label": "Status",
+                "name": "Status",
+                "options": [
+                  "To try",
+                  "Made it",
+                  "Favourite"
+                ],
+                "type": "select"
+              },
+              {
+                "label": "Details",
+                "name": "Details",
+                "type": "text"
+              },
+              {
+                "label": "Notes",
+                "name": "Notes",
+                "type": "text"
+              }
+            ],
+            "filter": {},
+            "items": [
+              {
+                "id": "87766482-EF99-4006-ABB1-43FA39B8A98A",
+                "linkedItems": [
+                  {
+                    "componentId": "checklist-1",
+                    "itemId": "B463993A-5BC3-4DFE-9B9C-29875A7FE0BA"
+                  }
+                ],
+                "schemaVersion": 1,
+                "values": {
+                  "Cuisine": "Indonesian",
+                  "Details": "[Kering Tempe details](pupa://memory/recipes/kering-tempe.md)",
+                  "Image": "🍲",
+                  "Notes": "Scaled 1/3 from 1.5 kg original. Seasonings to taste.",
+                  "Servings": "500 g tempe (1/3 batch)",
+                  "Source": "",
+                  "Status": "To try",
+                  "Time": "~40 min",
+                  "Title": "Crispy Sweet Tempe (Kering Tempe)"
+                }
+              },
+              {
+                "id": "025A2C04-8D38-43B4-9417-3D28F3A33F44",
+                "linkedItems": [
+                  {
+                    "componentId": "checklist-2",
+                    "itemId": "E932E261-7ABB-4414-AB62-1EABEC2A2234"
+                  }
+                ],
+                "schemaVersion": 1,
+                "values": {
+                  "Cuisine": "Indonesian-Italian",
+                  "Details": "[Martabak Gianduja-Mascarpone](pupa://memory/recipes/martabak-gianduja-mascarpone.md)",
+                  "Image": "🥞",
+                  "Notes": "Pupa original fusion. Sweet martabak folded over molten gianduja + cold mascarpone cream + toasted hazelnuts + flaky salt.",
+                  "Servings": "1 martabak (6–8 wedges)",
+                  "Source": "",
+                  "Status": "To try",
+                  "Time": "~35 min + 30 min rest",
+                  "Title": "Martabak Manis — Gianduja & Mascarpone"
+                }
+              },
+              {
+                "id": "D8813963-C086-4A13-8AC7-C24BDB4E5EA0",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "values": {
+                  "Cuisine": "Indonesian",
+                  "Image": "🥗",
+                  "Notes": "Blanched veg, tofu, egg under bumbu kacang (peanut sauce). By Nagi / RecipeTin Eats.",
+                  "Servings": "2",
+                  "Source": "https://www.recipetineats.com/gado-gado-indonesian-salad-with-peanut-sauce/",
+                  "Status": "To try",
+                  "Time": "30 min",
+                  "Title": "Gado-Gado (veg salad + peanut sauce)"
+                }
+              }
+            ],
+            "shrinkCards": false,
+            "title": "Recipes",
+            "viewMode": "grid"
+          },
+          "kind": "tracker"
+        },
+        "iconSystemName": "fork.knife",
+        "id": "tracker-1",
+        "isLocked": false,
+        "name": "Recipes",
+        "summary": "Recipe library. 3 starter rows: 2 fully worked (details md + steps checklist) and 1 lightweight row as /recipe-search leaves it. Details field holds the pupa://memory link once /recipe runs full intake."
+      },
+      {
+        "body": {
+          "data": {
+            "items": [
+              {
+                "done": false,
+                "id": "B463993A-5BC3-4DFE-9B9C-29875A7FE0BA",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "text": "Slice tempe thin and long (500 g)"
+              },
+              {
+                "done": false,
+                "id": "9A5F310D-943F-4BCF-A9A8-4F88F46E607F",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "text": "Slice red curly chilies diagonally (5 pcs)"
+              },
+              {
+                "done": false,
+                "id": "AF59C51C-D6DC-4B71-8048-3B42DA6B90A6",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "text": "Slice shallots (4 cloves) & garlic (3 cloves)"
+              },
+              {
+                "done": false,
+                "id": "6448B543-38F1-4719-8BCF-12162BA74F13",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "text": "Bruise lemongrass (1 stalk) & galangal (1-1.5 knuckles)"
+              },
+              {
+                "done": false,
+                "id": "A37DC916-E0C5-4B3F-9554-A2292EA3B2AE",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "text": "Saute shallots, garlic, lemongrass, bay leaf (1 leaf), galangal"
+              },
+              {
+                "done": false,
+                "id": "9B57C489-CCC3-457E-BCB6-B91EE51D50C7",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "text": "Add chilies, saute until wilted"
+              },
+              {
+                "done": false,
+                "id": "46017924-63AE-4B30-ABED-E727850DDAEB",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "text": "Add tempe, stir well"
+              },
+              {
+                "done": false,
+                "id": "6C6A9D56-B566-4C5A-ACF8-F03A4B55D883",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "text": "Pour in 70 ml water"
+              },
+              {
+                "done": false,
+                "id": "EFEF371A-B888-4707-B0A0-EB01BB7AE11F",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "text": "Dissolve tamarind pulp (1/6 tbsp) in 1 tbsp water, add in"
+              },
+              {
+                "done": false,
+                "id": "876482B7-1D58-4FA2-83B1-9EB38A60B8EC",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "text": "Add palm sugar (50g), sugar (2/3 tbsp), powdered broth, salt, seasoning to taste (small amount)"
+              },
+              {
+                "done": false,
+                "id": "BAD2F411-9214-4BED-89BB-827BAC886158",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "text": "Cook until dry and flavors absorbed"
+              },
+              {
+                "done": false,
+                "id": "BDC61526-D152-4C0A-B2DE-4173E2AFEF82",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "text": "Serve with uduk/yellow/tumpeng rice"
+              }
+            ],
+            "title": "Crispy Sweet Tempe (500g)"
+          },
+          "kind": "checklist"
+        },
+        "iconSystemName": "checklist",
+        "id": "checklist-1",
+        "isLocked": false,
+        "name": "Kering Tempe",
+        "summary": "Crispy sweet tempe recipe, scaled 1/3 for 500g tempe. 12 steps, prep to serve. English translation."
+      },
+      {
+        "body": {
+          "data": {
+            "items": [
+              {
+                "done": false,
+                "id": "E932E261-7ABB-4414-AB62-1EABEC2A2234",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "text": "Whisk batter: 150g flour, 1 tbsp sugar, 1/2 tsp yeast, 1/4 tsp baking soda, pinch salt; add 1 egg + 220ml warm milk + 1/2 tsp vanilla, whisk smooth"
+              },
+              {
+                "done": false,
+                "id": "0B5E7B3E-760B-4EB7-990B-562F3E1E73CB",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "text": "Rest batter covered 30 min until bubbly"
+              },
+              {
+                "done": false,
+                "id": "1D23EE35-1941-4488-82E9-33C559AE1B22",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "text": "Whip mascarpone cream: 120g mascarpone + 60ml cold cream + 1 tbsp icing sugar + 1/2 tsp vanilla to soft peaks; chill"
+              },
+              {
+                "done": false,
+                "id": "FE26C584-7768-4C8D-9329-15D981E12215",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "text": "Toast + roughly chop 40g hazelnuts"
+              },
+              {
+                "done": false,
+                "id": "CC016BA4-E841-48C6-8D26-AB0D165C9459",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "text": "Heat small cast/non-stick pan medium-low, light butter; pour batter ~1.5cm deep"
+              },
+              {
+                "done": false,
+                "id": "C6013B18-0DAA-466F-837B-F9B9B42CFF26",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "text": "Cover, cook ~4 min until surface holds bubbles + edges set; sprinkle caster sugar on top for lace crust"
+              },
+              {
+                "done": false,
+                "id": "82682DF7-55BC-43B1-9574-D0874E7C5F86",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "text": "Cover again, cook ~4–6 min until base golden + crumb honeycombed. No flip"
+              },
+              {
+                "done": false,
+                "id": "69749975-0126-48F4-8F46-BAE6A6A37192",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "text": "Brush surface with butter; spread 100g gianduja over one half so it melts"
+              },
+              {
+                "done": false,
+                "id": "FA7AA0DD-93AA-4C17-A77D-884F08E1325D",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "text": "Dollop chilled mascarpone cream over gianduja; scatter hazelnuts + flaky salt"
+              },
+              {
+                "done": false,
+                "id": "E9CAFB23-5D70-41BA-9B29-972BBD5046EC",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "text": "Fold in half, press, brush top with butter; rest 1 min, slice into wedges, serve warm"
+              }
+            ],
+            "title": "Martabak Gianduja-Mascarpone"
+          },
+          "kind": "checklist"
+        },
+        "iconSystemName": "checklist",
+        "id": "checklist-2",
+        "isLocked": false,
+        "name": "Martabak Gianduja-Mascarpone",
+        "summary": "Martabak Manis Gianduja-Mascarpone — 10 steps, 1 martabak (6–8 wedges). Pupa original Indo×Italian fusion dessert."
+      }
+    ],
+    "createdAt": "2026-07-10T14:46:13Z",
+    "currentThreadId": "BC5D6D9E-FF20-450A-9D11-8F37E0EA57E1",
+    "iconSystemName": "fork.knife",
+    "id": "6B94AF25-7446-4497-B66A-8AF50B6CD2D1",
+    "name": "Recipes Helper",
+    "threads": [
+      {
+        "createdAt": "2026-09-06T14:54:24Z",
+        "id": "BC5D6D9E-FF20-450A-9D11-8F37E0EA57E1",
+        "title": ""
+      }
+    ],
+    "typeId": "tracker"
+  },
+  "header": {
+    "appVersion": "0.0.279",
+    "exportedAt": "2026-09-06T14:54:24Z",
+    "format": "pupa.myapp.bundle",
+    "formatVersion": 1,
+    "includedMemories": true,
+    "includedRecords": true
+  },
+  "memories": [
+    {
+      "content": "# Recipes\n\n**Type:** tracker · a personal recipe library.\n\n## What this app is\n\nA recipe library. Each recipe = one row in the `Recipes` tracker, fanning out\ninto three linked artifacts:\n\n1. **Tracker row** (`tracker-1`) — photo, title, source, cuisine, time, status.\n2. **Details md** — `recipes/<slug>.md` in memories, linked from the row's\n   `Details` field as `pupa://memory/recipes/<slug>.md`.\n3. **Steps checklist** — a checklist component per recipe, for hands-free cooking.\n\n## Where things live\n\n- **Recipes tracker** — canvas component, kind `tracker`.\n- **Per-recipe checklists** — canvas components, kind `checklist`.\n- **Details markdown** — memories folder `recipes/` at the **root**, beside\n  `pupa/` — NOT inside `pupa/`. Always `recipes/<slug>.md`.\n- **Skills** — `pupa/skills/`: `/setup`, `/recipe`, `/recipe-search`.\n\n## Skills\n\n- **`/setup`** — orient the user; bootstrap the `Recipes` tracker if absent.\n- **`/recipe`** — turn a photo / screenshot / link / pasted text into a row +\n  details md + steps checklist. Handles translation and scaling.\n- **`/recipe-search`** — web-search recipes and fill the tracker with rows.\n\n## Conventions\n\n- Canvas hosts COMPONENTS (ids like `tracker-1`) — pass `componentId` to target\n  one; single-component myApps may omit it. Per-kind tools unlock only after\n  `addComponent` introduces that kind.\n- **LINKING** — `linkItem` / `unlinkItem` attach refs between any two items\n  (any kinds, any direction; same-component allowed for parent / subtask). Link\n  a recipe row to its steps checklist so the card shows a live pill.\n\n## Rules\n\n- Never re-render or overwrite a populated `Recipes` tracker (resets items) —\n  use `addTrackerField` / `renameTrackerField` for schema changes.\n- Details md always in root `recipes/`, never `pupa/recipes/`.\n- Salt / seasoning stay \"to taste\" — never scale into false precision.\n- Don't add charts / calendars unless asked.\n",
+      "path": "pupa/AGENTS.md"
+    },
+    {
+      "content": "---\ndescription: Skills, subagents and multi-agent slack rooms\nwhen_to_use: when creating skills or subagents, using /commands, or working with slack rooms\nversion: 23\n---\n- **Skills** — reusable playbooks that double as `/commands` in chat.\n  Each app has its own set (this guide is one). Ask the agent to create\n  one, or write it yourself in the memory tree under `pupa/skills/`.\n- **Subagents** — named delegates with their own persona and\n  instructions. The main agent creates them and hands off focused tasks.\n- **Orchestrator** — the top-level agent: creates and manages myapps and\n  delegates work to each app's agent.\n\n**Slack rooms.** A component with channels, group DMs and DMs. The\nworkspace roster is simply *all* the myapp's subagents — creating a\nsubagent adds it to the roster; nothing lives in the component but rooms\nand their transcripts. @-mention an agent (or post in its DM) to wake it:\nit reads the channel's history for context, works with the app's tools,\nand posts its reply back to the channel. Agents can @-mention each other,\nso one message can start a chain of replies. Exporting the app keeps the\nchannels and the agent personas but strips the transcripts.",
+      "path": "pupa/plugins/pupa-guide/skills/pupa-agents/SKILL.md"
+    },
+    {
+      "content": "---\ndescription: React to canvas events (an item moved) by proposing a chat — the pupa/automations.json rule format and its guards\nwhen_to_use: when the user wants the app to act automatically on a canvas change, or when authoring or editing automation rules\nversion: 23\n---\nAn **automation** reacts *inside* a myapp to a canvas event by proposing a\nchat. Declarative config, no code — rules ride the `.pupa` bundle and only\never start a model turn, always behind a confirm bubble unless a rule\nexplicitly opts out.\n\n**Trigger (v1).** `item.moved` — a user changes any **select** field on a\ntracker item: dragging a kanban lane, editing the field on the card, or\nsaving the edit sheet. Independent of the board's group-by — a rule\nwatching `Priority` fires while the board is grouped by `Status`, and in\ngrid view too. One event per changed select field. Agent moves never\ntrigger (so a reaction can't loop on itself).\n\n**Where.** One file per app: `pupa/automations.json`. Shape mirrors Claude\nCode hook config — an `automations` map keyed by event name, each a list of\nrules — but these are Pupa domain events, not harness hooks.\n\n```json\n{\"automations\":{\"item.moved\":[\n  {\"id\":\"review-on-move\",\n   \"matcher\":{\"field\":\"Status\",\"toColumn\":\"Review\"},\n   \"action\":{\"startThread\":{\"prompt\":\"Review {{item.title}}.\"}},\n   \"confirm\":true}\n]}}\n```\n\n**Fields.**\n- `id` (required) — unique per rule; also the lock key.\n- `matcher` — field-equality predicates, **all must hold (AND)**; omit or\n  `{}` to match every move. Keys are any of the item's own fields plus the\n  transition keys `field` / `toColumn` / `fromColumn`. Add `field` whenever\n  two select fields share an option name, or the rule fires on both.\n- `action.startThread.prompt` (required) — the chat prompt. Templates:\n  `{{item.title}}`, `{{item.<field>}}`, `{{field}}`, `{{toColumn}}`,\n  `{{fromColumn}}`, substituted literally (no code).\n- `confirm` — `true` (default) proposes a Start/Dismiss bubble; `false`\n  auto-fires with no prompt. `false` only survives in rules the user wrote\n  locally: **import rewrites every rule to `confirm: true`**, so shipping\n  it in a bundle has no effect.\n\n**Guards (automatic — you don't configure them).**\n- **Self-mutation** — the reaction's own edits don't re-trigger the rule.\n- **Once-per-transition** — the same move fires once within a short window.\n- **In-flight lock** — while a rule's reaction for an item is running, the\n  same item won't re-fire it (a timeout backstop frees a stuck one).\n\n**Limits.** v1 has one event (`item.moved`), one action (`startThread`),\nequality-only matching, and no chaining. A malformed rule is skipped, not\nfatal — the rest of the file still loads.",
+      "path": "pupa/plugins/pupa-guide/skills/pupa-automations/SKILL.md"
+    },
+    {
+      "content": "---\ndescription: The component shapes a myapp canvas can hold and how they combine\nwhen_to_use: when choosing, combining or linking components, or asked what shapes exist\nversion: 23\n---\nA myapp's canvas holds components. Available shapes:\n\n- **calculator** — live numeric model with tunable inputs + formula rows\n- **calendar** — time-indexed events in a list or month grid\n- **chart** — pie/bar/line visualisation of tracker or calculator data\n- **checklist** — simple done/not-done items, no per-row fields\n- **slack** — multi-agent chat rooms (subagent personas, channels, @-mentions)\n- **tracker** — multi-field records in a table/kanban (fields, filters, cards)\n\n**Combining.** One myapp mixes shapes freely. Items link across\ncomponents — a tracker row to a calendar event, a task to a parent\nrecord. Calculators and charts read live from other components, and a\nchart can be embedded straight into chat.\n\n**Views, not shapes.** Kanban is a tracker view mode (table ⇄ cards),\nnot a separate component.\n\n**Finding and scanning.** Both tracker views have a search box above\nthe cards — it matches any field, including link URLs, and in kanban it\nnarrows the cards without dropping columns. The shrink button next to\nthe view toggle collapses every card to its title for a whole-board\nview; it sticks per component. Cards with several links show the first\nfew and a \"+N\" you can tap to see the rest.",
+      "path": "pupa/plugins/pupa-guide/skills/pupa-components/SKILL.md"
+    },
+    {
+      "content": "---\ndescription: How Pupa remembers: memories, sessions, change history, archive\nwhen_to_use: when asked what persists, how to undo changes, or how to hide an app\nversion: 23\n---\n- **Memories** — a filesystem-like tree of notes and folders that lives\n  *inside* the app, not on the device's file system. Notes are markdown\n  (`.md`); config notes can be `.json` and show verbatim as code, so\n  indentation survives. Browse it from the Memories tab; a note opens over\n  whatever you were looking at, and closing it — by swiping it away, or with\n  its Close button — keeps your edit. The agent reads and writes it too. Persists\n  across sessions.\n- **Sessions** — \"New session\" starts a fresh conversation. The canvas\n  and memories stay. Past conversations are kept on-device and re-open with\n  their full history when you reopen the app — even after a long time away.\n- **History** — every canvas change is recorded per myapp. Browse the\n  History tab and restore any earlier state in one tap. Tap **Take\n  snapshot** to pin the current state permanently (kept forever); pinned\n  snapshots can be **Export**ed as a `.pupa` file (same share screen as\n  Settings, flagged as the pinned version). Pins survive deleting\n  the myapp — find them all in **Settings ▸ Pinned snapshots**, where a\n  deleted app can be restored (revived) from a pin.\n- **Archive** — hide a myapp without deleting it (its data and memories\n  are kept). Browse, restore or delete from Settings ▸ Archive.\n- **Folders** — tidy the sidebar: a myapp's row menu ▸ Move to Folder puts\n  it in a folder (or a new one); a folder row collapses, renames or\n  ungroups. Cosmetic only — folders never travel in a `.pupa` file, and a\n  folder disappears once its last myapp leaves.\n- **Recently deleted** — deleting a myapp is undoable for 180 days.\n  Settings ▸ Recently deleted lists them (including ones deleted on another\n  device, and ones a sync removed on its own) and restores the last saved\n  state — chats, components, and any skills or subagents a sync took with\n  it. Dismissing the \"Sync removed …\"\n  banner loses nothing — the app waits here. Each row can also be **deleted\n  permanently** — that erases its saved state, pinned snapshots included, on\n  every device.\n- **Recovering lost skills** — if a sync takes a skill or subagent from a\n  myapp that is still here, a \"Sync removed N memory files\" banner offers to\n  put them back. Recoverable for 30 days.",
+      "path": "pupa/plugins/pupa-guide/skills/pupa-memory/SKILL.md"
+    },
+    {
+      "content": "---\ndescription: Share and install myapps as .pupa files\nwhen_to_use: when exporting, sharing, importing or installing an app\nversion: 23\n---\nA `.pupa` file is an inert snapshot of a myapp: its components, optionally\nyour records and memories, plus the app's agent instructions and skills.\nNo code runs from the file itself.\n\n**Export.** Settings ▸ Import & Export: pick components, choose whether\nrecords and memories ride along, then Share (AirDrop, Messages, Files…) —\non Mac, Save, which writes the `.pupa` wherever you choose.\nExporting a pinned snapshot (from History or Settings ▸ Pinned snapshots)\nopens this same screen with a \"Pinned version\" banner — records and memories\ndefault off there too.\n\n**Install.** Open a `.pupa` file (or import from Settings). A confirmation\nsheet shows what's inside before anything is added. Imported agent\ninstructions run with your tools once installed — only install bundles\nyou trust.\n\n**Marketplace.** Settings ▸ Import & Export ▸ Import an app links out to\npupa-app.com/marketplace. Installing from there sends the app back to Pupa\nthrough the same confirmation sheet.",
+      "path": "pupa/plugins/pupa-guide/skills/pupa-sharing/SKILL.md"
+    },
+    {
+      "content": "---\ndescription: Where things live: the on-device app vs the backend, and standing instructions\nwhen_to_use: when unsure whether something belongs in the app or the backend, which skill system you're touching, or how to change standing behaviour\nversion: 23\n---\n**App vs backend.** Everything the user sees — components and their\nitems, memories, skills, `AGENTS.md` — is app state, created and edited\n**on the user's device** through the app's own tools. The backend only\nruns the model plus a few server-side tools (web search, shell, …) and\nstores **no app data**. Never write app content to a backend path or via\na shell unless explicitly told to; if unsure where something belongs, ask.\n\n**Canvas vs memory.** Components hold data items; memory is a *separate*\nper-app markdown note tree for durable context — not canvas data. Two\ndifferent stores; don't cross them. Memory paths are an in-app structure,\nnot host file paths — never reach for it via a shell.\n\n**Two skill systems.** *App* skills are on-device `SKILL.md` files —\nyours under `pupa/skills/<name>/`, bundled ones under\n`pupa/plugins/<plugin>/skills/<name>/` (this guide is one). A backend may\nseparately expose its own read-only skills library. App skills are\nalways the on-device files.\n\n**Standing behaviour.** Persistent instructions for an app's main agent\nlive at `pupa/AGENTS.md` (subagents: `pupa/agents/<name>/AGENTS.md`).\nEdit those to change behaviour permanently — not memory, not a skill.",
+      "path": "pupa/plugins/pupa-guide/skills/pupa-system/SKILL.md"
+    },
+    {
+      "content": "---\ndescription: What Pupa is and what it can do — guide entry point\nwhen_to_use: when the user asks what Pupa is, what it can do, or how its pieces fit together\nversion: 23\n---\nPupa builds apps around you: describe what you need in chat and the agent\nassembles a **myapp** — a canvas of components it edits live while you talk.\n\n**Boundaries — who is what**\n- **Orchestrator** — the top-level chat. Creates, renames, archives and\n  deletes myapps and delegates work to their agents. Has its own memories\n  and skills; no canvas of its own.\n- **Myapp** — one workspace: its own agent, canvas, memories, skills and\n  subagents.\n- **Component** — one shape on a myapp's canvas (tracker, calendar, …).\n- **Item** — one record inside a component (row, event, task…).\n- **Memories** — each myapp (and the orchestrator) keeps its own\n  filesystem-like tree of markdown notes and folders living *inside* the\n  app — not on the device's file system. Edited by you and the agent\n  alike; persists across sessions. Durable context, not records.\n\nItems can link across components *within one myapp*. Myapps don't share\ndata — an app moves between devices or people as a `.pupa` file.\n\n**Go deeper** (users: type the `/command`; agents: `app_skill_view`)\n- /pupa-components — the shapes a canvas can hold and how they combine\n- /pupa-sharing — export and install myapps as `.pupa` files\n- /pupa-memory — memories, sessions, change history, archive\n- /pupa-agents — skills, subagents and slack rooms\n- /pupa-automations — react to canvas events (an item moved) by proposing a chat\n- /pupa-system — where things live: on-device app vs backend, standing instructions",
+      "path": "pupa/plugins/pupa-guide/skills/pupa/SKILL.md"
+    },
+    {
+      "content": "---\ndescription: Search the web for recipes matching a query and fill the Recipes tracker with rows\nwhen_to_use: when the user wants to find/discover recipes by keyword, cuisine, ingredient, or diet and save them into this app\n---\n\n# Recipe search\n\nInput = a search query (dish, cuisine, ingredient, diet, e.g. \"vegetarian\nthai curry\", \"quick chicken dinner\"). Output = new rows in the `Recipes`\ntracker, one per recipe found.\n\n## 1. Search\n\n`WebSearch` the query with \"recipe\" appended. Pull 3–6 candidate results from\nreputable recipe sites (skip listicles, ad-farms, dead links). If the user\ngave a count (\"find me 3…\"), honour it; else default 5.\n\nFor each candidate, fetch the page (`WebFetch`) and extract:\n**title**, **source** (creator + URL), **cuisine**, **servings/yield**,\n**total time**, and the **og:image** (`<meta property=\"og:image\">`) for the\ndish photo. Missing field → leave blank, never invent.\n\n## 2. Confirm\n\nList the found recipes to the user as a short numbered list (title · source ·\ntime). Ask which to add — unless the user already said \"add all\" / gave a\ncount. Do not add rows the user did not pick.\n\n## 3. Fill the `Recipes` tracker\n\nOne row per chosen recipe. Create the tracker if absent:\n`addComponent(kind:\"tracker\", name:\"Recipes\")` → `get_tools_tracker` →\n`renderTracker`. Fields match the `/recipe` skill:\n\n| Field | Type | Notes |\n|---|---|---|\n| Image | image | dish photo URL (og:image); emoji `🍲` fallback |\n| Title | text | dish name |\n| Source | link | recipe URL |\n| Cuisine | select | add the dish's cuisine as an option |\n| Servings | text | as written |\n| Time | text | total, e.g. \"35 min\" |\n| Status | select | To try / Made it / Favourite |\n| Details | text | blank until full intake (step 4) |\n| Notes | text | blank |\n\nAdd rows with `addTrackerItems`, `Status = To try`. Never point Image at a URL\nyou have not fetched; social CDN links expire — use another site's og:image or\nthe emoji fallback.\n\n## 4. Full details (optional)\n\nRows from search are lightweight (no md file, no steps checklist). When the\nuser wants the full recipe for a row — ingredients, steps, scaling — run the\n`/recipe` skill on that row's Source URL. That writes\n`recipes/<slug>.md`, builds the steps checklist, and back-fills the\nDetails field + link.\n\n## Rules\n\n- Never duplicate a recipe already in the tracker — check\n  `searchTrackerItems` on title before adding.\n- Don't build md files or checklists in this skill — that's `/recipe`'s job.\n- Fetch every URL before trusting it (title, image, link).\n",
+      "path": "pupa/skills/recipe-search/SKILL.md"
+    },
+    {
+      "content": "---\ndescription: Turn a recipe photo, screenshot, or link into a tracker row + details md file + steps checklist\nwhen_to_use: when the user drops a recipe image, screenshot, URL, or pasted text and wants it saved into this app\n---\n\n# Recipe intake\n\nInput = photo / screenshot / link / pasted text. Output = 3 linked artifacts.\n\n## 0. Extract\n\nFrom the source pull: **title**, **source** (creator + URL), **ingredients**\n(with amounts), **steps**, **servings/yield**, **prep+cook time**, **cuisine**,\n**tags**. For a link, fetch it. For an image, read it directly. Missing amounts →\nmark `?`, never invent numbers. Non-English source → keep original names for\ndishes/ingredients that have no clean English word, translate the rest.\n\nAsk the user only if the dish name or a load-bearing amount is unreadable.\n\n## 1. Tracker row — `Recipes` tracker\n\nOne row per recipe. Create the tracker if absent: `addComponent(kind:\"tracker\", name:\"Recipes\")`,\nthen `get_tools_tracker`, then `renderTracker`.\n\nFields:\n\n| Field | Type | Notes |\n|---|---|---|\n| Image | image | dish photo URL — first field, renders as card hero |\n| Title | text | dish name, English + original in parens if translated |\n| Source | link | original URL; if image-only, creator name as text |\n| Cuisine | select | add the dish's cuisine as an option |\n| Servings | text | as written on source |\n| Time | text | total, e.g. \"35 min\" |\n| Status | select | To try / Made it / Favourite |\n| Details | text | `pupa://memory/recipes/<slug>.md` |\n| Notes | text | user's own tweaks |\n\nRow starts at `Status = To try`.\n\n`renderTracker` caps at 8 fields — render the first 8, then `addTrackerField`\nfor the rest and `reorderTrackerFields` to put `Image` first.\n\n### Finding the image\n\nEvery row gets a dish photo. Source it in this order:\n\n1. **og:image of the original link** — fetch the source URL, read\n   `<meta property=\"og:image\">`. Best match: it *is* the dish from that recipe.\n2. **Any inline hero image** on that page if og:image is missing.\n3. **A photo of the same dish from another recipe site** — search the dish\n   name, fetch a reputable recipe page, take its og:image. Note in `Notes`\n   that the photo is illustrative, not from the original source.\n4. **Emoji fallback** — an `image` field accepts an emoji (`🍲`) when no URL\n   works.\n\nSocial links (TikTok, Instagram) usually block hotlinking or expire their CDN\nURLs — go to step 3 for those. Never point at a URL you have not fetched.\n\n## 2. Details file — `recipes/<slug>.md`\n\n`<slug>` = kebab-case title. Write with `writeMemoryFile`. Template:\n\n```markdown\n# <Title>\n\nSource: <creator> — <url>\nServes: <n> · Time: <prep> prep + <cook> cook · Cuisine: <c>\n\n## Ingredients\n- <amount> <item>\n\n## Bumbu / spice paste\n- <amount> <item>\n\n## Steps\n1. <step>\n\n## Notes\n- substitutions, scaling notes, what went wrong last time\n```\n\nKeep the *original-language* ingredient names in a trailing `## Original`\nsection when translating, so the user can shop from the source.\n\n## 3. Steps checklist\n\n`addComponent(kind:\"checklist\", name:\"<Title>\")` → `get_tools_checklist` →\n`renderChecklist`. One item per action, imperative, amounts inline so the\ncook never leaves the checklist. Prep steps first (slice, bruise, dissolve),\nthen cook, then serve. 8–15 items — merge trivial ones rather than splitting.\n\nSet `summary` to: `<Title> — <n> steps, <scale note>`.\n\n## 4. Link them\n\n`linkItem` the tracker row → the checklist's first item, so the card shows a\nlive pill. Put the md link in the row's Details field as\n`[<Title>](pupa://memory/recipes/<slug>.md)`.\n\n## Scaling\n\nWhen the user has a different amount of the main ingredient: compute the\nfactor, apply to **everything** including water and tamarind, round to\nkitchen-real numbers (5 chilies not 5.3; \"small amount\" for seasonings under\nhalf a teaspoon). State the factor to the user. Rewrite the checklist in\nplace — don't stack a second one. Rename title to carry the new scale, e.g.\n`Kering Tempe (500g)`.\n\n## Rules\n\n- Never overwrite an existing recipe's md or checklist without asking.\n- Salt / broth powder / seasoning stay \"to taste\" — never scale into a false\n  precision.\n- Don't add a chart or calendar unless asked.\n",
+      "path": "pupa/skills/recipe/SKILL.md"
+    },
+    {
+      "content": "---\ndescription: Explain what this Recipes app does and how to use it; bootstrap the Recipes tracker if missing\nwhen_to_use: when the user runs /setup, asks how to use this app, what it can do, or is starting fresh with an empty canvas\n---\n\n# Setup — how to use the Recipes app\n\nOrient the user, then make sure the canvas is ready. Keep the reply short and\nconcrete — this is onboarding, not a manual dump.\n\n## What this app is\n\nA personal recipe library. Every recipe lives as **one row** in the `Recipes`\ntracker. A saved recipe fans out into three linked artifacts:\n\n1. **Tracker row** — the card (photo, title, source, cuisine, time, status).\n2. **Details file** — `recipes/<slug>.md` in memories (ingredients, steps,\n   scaling notes). Linked from the row's `Details` field.\n3. **Steps checklist** — a checklist component for cooking hands-free.\n\n## Where things live\n\n- **Recipes tracker** — canvas component `tracker-1` (kind: tracker).\n- **Per-recipe checklists** — canvas components (kind: checklist), one per\n  recipe cooked.\n- **Details markdown** — memories folder `recipes/` at the **root**, beside\n  `pupa/` — NOT inside `pupa/`. Path pattern: `recipes/<slug>.md`, linked as\n  `pupa://memory/recipes/<slug>.md`.\n- **Skills** — memories folder `pupa/skills/`.\n\n## What the user can do\n\nTell the user these entry points:\n\n- **`/recipe`** — drop a recipe photo, screenshot, link, or pasted text →\n  saved as a row + details md + steps checklist. Handles translation and\n  scaling.\n- **`/recipe-search`** — search the web by dish, cuisine, ingredient, or diet\n  → fills the tracker with candidate rows (lightweight; run `/recipe` later\n  for full details).\n- Just cook: open a recipe's checklist and tick steps.\n- Track status per recipe: `To try` / `Made it` / `Favourite`.\n\n## Bootstrap (only if missing)\n\nCheck the canvas. If no `Recipes` tracker exists:\n\n`addComponent(kind:\"tracker\", name:\"Recipes\")` → `get_tools_tracker` →\n`renderTracker` with these fields (Image first so it renders as the card hero):\n\n| Field | Type | Options |\n|---|---|---|\n| Image | image | — |\n| Title | text | — |\n| Source | link | — |\n| Cuisine | select | none preset — add as recipes come in |\n| Servings | text | — |\n| Time | text | — |\n| Status | select | To try, Made it, Favourite |\n| Details | text | — |\n| Notes | text | — |\n\n`renderTracker` caps at 8 fields — render the first 8, `addTrackerField` the\nrest, `reorderTrackerFields` to keep `Image` first.\n\nSet the tracker `summary` to describe what the rows hold. Don't wipe an\nexisting tracker — if `Recipes` already has rows, skip bootstrap and just\norient the user.\n\n## Rules\n\n- Never re-render or overwrite a populated `Recipes` tracker — that resets its\n  items. Use `addTrackerField` / `renameTrackerField` for schema tweaks.\n- Details md always goes in root `recipes/`, never `pupa/recipes/`.\n- Don't create charts, calendars, or extra components unless asked.\n",
+      "path": "pupa/skills/setup/SKILL.md"
+    },
+    {
+      "content": "---\ndescription: Record durable, app-level learnings from this conversation to pupa/MEMORIES.md\nwhen_to_use: when the user runs /to-memory or asks to capture what was learned this session\n---\nCapture what would help next time someone works on *this* app — especially\npoints where the user redirected you or an initial approach needed realignment.\n\n1. Re-read this conversation. Extract *general, durable* guidance: conventions\n   clarified, preferences stated, gotchas, and anything that needed\n   realignment mid-task. Skip one-off task specifics.\n2. Read the existing `pupa/MEMORIES.md` (if present) so you merge, not duplicate.\n3. Write to `pupa/MEMORIES.md` or your AGENTS.md file with the merged result — short bullets under clear\n   headings, the new insight integrated in place. Choose AGENTS.md for info you should always be aware of in every conversation, \n   while choose MEMORIES.md for info that is not always needed.\n4. Tell the user in one line what you added.",
+      "path": "pupa/skills/to-memory/SKILL.md"
+    },
+    {
+      "content": "# Crispy Sweet Tempe (Kering Tempe)\n\nSource: traditional Indonesian home recipe\nScaled: 1/3 of original (original 1.5 kg tempe → 500 g)\nTime: ~15 min prep + ~25 min cook · Cuisine: Indonesian\n\n## Ingredients\n- 500 g tempe, sliced thin and long\n- 5 red curly chilies, sliced diagonally\n- 70 ml water\n- 1/6 tbsp tamarind pulp, dissolved in 1 tbsp water\n- 50 g palm sugar, shaved\n- 2/3 tbsp granulated sugar\n- powdered broth, to taste\n- salt, to taste\n- seasoning, to taste\n\n## Bumbu / aromatics\n- 4 shallots, sliced\n- 3 garlic cloves, sliced\n- 1 lemongrass stalk, bruised\n- 1 bay leaf (daun salam)\n- 1–1.5 knuckles galangal, bruised\n\n## Steps\n1. Slice tempe thin and long.\n2. Slice chilies diagonally; slice shallots and garlic.\n3. Bruise lemongrass and galangal.\n4. Saute shallots, garlic, lemongrass, bay leaf, galangal until fragrant.\n5. Add chilies, saute until wilted.\n6. Add tempe, stir well.\n7. Pour in 70 ml water.\n8. Dissolve tamarind in 1 tbsp water, add in.\n9. Add palm sugar, sugar, broth powder, salt, seasoning.\n10. Cook until dry and flavors absorbed.\n11. Serve with nasi uduk, nasi kuning, or tumpeng.\n\n## Notes\n- Seasonings stay to taste — not scaled, taste-check near the end.\n- Tempe can be deep-fried first for a crispier result.\n- Keeps well; usually served as a side with rice dishes.\n\n## Original (Bahasa Indonesia, full 1.5 kg batch)\n\nBahan:\n- 1,5 kg tempe (potong tipis panjang)\n- 15 cabai merah keriting (iris serong)\n- 200 ml air\n- 1/2 sdm mata asam jawa (larutkan dengan 3 sdm air)\n- 150 gram gula aren sisir\n- Secukupnya kaldu bubuk, garam, penyedap\n- 2 sdm gula pasir\n\nBumbu:\n- 12 siung bawang merah\n- 8 siung bawang putih\n- 3 batang sereh (memarkan)\n- 3 lembar daun salam\n- 4 ruas lengkuas (memarkan)\n",
+      "path": "recipes/kering-tempe.md"
+    },
+    {
+      "content": "# Martabak Manis — Gianduja & Mascarpone\n\nSource: Pupa original (Indonesian × Italian fusion)\nServes: 1 martabak (6–8 wedges) · Time: ~20 min prep + 15 min cook + 30 min batter rest · Cuisine: Indonesian-Italian\n\nSweet martabak (terang bulan) — thick, honeycomb-crumb pan pancake — folded\nover molten **gianduja** (hazelnut chocolate) and cool **mascarpone cream**,\nfinished with toasted hazelnuts and flaky salt. Kaya-and-condensed-milk classic\nreimagined with an Italian dessert pantry.\n\n## Ingredients — batter\n- 150 g plain flour\n- 1 tbsp sugar\n- 1/2 tsp instant yeast\n- 1/4 tsp baking soda\n- 1 egg\n- 220 ml milk (warm)\n- pinch salt\n- 1/2 tsp vanilla\n- extra caster sugar, for the lace crust\n- butter, for the pan + brushing\n\n## Ingredients — filling\n- 100 g gianduja / hazelnut chocolate (or Nutella + chopped dark choc)\n- 120 g mascarpone\n- 60 ml cold double cream\n- 1 tbsp icing sugar\n- 1/2 tsp vanilla\n- 40 g hazelnuts, toasted + roughly chopped\n- flaky sea salt\n\n## Steps\n1. Whisk flour, sugar, yeast, baking soda, salt. Add egg + warm milk + vanilla, whisk smooth. Rest covered 30 min until bubbly.\n2. Mascarpone cream: whip mascarpone, cold cream, icing sugar, vanilla to soft peaks. Chill.\n3. Heat a small non-stick / cast pan, medium-low, light butter. Pour batter ~1.5 cm deep.\n4. Cover, cook until surface holds bubbles and edges set (~4 min). Sprinkle caster sugar over the top so it lace-caramelises.\n5. Cover again, cook until base is golden and crumb is honeycombed through (~4–6 min). No flip.\n6. Brush surface with butter. Spread gianduja over one half while hot so it melts; dollop mascarpone cream over it.\n7. Scatter toasted hazelnuts + a pinch flaky salt.\n8. Fold in half, press lightly, brush top with butter. Rest 1 min, slice into wedges. Serve warm.\n\n## Notes\n- Gianduja is the Piemontese hazelnut-chocolate — the bridge ingredient (Indonesian martabak already loves peanut + choc + condensed milk).\n- Keep mascarpone cream cold — it should stay a cool ribbon against the warm cake, not melt out.\n- Swap gianduja for pistachio cream for a green version.\n- Too dense? More baking soda / hotter rest. Crumb wants big open holes.\n",
+      "path": "recipes/martabak-gianduja-mascarpone.md"
+    }
+  ]
+}
