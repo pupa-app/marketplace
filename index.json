@@ -103,6 +103,31 @@
     },
     {
       "appFormatVersion": 1,
+      "appVersion": "0.0.279",
+      "author": "pupa-app",
+      "exportedAt": "2026-09-06T14:54:24Z",
+      "homepage": "https://github.com/pupa-app/pupa",
+      "icon": "fork.knife",
+      "id": "recipes-helper",
+      "includedMemories": true,
+      "includedRecords": true,
+      "name": "Recipes Helper",
+      "path": "apps/recipes-helper/app.pupa",
+      "screenshots": [],
+      "sha256": "bca1fa596df39c030eacdaba09a463b88a761bf469238933bbbe581fb713a35b",
+      "sizeBytes": 43385,
+      "summary": "Recipe library: turn a photo, link, or pasted text into a tracker row, a details markdown file, and a steps checklist. Handles translation and scaling; /recipe-search fills rows from the web.",
+      "tags": [
+        "recipes",
+        "cooking",
+        "tracker",
+        "checklist",
+        "productivity"
+      ],
+      "version": 1
+    },
+    {
+      "appFormatVersion": 1,
       "appVersion": "0.0.180",
       "author": "pupa-app",
       "exportedAt": "2026-07-10T08:00:47Z",
