@@ -16,7 +16,7 @@
       "screenshots": [],
       "sha256": "a9bdd1521c67c003ad00a8bf8ab3bfaef5884aba40727d8366b485243510f7a5",
       "sizeBytes": 84018,
-      "summary": "Job-application pipeline: scouts boards, scores openings against your rubric, tailors and submits applications, tracks deadlines. Also finds and ranks career events. Needs host pandoc plus Playwright.",
+      "summary": "Job-application pipeline: scouts boards, scores openings against your rubric, tailors and submits applications, tracks deadlines. Also finds and ranks career events.",
       "tags": [
         "jobs",
         "career",
