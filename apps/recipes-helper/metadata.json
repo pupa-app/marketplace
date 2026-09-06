@@ -2,7 +2,7 @@
   "id": "recipes-helper",
   "version": 1,
   "author": "pupa-app",
-  "summary": "Recipe library: turn a photo, link, or pasted text into a tracker row, a details markdown file, and a steps checklist. Handles translation and scaling; /recipe-search fills rows from the web.",
+  "summary": "Recipe library: turn a photo, link, or pasted text into a tracker row, a details markdown file, and a cooking steps checklist. Handles translation and scaling.",
   "tags": [
     "recipes",
     "cooking",
