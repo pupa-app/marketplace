@@ -28,6 +28,32 @@
     },
     {
       "appFormatVersion": 1,
+      "appVersion": "0.0.279",
+      "author": "pupa-app",
+      "exportedAt": "2026-09-07T21:33:01Z",
+      "homepage": "https://github.com/pupa-app/pupa",
+      "icon": "square.and.pencil",
+      "id": "content-studio",
+      "includedMemories": true,
+      "includedRecords": true,
+      "name": "Content Studio",
+      "path": "apps/content-studio/app.pupa",
+      "screenshots": [],
+      "sha256": "46ccefc850918973e6f72df05fca9b529e84707a45b728bda7dd733b6e35e2e6",
+      "sizeBytes": 71324,
+      "summary": "Editorial + video content pipeline: a kanban by stage, a five-agent studio room for research, editing and ideation, and stage automations that script, voice, assemble and caption a reel.",
+      "tags": [
+        "content",
+        "video",
+        "tracker",
+        "automation",
+        "writing",
+        "productivity"
+      ],
+      "version": 1
+    },
+    {
+      "appFormatVersion": 1,
       "appVersion": "0.0.212",
       "attribution": "Questionnaire: MSS-YSQ © NovoPsych, used under their Open Source Licence (CC BY-NC-SA). https://novopsych.com/assessments/formulation/mss-ysq-young-schema-questionnaire/",
       "author": "pupa-app",

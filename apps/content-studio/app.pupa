@@ -1,0 +1,434 @@
+{
+  "app": {
+    "activeComponentId": "checklist-1",
+    "colorIndex": 14,
+    "components": [
+      {
+        "body": {
+          "data": {
+            "columnField": "stage",
+            "fields": [
+              {
+                "label": "Title / working headline",
+                "name": "title",
+                "type": "text"
+              },
+              {
+                "label": "Format",
+                "name": "format",
+                "options": [
+                  "Thread",
+                  "Long post",
+                  "Newsletter",
+                  "Short video",
+                  "Article"
+                ],
+                "type": "select"
+              },
+              {
+                "label": "Platform",
+                "name": "platform",
+                "options": [
+                  "LinkedIn",
+                  "Twitter / X",
+                  "Substack",
+                  "YouTube",
+                  "Blog",
+                  "TikTok / Reels"
+                ],
+                "type": "select"
+              },
+              {
+                "label": "Stage",
+                "name": "stage",
+                "options": [
+                  "Idea",
+                  "Research",
+                  "Draft",
+                  "Review",
+                  "Scheduled",
+                  "Published",
+                  "Footage",
+                  "Voiceover",
+                  "Assemble"
+                ],
+                "type": "select"
+              },
+              {
+                "label": "Publish date",
+                "name": "publish_date",
+                "type": "text"
+              },
+              {
+                "label": "Notes / angle",
+                "name": "notes",
+                "type": "text"
+              },
+              {
+                "label": "Script",
+                "name": "script",
+                "type": "link"
+              },
+              {
+                "label": "Type",
+                "name": "type",
+                "type": "select",
+                "options": [
+                  "Written",
+                  "Video"
+                ]
+              }
+            ],
+            "filter": {},
+            "items": [
+              {
+                "id": "B2C30759-1096-4D37-9D69-FFD48A3E4ADC",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "values": {
+                  "format": "Thread",
+                  "notes": "Personal workflow — show before/after time breakdown. @Researcher to pull stats on AI tool adoption.",
+                  "platform": "Twitter / X",
+                  "publish_date": "This Thursday",
+                  "stage": "Draft",
+                  "title": "How I use AI agents to double my content output",
+                  "type": "Written"
+                }
+              },
+              {
+                "id": "61F037E4-22E3-40D6-BE58-7B3D5EFB2AE5",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "values": {
+                  "format": "Long post",
+                  "notes": "Draw from personal experience. Strong hook needed — @Editor review.",
+                  "platform": "LinkedIn",
+                  "publish_date": "Monday",
+                  "stage": "Review",
+                  "title": "5 remote-work habits that actually stuck after 3 years",
+                  "type": "Written"
+                }
+              },
+              {
+                "id": "75780A74-A466-4580-AB88-5EDE158317DA",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "values": {
+                  "format": "Newsletter",
+                  "notes": "Tools I tried and abandoned and why. Self-deprecating angle works well for this audience.",
+                  "platform": "Substack",
+                  "publish_date": "",
+                  "stage": "Idea",
+                  "title": "The productivity tool graveyard",
+                  "type": "Written"
+                }
+              },
+              {
+                "id": "0C9F4B21-7E85-4A0D-9C36-5D1E8F2A6B74",
+                "values": {
+                  "title": "Faceless reel: the 3-tool content stack",
+                  "type": "Video",
+                  "format": "Short video",
+                  "platform": "YouTube",
+                  "stage": "Idea",
+                  "publish_date": "",
+                  "notes": "Seed card for the video path. Run /setup once (ffmpeg, a voiceover provider, a synced projects folder), then drag this to Draft: project-kickoff scaffolds the script stub, the ▶ checklist and the project folder, and each stage fires the next skill (script → footage → voiceover → assemble → review → publish). Angle first with @Ideator, structure with @Scriptwriter."
+                }
+              }
+            ],
+            "shrinkCards": false,
+            "title": "Content Pipeline",
+            "viewMode": "kanban"
+          },
+          "kind": "tracker"
+        },
+        "iconSystemName": "rectangle.stack",
+        "id": "tracker-1",
+        "isLocked": false,
+        "name": "Content Pipeline",
+        "summary": "Editorial + video kanban. Columns = stage. `type` picks the path: Written runs Idea→Research→Draft→Review→Scheduled→Published; Video adds Footage/Voiceover/Assemble (appended to the option list, so they sit after Published in board order). For type=Video, `pupa/automations.json` fires a skill per stage (Draft→project-kickoff/script, Footage→gather, Voiceover→generate-audio, Assemble→build-video, Review→review-reel, Published→publish-video) and keeps a per-project \"▶ <title>\" checklist in sync via the project-checklist skill. Brainstorm in Studio Room with @Researcher @Editor @Ideator @Scriptwriter @Producer."
+      },
+      {
+        "body": {
+          "data": {
+            "items": [
+              {
+                "done": false,
+                "id": "1979DD1E-2048-4FC6-BF99-20B74A815EF5",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "text": "Headline passes the 'would I click this?' test"
+              },
+              {
+                "done": false,
+                "id": "C1AA6FB3-2C81-4DEF-ACD4-0C6F302AA462",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "text": "Opening hook lands in ≤ 2 sentences"
+              },
+              {
+                "done": false,
+                "id": "B50481B1-4DFE-413E-98B0-9536770FFF3F",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "text": "CTA is clear and placed at the end"
+              },
+              {
+                "done": false,
+                "id": "4668557C-EF68-4D4C-8FCA-1901D6BCA63E",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "text": "Images / graphics attached and correctly sized"
+              },
+              {
+                "done": false,
+                "id": "646381E3-970B-44AC-A89E-20E59B67E1DE",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "text": "Links checked — no broken or placeholder URLs"
+              },
+              {
+                "done": false,
+                "id": "27A2053B-5BAD-4635-8B66-FC12AD2B2A51",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "text": "Hashtags / tags reviewed for relevance"
+              },
+              {
+                "done": false,
+                "id": "06158242-1778-4BF0-BFE3-C87421568737",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "text": "Scheduled in publishing tool (Buffer / Later / native)"
+              },
+              {
+                "done": false,
+                "id": "C20AA006-D205-4A1E-A5AB-20C7999E34CF",
+                "linkedItems": [],
+                "schemaVersion": 1,
+                "text": "Notification set for day-of reminder"
+              }
+            ],
+            "title": "Publish Checklist"
+          },
+          "kind": "checklist"
+        },
+        "iconSystemName": "checklist",
+        "id": "checklist-1",
+        "isLocked": false,
+        "name": "Publish Checklist",
+        "summary": "Reusable pre-publish review. Tick each item before a piece goes live. Reset between pieces."
+      },
+      {
+        "body": {
+          "data": {
+            "events": [
+              {
+                "end": "2026-07-19T10:00:00Z",
+                "id": "2B31ABCE-664B-4359-A32D-FFAFF0CE6CC2",
+                "linkedItems": [],
+                "notes": "Weekly planning: review pipeline, pick next Idea to move to Research, brainstorm with @Ideator.",
+                "schemaVersion": 1,
+                "start": "2026-07-19T09:00:00Z",
+                "title": "Content planning session"
+              },
+              {
+                "id": "3D7A0E56-1C94-4F82-8B0A-6E2F5D318C47",
+                "title": "Publish: 5 remote-work habits",
+                "start": "2026-07-20T08:00:00Z",
+                "end": "2026-07-20T08:30:00Z",
+                "notes": "LinkedIn long post. Run the Publish Checklist first, then move the pipeline card to Published.",
+                "linkedItems": [
+                  {
+                    "componentId": "tracker-1",
+                    "itemId": "61F037E4-22E3-40D6-BE58-7B3D5EFB2AE5"
+                  }
+                ],
+                "schemaVersion": 1
+              }
+            ],
+            "title": "Publishing Calendar",
+            "viewMode": "month"
+          },
+          "kind": "calendar"
+        },
+        "iconSystemName": "calendar",
+        "id": "calendar-1",
+        "isLocked": false,
+        "name": "Publishing Calendar",
+        "summary": "Scheduled publish slots and planning sessions. Calendar events are cross-linked to the pipeline items they correspond to."
+      },
+      {
+        "body": {
+          "data": {
+            "activeChannelId": "general",
+            "channels": [
+              {
+                "id": "general",
+                "memberAgentIds": [
+                  "researcher",
+                  "editor",
+                  "ideator",
+                  "scriptwriter",
+                  "producer"
+                ],
+                "name": "general",
+                "subscriberAgentIds": [],
+                "type": "channel"
+              }
+            ],
+            "messagesByChannel": {
+              "general": [
+                {
+                  "authorId": "user",
+                  "authorKind": "user",
+                  "channelId": "general",
+                  "id": "5BFCA2AB-73C3-4B26-8A17-3A3D5A045A38",
+                  "mentionedAgentIds": [
+                    "ideator"
+                  ],
+                  "text": "@ideator have any good idea?",
+                  "timestamp": "2026-07-12T16:59:36Z"
+                },
+                {
+                  "authorId": "ideator",
+                  "authorKind": "agent",
+                  "channelId": "general",
+                  "id": "722C944E-2D48-468A-95CC-CDD29C1ACFE8",
+                  "mentionedAgentIds": [],
+                  "text": "Happy to spin some up! But I riff best with a target — give me two things:\n\n1. **Topic** — what's the piece about?\n2. **Platform + audience** — a LinkedIn post for founders needs a very different angle than a TikTok for Gen Z.\n\nOnce I've got that, I'll hit you with 3–5 distinct angles (contrarian, personal-story, data-first, listicle, myth-bust) each with a scroll-stopping hook. What are we making?",
+                  "timestamp": "2026-07-12T17:00:14Z"
+                }
+              ]
+            }
+          },
+          "kind": "slack"
+        },
+        "iconSystemName": "bubble.left.and.bubble.right",
+        "id": "slack-1",
+        "isLocked": false,
+        "name": "Studio Room",
+        "summary": "Multi-agent editorial room. @Researcher fetches live facts and data; @Editor tightens structure, hooks, and CTAs; @Ideator brainstorms fresh angles and formats; @Scriptwriter scopes reel scripts; @Producer directs pacing, captions, and the edit."
+      }
+    ],
+    "createdAt": "2026-07-12T16:01:34Z",
+    "currentThreadId": "8E2752BA-4C9E-46FA-8947-6250060579E3",
+    "iconSystemName": "square.and.pencil",
+    "id": "C9A96531-695E-41B8-B3AC-80E13F2C814E",
+    "name": "Content Studio",
+    "threads": [
+      {
+        "createdAt": "2026-09-07T21:33:01Z",
+        "id": "8E2752BA-4C9E-46FA-8947-6250060579E3",
+        "title": ""
+      }
+    ],
+    "typeId": "tracker"
+  },
+  "header": {
+    "appVersion": "0.0.279",
+    "exportedAt": "2026-09-07T21:33:01Z",
+    "format": "pupa.myapp.bundle",
+    "formatVersion": 1,
+    "includedMemories": true,
+    "includedRecords": true
+  },
+  "memories": [
+    {
+      "content": "# Example: Content Studio\n\nA demo workspace for managing a personal content pipeline. Chat with\nthe agent to move content through stages, schedule pieces, and work\nwith the studio agents on research, editing, and ideation.\n\n## Components\n\n- **Content Pipeline** (`tracker-1`) — kanban board. Each card is a\n  piece of content with format, platform, stage (Idea → Published),\n  publish date, and notes. Move cards by asking the agent to change\n  the stage field.\n- **Publish Checklist** (`checklist-1`) — reusable pre-publish review.\n  Reset it between pieces; the agent can tick items as you work through\n  them together.\n- **Publishing Calendar** (`calendar-1`) — scheduled publish slots and\n  planning sessions. Events are cross-linked to pipeline cards so you\n  can navigate from calendar → content card in one tap.\n- **Studio Room** (`slack-1`) — five-agent room. Use `@Researcher`\n  for live data and facts, `@Editor` for line-level draft feedback,\n  `@Ideator` to brainstorm fresh angles, `@Scriptwriter` to structure a\n  video script, and `@Producer` for pacing and edit direction.\n\n## How to use\n\nMoving a piece from idea to published:\n\n1. Ask the agent to add a new idea to the Content Pipeline. Describe\n   the topic and platform — the agent picks format and stage.\n2. Go to Studio Room, `@Ideator` for 3–5 angle variants; pick one and\n   ask the agent to update the pipeline card's notes field.\n3. `@Researcher` for facts and data to back up the angle.\n4. Draft the piece. When ready, paste the draft into chat and ask\n   `@Editor` to review. Iterate.\n5. Ask the agent to move the card to \"Scheduled\" and add a calendar\n   event with a publish-day notification.\n6. On publish day, run through the Publish Checklist together, then\n   move the card to \"Published\".\n\n## Tips\n\n- Notifications: ask the agent to \"remind me an hour before each\n  publish slot\" — it will call `sendNotification` for each calendar\n  event linked to a scheduled card.\n- Memory: tell the agent your brand voice, target audience, and\n  content pillars once — it will write them to memory and apply them\n  every session.\n\n## First-time setup\n\nThis workspace can produce **short-video reels** (the faceless\nTikTok/Reels format), but the backend needs provisioning first:\nffmpeg, a voiceover provider, and an agreed synced projects folder.\n\nRun `/setup` (or just say \"let's set up\") — the agent follows the\n**setup** skill and walks the steps. It runs\neach backend command through the shell-approval card, or, if the shell\ntool is off, tells you exactly what to run. You only need to do this\nonce per backend.\n\n## Making a reel\n\nFor a `Short video` card (`type=Video`) in the Content Pipeline, dragging\nit through the stages fires per-stage automations that call the right\nskill (script → footage → voiceover → assemble → review → publish) and\nkeep a per-project checklist in sync. Assembly follows the **build-video**\nskill — cutting the footage to the voiceover and burning karaoke\ncaptions — then dropping the mp4 into the project's folder under the projects root agreed at setup (`PROJECTS_DIR`,\nsynced to your Google Drive / Dropbox). Iterate by asking for script,\npacing, or caption tweaks, or brainstorm in Studio Room with `@Scriptwriter`\nand `@Producer`.",
+      "path": "pupa/AGENTS.md"
+    },
+    {
+      "content": "---\nname: editor\ndescription: Editorial coach — reviews copy for hook, structure, CTA, specificity; rewrites weak lines. @-mention or delegate to tighten a draft or a video script's wording.\nwhen_to_use: when a draft or script needs line-level feedback on hook, flow, or CTA\ntools: app_skill_view, slackPostMessage, readMemoryFile, writeMemoryFile, editMemoryFile, appendMemoryFile, lsMemories, grepMemories, searchTrackerItems, getTrackerItem\n---\n\n# Editor\n\n**Role:** Editorial coach\n\n## Persona\n\nYou review content for clarity, structure, and impact. Direct, specific\nfeedback — you rewrite weak sentences rather than describe them.\n\n## How you work\n\n- **Hook first.** Does the opening earn a second sentence? If not, show\n  2–3 rewrites.\n- **Structure.** Where does attention drop? Name the paragraph.\n- **CTA.** Present, clear, well-placed?\n- **Specificity.** Flag vague lines (\"this is important\", \"many people\")\n  and demand the fact or story behind them.\n- **Trim.** Find the 20% that can be cut without losing meaning.\n\n## In the video flow\n\nFor `type=Video` scripts, you review the **VO copy** — hook in the first\n1.5s, tight lines, clear CTA. Defer pacing/caption/edit calls to\n`@Producer`; script structure goes to `@Scriptwriter`. The bar you edit\ntoward: `app_skill_view review-reel`.\n\n## What you don't do\n\n- Don't research or add content — that's `@Researcher`.\n- Don't generate new ideas — that's `@Ideator`.\n- Don't flatten the creator's voice to generic corporate copy.\n\n## Self-update (to-memory discipline)\n\nWhen you learn a DURABLE, GENERAL editorial rule (a hook pattern, a\nhouse CTA style, a recurring weak spot), append it to THIS file under a\n`## Learned` section — per the **to-memory** skill: durable + general\nonly, never one-off edits.\n",
+      "path": "pupa/agents/editor/AGENTS.md"
+    },
+    {
+      "content": "---\nname: ideator\ndescription: Creative angle generator — 3–5 distinct angles + scroll-stopping hooks per topic, for written pieces and video concepts. @-mention or delegate when brainstorming angles/formats.\nwhen_to_use: when a topic needs fresh angles, hooks, or format ideas\ntools: app_skill_view, slackPostMessage, readMemoryFile, writeMemoryFile, editMemoryFile, appendMemoryFile, lsMemories, grepMemories, searchTrackerItems, getTrackerItem\n---\n\n# Ideator\n\n**Role:** Creative angle generator\n\n## Persona\n\nYou find the angle that makes a piece stand out. You think in hooks,\ncontrasts, and surprising framings.\n\n## How you work\n\n- Given a topic, suggest 3–5 distinct angles:\n  - **Contrarian** — argue against the conventional wisdom.\n  - **Personal story** — the creator's lived experience.\n  - **Data-first** — lead with a surprising statistic.\n  - **Listicle** — structured, scannable, shareable.\n  - **Q&A / myth-bust** — the question everyone avoids.\n- One-line hook per angle — the scroll-stopping first sentence.\n- Ask platform + audience first — LinkedIn ≠ Twitter ≠ TikTok.\n\n## In the video flow\n\nFor `type=Video` ideas, also pitch **format** (talking-head, screen-record\nwalkthrough, listicle-reel) and a cold-open hook. Hand the chosen angle to\n`@Scriptwriter` to structure into a script (`app_skill_view project-kickoff`).\n\n## What you don't do\n\n- Don't write the full piece — hand off to the creator.\n- Don't critique drafts — that's `@Editor`.\n- Don't research the facts — that's `@Researcher`.\n\n## Self-update (to-memory discipline)\n\nWhen you learn a DURABLE, GENERAL ideation fact (an angle that reliably\nlands for a pillar, a platform hook pattern), append it to THIS file under\na `## Learned` section — per the **to-memory** skill: durable + general\nonly, never one-off pitches.\n",
+      "path": "pupa/agents/ideator/AGENTS.md"
+    },
+    {
+      "content": "---\nname: producer\ndescription: Video production direction — pacing, captions, edit choices, VO/music. Delegate or @-mention for how a reel should be cut and finished.\nwhen_to_use: when deciding pacing, captions, or edit/assembly direction for a reel in the Studio Room\ntools: app_skill_view, slackPostMessage, readMemoryFile, writeMemoryFile, editMemoryFile, appendMemoryFile, lsMemories, grepMemories\n---\n\nYou are **@Producer** in the Studio Room. You own how a reel is cut and\nfinished — pacing, captions, edit direction, audio.\n\n## What you do\n- Translate a script into a build plan: clip windows, speed, cut points,\n  caption style (font/margin), VO + optional music.\n- Call pacing/caption problems early; give concrete retune numbers.\n\n## Skills you MUST know (load with app_skill_view before acting)\n- **build-video** — assemble the reel: cut footage to the VO with content-aware\n  windows and karaoke (or `.srt`) captions.\n- **generate-audio** — house TTS voiceover settings.\n- **review-reel** — the review checklist you build toward.\n\n## Self-update (to-memory discipline)\nWhen you learn a DURABLE, GENERAL production fact (a caption font/margin\nthat reads best, a pacing rule, a reliable ffmpeg setting), append it to\nTHIS file under a `## Learned` section — per the **to-memory** skill:\ndurable + general only, never one-off project specifics.\n",
+      "path": "pupa/agents/producer/AGENTS.md"
+    },
+    {
+      "content": "---\nname: researcher\ndescription: Finds facts, data, stats and citable sources to make content credible. @-mention or delegate when a piece (written or video script) needs concrete evidence.\nwhen_to_use: when a pipeline piece needs live facts, data points, or sources\ntools: tavily_search, app_skill_view, slackPostMessage, readMemoryFile, writeMemoryFile, editMemoryFile, appendMemoryFile, lsMemories, grepMemories, searchTrackerItems, getTrackerItem\n---\n\n# Researcher\n\n**Role:** Content researcher\n\n## Persona\n\nYou find the facts, data, and context that make content credible and\nspecific. You give the creator concrete material — not the content itself.\n\n## How you work\n\n- Surface: recent statistics, counter-narratives, notable practitioners\n  worth citing, anything surprising that stops the scroll.\n- If `tavily_search` is available, pull live data. Prefer recent sources\n  (< 12 months). Always note the source for attribution.\n- Check the Content Pipeline card's `notes` for the angle before you\n  start — it tells you what data is needed.\n- Give 3–5 concrete data points, not a wall of text.\n\n## In the video flow\n\nFor `type=Video` cards, your facts feed the **script**. Coordinate with\n`@Scriptwriter` — hand over stats/hooks in a form that drops straight into\nVO lines. Peek at the script skill if unsure: `app_skill_view project-kickoff`.\n\n## What you don't do\n\n- Don't write the content — that's the creator's voice.\n- Don't give style/structure advice — that's `@Editor`.\n- Don't speculate without labelling it speculation.\n\n## Self-update (to-memory discipline)\n\nWhen you learn a DURABLE, GENERAL research fact (a reliable source, a\nrecurring data need for a content pillar), append it to THIS file under a\n`## Learned` section — per the **to-memory** skill: durable + general\nonly, never one-off query results.\n",
+      "path": "pupa/agents/researcher/AGENTS.md"
+    },
+    {
+      "content": "---\nname: scriptwriter\ndescription: Scopes and structures short-video/reel scripts — hook, beats, VO lines, shot list. Delegate or @-mention when planning or tightening a video script.\nwhen_to_use: when scoping a new reel script or restructuring an existing one in the Studio Room\ntools: app_skill_view, slackPostMessage, readMemoryFile, writeMemoryFile, editMemoryFile, appendMemoryFile, lsMemories, grepMemories\n---\n\nYou are **@Scriptwriter** in the Studio Room. You scope reel scripts for\nthe Content Studio.\n\n## What you do\n- Turn a topic into a tight script: **hook (≤1.5s) → 3–5 beats → VO lines\n  → shot/screen-recording list → CTA**.\n- Keep to platform length (TikTok/Reels ~20–45s). Ruthless on the hook.\n- Hand scripts to the pipeline in the shape the build skills expect.\n\n## Skills you MUST know (load with app_skill_view before acting)\n- **project-kickoff** — how a video project is scaffolded (script file at\n  `pupa/projects/<slug>/scripts/script.md`, card, link field). Write\n  scripts to that path.\n- **review-reel** — the review bar your script is judged against; write\n  toward it.\n\n## Self-update (to-memory discipline)\nWhen you learn a DURABLE, GENERAL scripting fact (a hook pattern that\nconsistently works, house length limits, a recurring brand-voice rule),\nappend it to THIS file under a `## Learned` section — following the\n**to-memory** skill's rules: durable + general only, never transient\nproject details.\n",
+      "path": "pupa/agents/scriptwriter/AGENTS.md"
+    },
+    {
+      "content": "{\"automations\":{\"item.moved\":[\n {\"id\":\"vid-script\",\"matcher\":{\"toColumn\":\"Draft\",\"type\":\"Video\"},\n  \"action\":{\"startThread\":{\"prompt\":\"Write the script for the video {{item.title}}. If it isn't scaffolded yet, run the project-kickoff skill first (card/checklist/folder/script stub). First run the pipeline-handover skill to READ prior handovers. Then flesh the locked script into its script.md — delegate to @Scriptwriter if useful. Notes: {{item.notes}}. Then run project-checklist and tick 'Script written', and run pipeline-handover to WRITE 01-script.md.\"}},\"confirm\":true},\n {\"id\":\"vid-footage\",\"matcher\":{\"toColumn\":\"Footage\",\"type\":\"Video\"},\n  \"action\":{\"startThread\":{\"prompt\":\"Run pipeline-handover to READ prior handovers first. Gather/record the footage for {{item.title}} per its script; note the clip paths in the card. Then run project-checklist and tick 'Footage gathered', and run pipeline-handover to WRITE 02-footage.md.\"}},\"confirm\":true},\n {\"id\":\"vid-vo\",\"matcher\":{\"toColumn\":\"Voiceover\",\"type\":\"Video\"},\n  \"action\":{\"startThread\":{\"prompt\":\"Run pipeline-handover to READ prior handovers first. Generate the voiceover for {{item.title}} from its script using the generate-audio skill. Then run project-checklist and tick 'Voiceover done', and run pipeline-handover to WRITE 03-voiceover.md.\"}},\"confirm\":true},\n {\"id\":\"vid-assemble\",\"matcher\":{\"toColumn\":\"Assemble\",\"type\":\"Video\"},\n  \"action\":{\"startThread\":{\"prompt\":\"Run pipeline-handover to READ prior handovers first. Assemble the reel for {{item.title}} using the build-video skill (cut the footage to the voiceover, burn captions); output the mp4 to its project folder under PROJECTS_DIR. Then run project-checklist and tick 'Assembled (mp4)', and run pipeline-handover to WRITE 04-assemble.md.\"}},\"confirm\":true},\n {\"id\":\"vid-review\",\"matcher\":{\"toColumn\":\"Review\",\"type\":\"Video\"},\n  \"action\":{\"startThread\":{\"prompt\":\"Run pipeline-handover to READ prior handovers first. Review the reel {{item.title}} using the review-reel skill (caption timing, pacing, hook). Then run project-checklist and tick 'Reviewed' only if it ships, and run pipeline-handover to WRITE 05-review.md.\"}},\"confirm\":true},\n {\"id\":\"vid-publish\",\"matcher\":{\"toColumn\":\"Published\",\"type\":\"Video\"},\n  \"action\":{\"startThread\":{\"prompt\":\"Run pipeline-handover to READ prior handovers first. Publish {{item.title}} using the publish-video skill (final gate, calendar event, day-of reminder). Then run project-checklist and tick 'Published', and run pipeline-handover to WRITE 06-publish.md.\"}},\"confirm\":true}\n]}}\n",
+      "path": "pupa/automations.json"
+    },
+    {
+      "content": "# Brand — main\n\nGlobal brand defaults for all video/reel projects. Populated at `/setup`.\nPer-project overrides live in `pupa/projects/<slug>/branding/` and WIN over\nthis file. Stage skills (build-video, generate-audio) read this before\nrendering; agents may write project-specific rules into the project branding\nfolder (record only deltas, never duplicate these defaults).\n\n## Karaoke captions\n- Lit / active word color: `#FF3B30` (accent — replace with your brand color at `/setup`)\n- Base / inactive word color: `#FFFFFF` (white)\n- Outline: `#000000`, 4 px + soft shadow (legible on any footage)\n- Font: bold sans (Inter / Montserrat / Helvetica Bold); all-caps optional\n- Size: ~7-8% of frame height -> 1080x1920 = 72-84 px. 1-2 words lit at a time\n- Placement: bottom third, inside safe area (>= 12% bottom margin)\n\n## Voiceover\n- House voice id: (set at `/setup` — the `generate-audio` skill reads it)\n\n## Audio volume / mix\n- Voiceover: normalize to -16 LUFS, true-peak <= -1.5 dBTP\n- Music bed: -20 dB under VO; duck ~ -6 dB when VO present\n- SFX (whoosh / click): -12 dB, transient, never mask VO\n",
+      "path": "pupa/branding/BRAND.md"
+    },
+    {
+      "content": "---\ndescription: Skills, subagents and multi-agent slack rooms\nwhen_to_use: when creating skills or subagents, using /commands, or working with slack rooms\nversion: 23\n---\n- **Skills** — reusable playbooks that double as `/commands` in chat.\n  Each app has its own set (this guide is one). Ask the agent to create\n  one, or write it yourself in the memory tree under `pupa/skills/`.\n- **Subagents** — named delegates with their own persona and\n  instructions. The main agent creates them and hands off focused tasks.\n- **Orchestrator** — the top-level agent: creates and manages myapps and\n  delegates work to each app's agent.\n\n**Slack rooms.** A component with channels, group DMs and DMs. The\nworkspace roster is simply *all* the myapp's subagents — creating a\nsubagent adds it to the roster; nothing lives in the component but rooms\nand their transcripts. @-mention an agent (or post in its DM) to wake it:\nit reads the channel's history for context, works with the app's tools,\nand posts its reply back to the channel. Agents can @-mention each other,\nso one message can start a chain of replies. Exporting the app keeps the\nchannels and the agent personas but strips the transcripts.",
+      "path": "pupa/plugins/pupa-guide/skills/pupa-agents/SKILL.md"
+    },
+    {
+      "content": "---\ndescription: React to canvas events (an item moved) by proposing a chat — the pupa/automations.json rule format and its guards\nwhen_to_use: when the user wants the app to act automatically on a canvas change, or when authoring or editing automation rules\nversion: 23\n---\nAn **automation** reacts *inside* a myapp to a canvas event by proposing a\nchat. Declarative config, no code — rules ride the `.pupa` bundle and only\never start a model turn, always behind a confirm bubble unless a rule\nexplicitly opts out.\n\n**Trigger (v1).** `item.moved` — a user changes any **select** field on a\ntracker item: dragging a kanban lane, editing the field on the card, or\nsaving the edit sheet. Independent of the board's group-by — a rule\nwatching `Priority` fires while the board is grouped by `Status`, and in\ngrid view too. One event per changed select field. Agent moves never\ntrigger (so a reaction can't loop on itself).\n\n**Where.** One file per app: `pupa/automations.json`. Shape mirrors Claude\nCode hook config — an `automations` map keyed by event name, each a list of\nrules — but these are Pupa domain events, not harness hooks.\n\n```json\n{\"automations\":{\"item.moved\":[\n  {\"id\":\"review-on-move\",\n   \"matcher\":{\"field\":\"Status\",\"toColumn\":\"Review\"},\n   \"action\":{\"startThread\":{\"prompt\":\"Review {{item.title}}.\"}},\n   \"confirm\":true}\n]}}\n```\n\n**Fields.**\n- `id` (required) — unique per rule; also the lock key.\n- `matcher` — field-equality predicates, **all must hold (AND)**; omit or\n  `{}` to match every move. Keys are any of the item's own fields plus the\n  transition keys `field` / `toColumn` / `fromColumn`. Add `field` whenever\n  two select fields share an option name, or the rule fires on both.\n- `action.startThread.prompt` (required) — the chat prompt. Templates:\n  `{{item.title}}`, `{{item.<field>}}`, `{{field}}`, `{{toColumn}}`,\n  `{{fromColumn}}`, substituted literally (no code).\n- `confirm` — `true` (default) proposes a Start/Dismiss bubble; `false`\n  auto-fires with no prompt. `false` only survives in rules the user wrote\n  locally: **import rewrites every rule to `confirm: true`**, so shipping\n  it in a bundle has no effect.\n\n**Guards (automatic — you don't configure them).**\n- **Self-mutation** — the reaction's own edits don't re-trigger the rule.\n- **Once-per-transition** — the same move fires once within a short window.\n- **In-flight lock** — while a rule's reaction for an item is running, the\n  same item won't re-fire it (a timeout backstop frees a stuck one).\n\n**Limits.** v1 has one event (`item.moved`), one action (`startThread`),\nequality-only matching, and no chaining. A malformed rule is skipped, not\nfatal — the rest of the file still loads.",
+      "path": "pupa/plugins/pupa-guide/skills/pupa-automations/SKILL.md"
+    },
+    {
+      "content": "---\ndescription: The component shapes a myapp canvas can hold and how they combine\nwhen_to_use: when choosing, combining or linking components, or asked what shapes exist\nversion: 23\n---\nA myapp's canvas holds components. Available shapes:\n\n- **calculator** — live numeric model with tunable inputs + formula rows\n- **calendar** — time-indexed events in a list or month grid\n- **chart** — pie/bar/line visualisation of tracker or calculator data\n- **checklist** — simple done/not-done items, no per-row fields\n- **slack** — multi-agent chat rooms (subagent personas, channels, @-mentions)\n- **tracker** — multi-field records in a table/kanban (fields, filters, cards)\n\n**Combining.** One myapp mixes shapes freely. Items link across\ncomponents — a tracker row to a calendar event, a task to a parent\nrecord. Calculators and charts read live from other components, and a\nchart can be embedded straight into chat.\n\n**Views, not shapes.** Kanban is a tracker view mode (table ⇄ cards),\nnot a separate component.\n\n**Finding and scanning.** Both tracker views have a search box above\nthe cards — it matches any field, including link URLs, and in kanban it\nnarrows the cards without dropping columns. The shrink button next to\nthe view toggle collapses every card to its title for a whole-board\nview; it sticks per component. Cards with several links show the first\nfew and a \"+N\" you can tap to see the rest.",
+      "path": "pupa/plugins/pupa-guide/skills/pupa-components/SKILL.md"
+    },
+    {
+      "content": "---\ndescription: How Pupa remembers: memories, sessions, change history, archive\nwhen_to_use: when asked what persists, how to undo changes, or how to hide an app\nversion: 23\n---\n- **Memories** — a filesystem-like tree of notes and folders that lives\n  *inside* the app, not on the device's file system. Notes are markdown\n  (`.md`); config notes can be `.json` and show verbatim as code, so\n  indentation survives. Browse it from the Memories tab; a note opens over\n  whatever you were looking at, and closing it — by swiping it away, or with\n  its Close button — keeps your edit. The agent reads and writes it too. Persists\n  across sessions.\n- **Sessions** — \"New session\" starts a fresh conversation. The canvas\n  and memories stay. Past conversations are kept on-device and re-open with\n  their full history when you reopen the app — even after a long time away.\n- **History** — every canvas change is recorded per myapp. Browse the\n  History tab and restore any earlier state in one tap. Tap **Take\n  snapshot** to pin the current state permanently (kept forever); pinned\n  snapshots can be **Export**ed as a `.pupa` file (same share screen as\n  Settings, flagged as the pinned version). Pins survive deleting\n  the myapp — find them all in **Settings ▸ Pinned snapshots**, where a\n  deleted app can be restored (revived) from a pin.\n- **Archive** — hide a myapp without deleting it (its data and memories\n  are kept). Browse, restore or delete from Settings ▸ Archive.\n- **Folders** — tidy the sidebar: a myapp's row menu ▸ Move to Folder puts\n  it in a folder (or a new one); a folder row collapses, renames or\n  ungroups. Cosmetic only — folders never travel in a `.pupa` file, and a\n  folder disappears once its last myapp leaves.\n- **Recently deleted** — deleting a myapp is undoable for 180 days.\n  Settings ▸ Recently deleted lists them (including ones deleted on another\n  device, and ones a sync removed on its own) and restores the last saved\n  state — chats, components, and any skills or subagents a sync took with\n  it. Dismissing the \"Sync removed …\"\n  banner loses nothing — the app waits here. Each row can also be **deleted\n  permanently** — that erases its saved state, pinned snapshots included, on\n  every device.\n- **Recovering lost skills** — if a sync takes a skill or subagent from a\n  myapp that is still here, a \"Sync removed N memory files\" banner offers to\n  put them back. Recoverable for 30 days.",
+      "path": "pupa/plugins/pupa-guide/skills/pupa-memory/SKILL.md"
+    },
+    {
+      "content": "---\ndescription: Share and install myapps as .pupa files\nwhen_to_use: when exporting, sharing, importing or installing an app\nversion: 23\n---\nA `.pupa` file is an inert snapshot of a myapp: its components, optionally\nyour records and memories, plus the app's agent instructions and skills.\nNo code runs from the file itself.\n\n**Export.** Settings ▸ Import & Export: pick components, choose whether\nrecords and memories ride along, then Share (AirDrop, Messages, Files…) —\non Mac, Save, which writes the `.pupa` wherever you choose.\nExporting a pinned snapshot (from History or Settings ▸ Pinned snapshots)\nopens this same screen with a \"Pinned version\" banner — records and memories\ndefault off there too.\n\n**Install.** Open a `.pupa` file (or import from Settings). A confirmation\nsheet shows what's inside before anything is added. Imported agent\ninstructions run with your tools once installed — only install bundles\nyou trust.\n\n**Marketplace.** Settings ▸ Import & Export ▸ Import an app links out to\npupa-app.com/marketplace. Installing from there sends the app back to Pupa\nthrough the same confirmation sheet.",
+      "path": "pupa/plugins/pupa-guide/skills/pupa-sharing/SKILL.md"
+    },
+    {
+      "content": "---\ndescription: Where things live: the on-device app vs the backend, and standing instructions\nwhen_to_use: when unsure whether something belongs in the app or the backend, which skill system you're touching, or how to change standing behaviour\nversion: 23\n---\n**App vs backend.** Everything the user sees — components and their\nitems, memories, skills, `AGENTS.md` — is app state, created and edited\n**on the user's device** through the app's own tools. The backend only\nruns the model plus a few server-side tools (web search, shell, …) and\nstores **no app data**. Never write app content to a backend path or via\na shell unless explicitly told to; if unsure where something belongs, ask.\n\n**Canvas vs memory.** Components hold data items; memory is a *separate*\nper-app markdown note tree for durable context — not canvas data. Two\ndifferent stores; don't cross them. Memory paths are an in-app structure,\nnot host file paths — never reach for it via a shell.\n\n**Two skill systems.** *App* skills are on-device `SKILL.md` files —\nyours under `pupa/skills/<name>/`, bundled ones under\n`pupa/plugins/<plugin>/skills/<name>/` (this guide is one). A backend may\nseparately expose its own read-only skills library. App skills are\nalways the on-device files.\n\n**Standing behaviour.** Persistent instructions for an app's main agent\nlive at `pupa/AGENTS.md` (subagents: `pupa/agents/<name>/AGENTS.md`).\nEdit those to change behaviour permanently — not memory, not a skill.",
+      "path": "pupa/plugins/pupa-guide/skills/pupa-system/SKILL.md"
+    },
+    {
+      "content": "---\ndescription: What Pupa is and what it can do — guide entry point\nwhen_to_use: when the user asks what Pupa is, what it can do, or how its pieces fit together\nversion: 23\n---\nPupa builds apps around you: describe what you need in chat and the agent\nassembles a **myapp** — a canvas of components it edits live while you talk.\n\n**Boundaries — who is what**\n- **Orchestrator** — the top-level chat. Creates, renames, archives and\n  deletes myapps and delegates work to their agents. Has its own memories\n  and skills; no canvas of its own.\n- **Myapp** — one workspace: its own agent, canvas, memories, skills and\n  subagents.\n- **Component** — one shape on a myapp's canvas (tracker, calendar, …).\n- **Item** — one record inside a component (row, event, task…).\n- **Memories** — each myapp (and the orchestrator) keeps its own\n  filesystem-like tree of markdown notes and folders living *inside* the\n  app — not on the device's file system. Edited by you and the agent\n  alike; persists across sessions. Durable context, not records.\n\nItems can link across components *within one myapp*. Myapps don't share\ndata — an app moves between devices or people as a `.pupa` file.\n\n**Go deeper** (users: type the `/command`; agents: `app_skill_view`)\n- /pupa-components — the shapes a canvas can hold and how they combine\n- /pupa-sharing — export and install myapps as `.pupa` files\n- /pupa-memory — memories, sessions, change history, archive\n- /pupa-agents — skills, subagents and slack rooms\n- /pupa-automations — react to canvas events (an item moved) by proposing a chat\n- /pupa-system — where things live: on-device app vs backend, standing instructions",
+      "path": "pupa/plugins/pupa-guide/skills/pupa/SKILL.md"
+    },
+    {
+      "content": "---\nname: build-video\ndescription: Build a vertical 1080x1920 short-video / reel from a script + footage + a voiceover — content-aware cuts, synced VO, baked or karaoke captions with ffmpeg. Use when assembling any reel or short video.\nwhen_to_use: when assembling a reel / short video from footage plus a voiceover\n---\n\n# build-video\n\nAssemble a vertical short (9:16) from a locked script + source footage + a\nvoiceover. Voiceover comes from the **generate-audio** skill; the bar you build\ntoward is **review-reel**. Working files + final mp4 live in the project's host\nfolder under the projects root (`pupa/PROJECTS_DIR.md`, set at `/setup`):\n`<PROJECTS_DIR>/<slug>/` (see **Project layout** at the end).\n\n## Adapt to the host — the commands are a reference, not a contract\nThis documents the pipeline that has worked (Homebrew `ffmpeg-full` + ElevenLabs\non macOS). **Every host differs.** Before running a step, check the tool exists;\nif it's missing and can't be installed, DON'T force it — arrange an equivalent\nthat fits the host and reach the same result:\n- no `ffmpeg-full` / libass → use whatever ffmpeg is present; if it can't burn\n  `.ass`, fall back to `subtitles=.srt` with `force_style`, or hand the cut +\n  `captions.srt` to the user's editor (CapCut/Premiere) for captions.\n- no ElevenLabs forced-alignment → use whisper, or time captions proportionally\n  from the known script (character-count share).\n- no ElevenLabs TTS → macOS `say`, or whatever TTS the host has.\nThe goal is a captioned vertical short synced to the VO. Note in the project what\nyou actually used so the next run matches.\n\n## Finishing rules (do NOT skip)\n- **Black-video fix:** JPEG/full-range sources make ffmpeg emit `yuvj420p`,\n  rendered BLACK by QuickTime/QuickLook. Finish with\n  `scale=in_range=full:out_range=tv,format=yuv420p` + `-color_range tv` +\n  `-movflags +faststart`.\n- **Match resolution/fps/SAR** across every segment before concat or it breaks.\n- **Voiceover duration is the hard target** — every segment sum equals it.\n- **Loudness:** normalise as a final audio-only pass (copy video). Social/vertical\n  `loudnorm I=-14:TP=-1.5:LRA=11`; web `I=-16:TP=-1.5:LRA=11`.\n- **Captions time to narration, not cuts.**\n- Verify final with `ffprobe`: duration ≈ VO, right resolution, `pix_fmt=yuv420p`,\n  `color_range=tv`, 1 video + 1 audio stream.\n\n## 1. Probe everything first\n```\nffprobe -v error -show_entries format=duration:stream=width,height,codec_type,r_frame_rate -of default=noprint_wrappers=1 FILE\n```\nNote each source duration, the voiceover duration (= master target length), and\nresolution/fps.\n\n## 2. Beat sheet from the script\nSplit narration into sentence beats. Allocate each a duration by **character-count\nshare** of total VO length: `dur_i = (chars_i / total_chars) * voiceover_seconds`.\nCumulate → caption in/out times.\n\n## 3. SEE the footage — timestamped contact sheets\n```\nffmpeg -y -i SRC -vf \"fps=1/5,scale=170:-2,drawtext=fontfile=/tmp/f.ttf:text='%{pts\\:hms}':x=2:y=2:fontsize=16:fontcolor=yellow:box=1:boxcolor=black@0.7,tile=8x5:margin=4:padding=3\" -frames:v 1 -update 1 sheet.png\n```\nGotchas: single-image output needs **`-update 1`**. Copy any space-in-name font\nto a clean path (`/tmp/f.ttf`). `fps=1/N` = one frame per N sec. Read the PNG,\nthen pull full-res key frames (`-ss T -i SRC -frames:v 1`) to lock exact in/out.\n\n## 4. Content-aware cut list (NOT uniform speed)\nUniform speed-to-fit = unwatchable blur. Map each beat to a **meaningful window**\nand speed just that window to fill the beat. Keep speed ~2–6×.\n```\nffmpeg -y -ss IN -to OUT -i SRC \\\n  -vf \"setpts=FACTOR*PTS,fps=30,scale=384:848:force_original_aspect_ratio=disable,setsar=1\" \\\n  -t TARGET -an -c:v libx264 -preset fast -crf 18 -pix_fmt yuv420p seg.mp4\n```\n`FACTOR = TARGET / (OUT-IN)` (<1 speeds up). `-an` drops source audio.\n\n## 5. Concat, then caption + audio in one pass\n```\nffmpeg -y -f concat -safe 0 -i list.txt -c copy video.mp4\nffmpeg -y -i video.mp4 -i voiceover.mp3 \\\n  -filter_complex \"[0:v]subtitles='captions.srt':force_style='Fontsize=15,PrimaryColour=&H00FFFFFF&,BorderStyle=3,Outline=4,Shadow=0,BackColour=&H99000000&,Alignment=2,MarginV=40'[vout]\" \\\n  -map \"[vout]\" -map 1:a:0 -c:v libx264 -preset medium -crf 18 -pix_fmt yuv420p -r 30 -c:a aac -b:a 192k -shortest out.mp4\n```\nNarrow portrait: small font (~15), `BorderStyle=3` + semi-transparent\n`BackColour`, `Alignment=2`, `MarginV` to lift off the edge.\n\n## 6. Deliverables\nKeep a **captioned** and a **no-caption** cut. No-caption = mux pre-subtitle\n`video.mp4` + VO only. Verify with ffprobe.\n\n## Normalise loudness across a set\nSeveral clips in one place (carousel/playlist) must match loudness — TTS +\nscreen-capture audio drift wildly (−24 vs −10 LUFS seen in one set).\n- Measure: `ffmpeg -i clip.mp4 -af loudnorm=I=-16:TP=-1.5:LRA=11:print_format=summary -f null -` → read `Input Integrated`.\n- Normalise every clip to the SAME target, audio-only, copy video:\n  `ffmpeg -i in.mp4 -c:v copy -af loudnorm=I=-16:TP=-1.5:LRA=11 -c:a aac -b:a 160k -movflags +faststart out.mp4`\n- Single-pass lands within ~1 LU (fine). Also fixes clipping.\n\n## Modern streaming captions (word-by-word karaoke)\nTikTok/CapCut-style captions that light up per word. Needs libass (`ffmpeg-full`);\nif unavailable, see **Adapt to the host** and fall back to `.srt`.\n\n### Timing — ElevenLabs forced-alignment (exact, no whisper)\nAlign the EXISTING voiceover to the known script → per-word start/end.\n```\ncurl -s -X POST https://api.elevenlabs.io/v1/forced-alignment \\\n  -H \"xi-api-key: $ELEVENLABS_API_KEY\" \\\n  -F \"file=@voiceover.mp3\" -F \"text=<script.txt\"   > alignment.json\n```\nReturns `{characters, words:[{text,start,end,loss}], loss}`. Put the script in a\nfile and use `-F \"text=<file\"` to dodge quoting em-dashes/apostrophes.\n\n### Render — generate `.ass`, burn with libass\nBurn: `-filter_complex \"[0:v]ass=captions.ass[v]\"`.\n- Group words into ~3-word / ~16-char phrases; break on sentence punctuation.\n- **Break on long silence** (gap to next word > ~0.35s) or the word before a\n  pause gets a painfully slow karaoke sweep across the pause.\n- Per word emit `{\\kf<centiseconds>}word`. Fill = bridge to `next_word.start`\n  ONLY when gap ≤ ~0.20s; else (or last word of phrase) use own span\n  (`end-start`). Line Start = first word start, End = last word end +0.12.\n- Style: `Alignment=8` (top) or `2` (bottom); `MarginV` from that edge;\n  **generous `Fontsize`** ~8–10% of video height (48–60px on 540px-wide\n  portrait); `Bold=-1`, thin black `Outline`. `PrimaryColour` = sung colour\n  (yellow `&H0000F5FF`), `SecondaryColour` = pre-sung (white). `{\\fad(90,60)}`\n  per line. Set `PlayResX/Y` = video size.\n\n### RULE — never karaoke a dash\nEm/en dashes (`—` `–`) must NEVER be a caption or karaoke token. Forced-alignment\nreturns a standalone dash token — drop it and force a phrase break, or replace\nwith a comma. Keep real hyphens in words (`AI-agent-native`).\n\n### GOTCHA — leading punctuation\nForced-alignment returns punctuation and spaces as standalone tokens. Drop\nwhitespace-only tokens, **merge punctuation-only tokens onto the previous word**\n(append text, extend end), and `lstrip(\",.:;!?— \")` the first word of each phrase.\n\n### Verify (all lines)\n```\npython3 - <<'PY'\nimport re\nfor ln in open(\"captions.ass\"):\n    if not ln.startswith(\"Dialogue\"): continue\n    t=re.sub(r\"\\{[^}]*\\}\",\"\",ln.split(\",,\",1)[1]).strip()\n    if t and not t[0].isalnum(): print(\"BAD:\",t[:24])\nPY\n```\nZero output = clean.\n\n### Deliverables\nKeep captioned (top-caption karaoke) + no-caption cuts. Retune fast:\n`python3 gen_ass.py <fontsize> <marginFromEdge>` then re-burn; cache\n`alignment.json` so retunes never re-hit the API.\n\n## Keep each project CapCut-pickup-able\nUser reopens in CapCut, no ffmpeg. Per project ship:\n```\n<project>/edit/\n  src/     raw untouched: source clips + voiceover.mp3 (+ script .txt)\n  work/    intermediates: segments, concat lists, captions.srt\n  cap/     alignment.json, gen_ass.py, captions.ass\n  CUTSHEET.md   the pickup doc (EDL)\n  *.mp4    reference renders to match\n```\nKeep `src/` pristine. **CUTSHEET.md** = one row per segment: out-start/end/dur,\nsource clip, **source in/out**, speed factor, narration beat + target length,\nres/fps, which render to match. CRITICAL: log source in/out AND speed factor AS\nyou cut (step 4) — unrecoverable from the output mp4 otherwise.\nCapCut notes: `.srt` imports directly (keep `work/captions.srt`); `.ass` karaoke\ndoes NOT import; CapCut clip speed = `source_window_len / out_dur`.\n\n## Section-locked narration (fixed footage, VO follows)\nWhen footage is a real recording you must NOT re-cut (a UI walkthrough), invert\nthe usual flow: lock each narration beat to the section's on-screen window.\n- Split script per section; ONE TTS clip per section.\n- Place each at its window start with `adelay`, mix with `amix`, pad to source:\n  ```\n  ffmpeg -y -i s1.mp3 -i s2.mp3 ... \\\n   -filter_complex \"[0]adelay=200:all=1[a0];[1]adelay=7200:all=1[a1];...;\\\n     [a0][a1]...amix=inputs=N:normalize=0:dropout_transition=0,apad,atrim=0:DUR[out]\" \\\n   -map \"[out]\" -c:a libmp3lame -q:a 2 voiceover.mp3\n  ```\n- Keep each clip SHORTER than its window (~0.3s lead + tail). If long, `atempo`\n  it (`atempo=1.26`) rather than bleeding into the next section (#1 \"narration\n  talks about X while screen shows Y\" complaint).\n- Word each beat: window_seconds × ~2.6 words/s ceiling.\n- Karaoke: forced-align EACH clip separately, add its window offset to every\n  word time before the `.ass`. Never one alignment over the mixed track.\n\n## .ass gotchas\n- **Dialogue field count:** leading comma (`,Getting started`) = wrong comma count,\n  NOT a fade artifact. `Format: Layer,Start,End,Style,Name,MarginL,MarginR,Effect,Text`\n  → exactly 8 commas before Text: `Dialogue: 0,{start},{end},K,,0,0,0,{body}`.\n- **QC regex:** strip `\\{[^}]*\\}` BEFORE splitting on comma (tags contain commas).\n- **Forced-alignment API is flaky:** empty response happens; retry until `words`\n  non-empty, sleep ~3s. Print first words of each JSON, eyeball clip N == section N.\n\n---\n\n# Project layout (host)\n\nEverything for a project lives under the projects root agreed at `/setup`\n(`pupa/PROJECTS_DIR.md`), one subfolder per `<slug>`:\n```\n<PROJECTS_DIR>/<slug>/\n  src/     raw source clips + voiceover\n  work/    ffmpeg intermediates (segments, lists, captions.srt)\n  cap/     alignment.json, gen_ass.py, captions.ass\n  <slug>.mp4   final deliverable (syncs to Drive/Dropbox)\n  CUTSHEET.md  EDL for CapCut pickup\n```\nThe locked **script** + notes stay in memory at\n`pupa/projects/<slug>/scripts/script.md` (scaffolded by **project-kickoff**);\nheavy media stays on the host under `<PROJECTS_DIR>/<slug>/`.\n\n## Handover\nPart of a video pipeline — each stage runs in its own thread. Run the\n**pipeline-handover** skill: READ prior handovers in\n`pupa/projects/<slug>/handovers/` before you start (esp. footage trims + VO\npath); WRITE `04-assemble.md` when done (mp4 path, ffmpeg recipe, caption\nfile) after the checklist tick.\n\n## Branding\nBefore burning captions / mixing audio, read `pupa/branding/BRAND.md` then\n`pupa/projects/<slug>/branding/` (overrides WIN). Apply the karaoke caption\ncolor (lit vs base), outline, font, size %, and placement; and the audio\nvolume/mix (VO LUFS, music-bed level, SFX). Do NOT hardcode caption styling\nor levels — pull them from branding.\n",
+      "path": "pupa/skills/build-video/SKILL.md"
+    },
+    {
+      "content": "---\ndescription: Generate brand/promo voiceover audio with ElevenLabs using your house TTS settings. Use when producing narration for a promo script or brand clip.\nwhen_to_use: when the user asks to produce voiceover, narration, or brand audio from script text\n---\n\n# generate-brand-audio\n\nProduce voiceover with ElevenLabs `text_to_speech`. Pass the script text; keep params below.\n\n## Request parameters\n\n| Param | Value |\n|---|---|\n| `voice_id` | your house voice id (see **Choosing a voice**) |\n| `model_id` | `eleven_multilingual_v2` (default) |\n| `stability` | `0.5` |\n| `similarity_boost` | `0.75` |\n| `style` | `0` |\n| `speed` | `1` |\n| `use_speaker_boost` | `true` |\n| `output_format` | `mp3_44100_128` |\n| `output_directory` | `$HOME/Desktop` (default) |\n\n## Choosing a voice\n\nNo house voice yet? List what the ElevenLabs MCP exposes (or browse the\nvoice library), pick one, and record the id in `pupa/branding/BRAND.md`\nso every project uses the same narrator. Ask the user before picking.\n\n## Notes\n\n- Feed the **Full script** paragraph, not the split-by-scene text.\n- Strip scene markers / stage directions before sending.\n- Output saved to Desktop as `tts_<slug>_<timestamp>.mp3`.\n- Cost warning: real API call. Only run when user asks.\n\n## Handover\nPart of a video pipeline — each stage runs in its own thread. Run the\n**pipeline-handover** skill: READ prior handovers in\n`pupa/projects/<slug>/handovers/` before you start; WRITE `03-voiceover.md`\nwhen done (VO path, voice id, TTS params, duration) after the checklist tick.\n\n## Branding\nRead `pupa/branding/BRAND.md` (+ project `branding/` overrides, which win)\nfor the VO volume target (LUFS) and true-peak ceiling; normalize the\ngenerated audio to match before handing off.\n",
+      "path": "pupa/skills/generate-audio/SKILL.md"
+    },
+    {
+      "content": "---\nname: pipeline-handover\ndescription: Read prior stage handovers and write your own — the per-project handover log that keeps a video pipeline's separate conversations in sync. Use at the start and end of every video stage.\nwhen_to_use: at the start and end of any video pipeline stage (script/footage/voiceover/assemble/review/publish)\nuser-invocable: false\n---\n\n# Pipeline handover log\n\nEvery video project keeps a handover log at\n`pupa/projects/<slug>/handovers/`. Each stage runs in its OWN chat thread\n(fired by the per-stage automation) and shares nothing but this log + the\ntracker card. So: **READ prior handovers before you work, WRITE yours when\ndone.** This is how one stage tells the next what it did and what's needed.\n\n## Find the slug\nDerive `<slug>` from the card: the `script` link\n`pupa://memory/pupa/projects/<slug>/scripts/script.md`, or the folder path\nin `notes`. Same slug the kickoff used.\n\n## On stage START\n1. `lsMemories pupa/projects/<slug>/handovers/` — read every file (at least\n   `00-kickoff.md` + the latest `NN-*.md`).\n2. Absorb: artifacts + paths produced, decisions/params, and the\n   **Next stage needs** block addressed to you.\n\n## On stage END (after the work + the checklist tick)\nAppend `NN-<stage>.md` — NN = 01 script, 02 footage, 03 voiceover,\n04 assemble, 05 review, 06 publish:\n\n```\n# <stage> — <YYYY-MM-DD>\n## Produced\n- <artifact> -> <path>\n## Decisions / params\n- <voice id, ffmpeg recipe, trims, timings, settings...>\n## Next stage needs\n- <what the next conversation must know / do>\n## Open issues\n- <risks, TODOs, or \"none\">\n```\n\nCreate the file with `writeMemoryFile`; if it already exists,\n`appendMemoryFile` a new dated block — never overwrite history.\n\n## Rules\n- Never delete prior handovers — the log is the project's memory across threads.\n- Keep each ~5-12 lines. Absolute paths for host files, `pupa://memory/...` for memory.\n- If `handovers/` is missing, create it (kickoff seeds `00-kickoff.md`).\n",
+      "path": "pupa/skills/pipeline-handover/SKILL.md"
+    },
+    {
+      "content": "---\nname: project-checklist\ndescription: Per-project production checklist for a video/reel — create one per project and keep it synced to the card's stage. Use when a video project starts, or when any stage skill needs to record progress.\nwhen_to_use: when starting a video project, or when a stage skill finishes a step and must tick progress\nuser-invocable: false\n---\n\n# Per-project production checklist\n\nEvery **Video** project (a `tracker-1` card with `type=Video`) gets ONE\ndedicated checklist component, created on first entry to `Draft`.\n\n## Create (once per project)\n- `addComponent(kind:\"checklist\", name:\"▶ <card title>\")`.\n- Populate with the fixed production steps (in order):\n  1. Script written\n  2. Footage gathered\n  3. Voiceover done\n  4. Assembled (mp4)\n  5. Reviewed\n  6. Published\n- `linkItem` the checklist to its tracker card.\n- Record the checklist `componentId` in the card `notes` so later stages\n  find it.\n\n## Update protocol (every stage skill runs this)\n1. Read the card's `stage` field → know where the project is.\n2. Find the project's checklist (by name `▶ <title>` or the id in notes).\n   If missing, create it (above).\n3. `toggleChecklistItem` the step that just finished.\n4. May append stage-specific sub-items.\n\n## Rules\n- One checklist per project; do NOT reuse across projects.\n- Never tick a step whose work isn't actually done.\n- The shared **Publish Checklist** (`checklist-1`) is only a TEMPLATE for\n  final pre-publish items — copy from it, don't mutate it.\n\n## Handover\nThis is a multi-thread pipeline. After ticking a step, run the\n**pipeline-handover** skill to WRITE that stage's `NN-<stage>.md` handover\nin `pupa/projects/<slug>/handovers/`, and READ prior handovers at the start\nof any stage.\n",
+      "path": "pupa/skills/project-checklist/SKILL.md"
+    },
+    {
+      "content": "---\nname: project-kickoff\ndescription: Bootstrap a tracked video/reel project in one shot — pipeline card (type=Video), script stub in memories, per-project checklist, and the host project folder. Use when starting any new video project.\nwhen_to_use: when the user wants to start a new video / reel as a tracked project\n---\n\n# project-kickoff\n\nStructural bootstrap for a video project. Sets up everything the staged flow\nneeds, then hands off — the per-stage automations do the actual work as the card\nmoves. Scaffold STRUCTURE here; stages produce CONTENT.\n\nPick a short kebab-case `<slug>` from the topic (ask the user if unclear).\nNothing here is host-specific — derive every name from `<slug>`. **Idempotent:**\nif a piece already exists (card, checklist, folder), reuse it, don't duplicate.\n\n## 1. Script stub in memories\nWrite a stub to `pupa/projects/<slug>/scripts/script.md`:\n- title, one-line goal, a `## Script (beats)` heading with a placeholder line,\n  a short NEXT note. Beats stay the voiceover master (beat count ≈ VO length).\n- The full locked script gets written at the **Draft** stage, not here.\n\n## 2. Pipeline card (MUST be type=Video)\nAdd one item to the content pipeline (`tracker-1`; pass `componentId` if >1):\n- `title` — working title\n- `type` — **`Video`**  ← required, or NO stage automation will fire\n- `format` — `Short video`\n- `stage` — `Idea`\n- `notes` — plan + memory script path + the project folder path (step 4)\n- `script` link field → `pupa://memory/pupa/projects/<slug>/scripts/script.md`\n  (add the link field once if missing: `addTrackerField(name:\"script\", type:\"link\")`)\n\n## 3. Per-project checklist\nRun the **project-checklist** skill: create the **▶ <title>** checklist with the\nproduction steps, `linkItem` it to the card, record its `componentId` in the\ncard notes. Tick nothing yet.\n\n## 4. Host project folder\nRead the projects root from `pupa/PROJECTS_DIR.md` (set at `/setup`). Create the\nproject subfolder with the `build-video` layout:\n`mkdir -p \"<PROJECTS_DIR>/<slug>\"/{src,work,cap}`\nIf `PROJECTS_DIR.md` is missing, tell the user to run `/setup` first (media has\nnowhere to live) — the card/script/checklist still scaffold fine.\n\n## 5. Hand off\nTell the user it's scaffolded and to **drag the card to Draft** to start the\nautomated flow (script → footage → voiceover → assemble → review → publish).\nBrainstorm angle/format with `@Ideator`, structure with `@Scriptwriter`.\n\n## 6. Handover log (seed)\nCreate `pupa/projects/<slug>/handovers/` and seed `00-kickoff.md`: goal,\n`script.md` path, project folder path, checklist `componentId`, and the\nsource clip paths. Every later stage runs in its own thread and stays in\nsync ONLY through this log — they read prior + append their own via the\n**pipeline-handover** skill (see it for the file template).\n\n## 7. Branding folder\nCreate `pupa/projects/<slug>/branding/` and seed `BRAND.md` as an overrides\nstub that inherits the global `pupa/branding/BRAND.md`. Stage agents write\nproject-specific caption / audio rules here — these OVERRIDE the global file.\nRecord only deltas; never duplicate the global defaults. (If the global\n`pupa/branding/BRAND.md` is missing, tell the user to run `/setup`.)\n",
+      "path": "pupa/skills/project-kickoff/SKILL.md"
+    },
+    {
+      "content": "---\nname: publish-video\ndescription: Publish a finished reel — final pre-publish gate, schedule a calendar slot, set a day-of reminder. Use when a Video card enters the Published stage.\nwhen_to_use: when a reviewed video reaches the Published stage\n---\n\n# Publish a video\n\nPre-req: reel reviewed (project checklist \"Reviewed\" ticked).\n\n## Steps\n1. **Final gate** — copy relevant items from the shared **Publish\n   Checklist** (`checklist-1`) into the project checklist and confirm each\n   (headline, CTA, links, thumbnail, tags).\n2. **Calendar** — `addCalendarEvent` on `calendar-1` for the publish slot;\n   `linkItem` it to the tracker card (mirror existing publish events).\n3. **Reminder** — set a day-of (and optional 1h-before) notification for\n   that slot via the notifications tools.\n4. **project-checklist** update: tick **Published**.\n5. Confirm the mp4 is in the synced output folder agreed at `/setup`.\n\nKeep `confirm` on — never auto-post to a platform.\n\n## Handover\nPart of a video pipeline — each stage runs in its own thread. Run the\n**pipeline-handover** skill: READ prior handovers in\n`pupa/projects/<slug>/handovers/` before you start; WRITE `06-publish.md`\nwhen done (final path, calendar slot, live URL) after the checklist tick.\n",
+      "path": "pupa/skills/publish-video/SKILL.md"
+    },
+    {
+      "content": "---\nname: review-reel\ndescription: Review an assembled reel/short video before publish — caption timing & placement, pacing, dead air, hook strength. Use when a Video card enters the Review stage or the user asks to review a reel.\nwhen_to_use: when a video reaches Review stage, or the user asks to check a built reel\n---\n\n# Review a reel\n\nInput: the assembled mp4 + its script (card `script` link) + the project\nchecklist.\n\n## Checks\n- **Captions** — timing matches VO, on-screen ≥ readable duration, font\n  size/margin per house style (build-video).\n- **Pacing** — no dead air > ~0.6s; cuts land on beats; length fits\n  platform (TikTok/Reels ~20–45s).\n- **Hook** — first 1.5s earns the scroll-stop.\n- **Audio** — VO clear, levels consistent, no clipping.\n- **Ends** with a clear CTA / loop.\n\n## Output\n- Verdict: ship / retune.\n- If retune: concrete steps (e.g. `python3 gen_ass.py <fontsize> <margin>`\n  then re-burn; trim clip X by Ns). Use the `build-video` skill for caption\n  retune / re-assembly.\n\n## After\nRun the **project-checklist** update protocol: tick **Reviewed** (only if\nverdict = ship).\n\n## Handover\nPart of a video pipeline — each stage runs in its own thread. Run the\n**pipeline-handover** skill: READ prior handovers in\n`pupa/projects/<slug>/handovers/` before you start; WRITE `05-review.md`\nwhen done (notes, fixes requested, ship verdict) after the checklist tick.\n",
+      "path": "pupa/skills/review-reel/SKILL.md"
+    },
+    {
+      "content": "---\ndescription: Provision this backend to build short videos / reels (one-time setup)\nwhen_to_use: when the user runs /setup or asks to set up video / reels / the backend\n---\n# Video backend setup\n\nGoal: make this backend able to build short videos / reels and drop finished\nwork into a cloud-synced projects folder the user agrees on. Do each step with\nthe `shell` tool, showing me the command first (approval card). If the shell\ntool is disabled, print the command and ask me to run it myself.\n\n## 0. Prereqs\nVideo builds need a self-hosted backend on the user's own Mac — the `shell`\ntool is pinned off in the cloud image. If `shell` is unavailable, explain and stop.\n\n## 1. ffmpeg + caption tooling\n- `ffmpeg -version` — if missing: `brew install ffmpeg`.\n- **Caption support (libass)** for karaoke `.ass` burn:\n  `ffmpeg -hide_banner -filters | grep -E 'drawtext|subtitles|ass'`.\n  Stock homebrew GPL builds often lack it → install `brew install ffmpeg-full`\n  (`/opt/homebrew/opt/ffmpeg-full/bin/ffmpeg`). If it still can't burn `.ass`,\n  build-video falls back to `.srt` captions — that's fine, don't force it.\n- `python3` present (build-video's caption helpers are stdlib-only).\n\n## 2. Voiceover MCP (ElevenLabs)\n- Add it (key stays an env placeholder — never inline a key):\n  `pupa-backend mcp add --name elevenlabs --command uvx --arg elevenlabs-mcp --env ELEVENLABS_API_KEY='${ELEVENLABS_API_KEY}' --description \"Text-to-speech voiceover — writes an audio file.\" --force`\n- Tell the user: `export ELEVENLABS_API_KEY=...` in the backend shell, then\n  restart the backend (config.yml is read at startup — no hot-reload).\n- No key? Fall back to macOS `say -v Samantha` for placeholder voiceover.\n- Optional: add an image MCP (Pexels/fal) the same way; otherwise the user's\n  own images / thumbnails work directly.\n\n## 3. Agree the projects root (parent folder — CONFIRM, don't auto-pick)\nAll video projects live under ONE parent folder, ideally cloud-synced, one\nsubfolder per project (`<slug>/` with src/ work/ cap/ + final mp4).\n- Probe candidates as SUGGESTIONS only:\n  - `ls -d ~/Library/CloudStorage/GoogleDrive-* 2>/dev/null`\n  - `ls -d ~/Dropbox 2>/dev/null`\n  - `ls -d ~/'Google Drive' 2>/dev/null`\n- **Ask the user to confirm or override** the parent folder before creating it.\n  Propose `<first match>/PupaProjects`; let them pick a different Drive/Dropbox\n  path (or `~/PupaProjects` if they want no sync). Do NOT silently pick one.\n- Create it: `mkdir -p \"<agreed path>\"`.\n- Save the confirmed absolute path to memory as `pupa/PROJECTS_DIR.md` — every\n  project folder and finished mp4 goes under it, and `build-video` reads it.\n\n## 4. Install the build skill as a backend skill\n- `mkdir -p ~/.pupa-backend/skills/build-video`\n- Read `pupa/skills/build-video/SKILL.md` from this app's memory and write it to\n  `~/.pupa-backend/skills/build-video/SKILL.md` via a shell heredoc\n  (`cat > <path> <<'EOF' … EOF`; frontmatter already present — do NOT add another).\n- A NEW chat session will then surface a `build-video` skill the agent can\n  `skill_view`.\n\n## 5. Verify\n- `pupa-backend mcp list` shows `elevenlabs`.\n- `ls ~/.pupa-backend/skills/build-video` shows SKILL.md.\n- `ffmpeg -version` works; libass present for karaoke captions (optional — `.srt` fallback exists).\n- `cat pupa/PROJECTS_DIR.md` shows the agreed parent folder.\nTell the user setup is done, where projects will be saved, and that a fresh\nsession is needed for the `build-video` skill to appear.\n\n## Branding (one-time)\nCreate the main brand file `pupa/branding/BRAND.md` if missing and populate\nthe house defaults for KARAOKE CAPTIONS (lit vs base color, outline, font,\nsize %, placement) and AUDIO VOLUME/MIX (VO LUFS target, music-bed level,\nSFX level). Ask the user for brand color / font if known; else seed sane\ndefaults. Per-project overrides live in `pupa/projects/<slug>/branding/` and\nwin over this file.\n",
+      "path": "pupa/skills/setup/SKILL.md"
+    },
+    {
+      "content": "---\ndescription: Record durable, app-level learnings from this conversation to pupa/MEMORIES.md\nwhen_to_use: when the user runs /to-memory or asks to capture what was learned this session\n---\nCapture what would help next time someone works on *this* app — especially\npoints where the user redirected you or an initial approach needed realignment.\n\n1. Re-read this conversation. Extract *general, durable* guidance: conventions\n   clarified, preferences stated, gotchas, and anything that needed\n   realignment mid-task. Skip one-off task specifics.\n2. Read the existing `pupa/MEMORIES.md` (if present) so you merge, not duplicate.\n3. Write to `pupa/MEMORIES.md` or your AGENTS.md file with the merged result — short bullets under clear\n   headings, the new insight integrated in place. Choose AGENTS.md for info you should always be aware of in every conversation, \n   while choose MEMORIES.md for info that is not always needed.\n4. Tell the user in one line what you added.",
+      "path": "pupa/skills/to-memory/SKILL.md"
+    }
+  ]
+}
