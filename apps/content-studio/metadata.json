@@ -1,0 +1,15 @@
+{
+  "id": "content-studio",
+  "version": 1,
+  "author": "pupa-app",
+  "summary": "Editorial + video content pipeline: a kanban by stage, a five-agent studio room for research, editing and ideation, and stage automations that script, voice, assemble and caption a reel.",
+  "tags": [
+    "content",
+    "video",
+    "tracker",
+    "automation",
+    "writing",
+    "productivity"
+  ],
+  "homepage": "https://github.com/pupa-app/pupa"
+}
